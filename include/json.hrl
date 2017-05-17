@@ -1,0 +1,15 @@
+-define(CONTENT,"content").
+-define(FROM,"from").
+-define(ID,"id").
+-define(SUB,"subject").
+-define(TO,"to").
+-define(TYPE,"type").
+-define(CDATE,"creationDate").
+-define(DATE,"date").
+-define(DAY,"day").
+-define(HOURS,"hours").
+-define(MIN,"minutes").
+-define(SEC,"seconds").
+-define(TIME,"time").
+-define(OFFSET,"timezoneOffset").
+-define(YEAR,"year").

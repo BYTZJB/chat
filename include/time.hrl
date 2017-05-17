@@ -1,0 +1,1 @@
+-record(time,{date,day,hours,minutes,month,seconds,thetime,offset,year}).

@@ -1,0 +1,1 @@
+-record(roominfo,{id,name,type,unum,tablename,status,creationDate}).
