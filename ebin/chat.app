@@ -1,5 +1,5 @@
 {application,chat,
-             [{description,[]},
+             [{description,["hahahha"]},
               {vsn,"1"},
               {registered,[]},
               {applications,[kernel,stdlib,lager, jiffy]},
