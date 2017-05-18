@@ -15,4 +15,10 @@
 -export([get_all_group/0]).
 
 get_all_group() ->
-	mod_mnesia:get_group_keys().
+	do(qlc:q([X#group.id || X <- mnesia:table(group)])).
+
+do(Q) ->
+	F = fun() -> qlc:e(Q) end,
+	{atomic, Val} = mnesia:transaction(F),
+	Val.
+	

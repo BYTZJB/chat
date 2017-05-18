@@ -89,32 +89,32 @@ init([]) ->
 		timeout() | hibernate} |
 	{stop, Reason :: term(), NewState :: #state{}}).
 wait_socket({go, Socket}, State) ->
-	inet:setopts(Socket, [binary, {packet, 4}, {active, true}, {exit_on_close, true}]),
+	inet:setopts(Socket, [binary, {packet, 0}, {active, true}, {exit_on_close, true}]),
+	lager:info("wait_socket: ~p", [Socket]),
 	{next_state, wait_auth, State#state{socket = Socket}}.
 
 wait_auth(#register{username = UserName, password = PassWord}, State) ->
 	Client_Id = id_generator:get_new_id(client),
 	Client = #client{
-			id = Client_Id,
-			username = UserName,
-			password = PassWord,
-			friends = [],
-			groups = []
-		},
+		id = Client_Id,
+		username = UserName,
+		password = PassWord,
+		friends = [],
+		groups = []
+	},
 	%% 将用户放到在线列表中去
 	ets:insert(client_pid, {Client_Id, self()}),
 	%% 往数据库添加新的用户
 	mod_mnesia:add_new_client(Client),
-	%% 给mod_tcp_agent添加新的子进程
+	%% 给用户生成对应的处理进程
 	%% 并与当前进程相结合
-	Client_Pid = mod_tcp_agent:add_new_client(Client),
-	ets:insert(client_pid, {Client_Id, self()}),
+	{ok, Client_Pid} = mod_tcp_agent:add_new_client(Client),
 	{next_state, wait_data, State#state{client_pid = Client_Pid}};
 
 wait_auth(#login{id = Id, password = PassWord1}, State) ->
-	PassWord2 = mod_mnesia:get_client_password(Id),
-	case PassWord1 of
-		PassWord2 ->
+	PassWords=  mod_mnesia:get_client_password(Id),
+	case PassWords of
+		[PassWord1] ->
 			%% 将用户放到在线列表中去
 			ets:insert(client_pid, {Id, self()}),
 			%% 给mod_tcp_agent添加新的子进程
@@ -159,12 +159,12 @@ wait_data(#chat{to_id = To_Id} = Chat, State) ->
 %%
 %% @end
 %%--------------------------------------------------------------------
-	-spec(handle_event(Event :: term(), StateName :: atom(),
-StateData :: #state{}) ->
-{next_state, NextStateName :: atom(), NewStateData :: #state{}} |
-{next_state, NextStateName :: atom(), NewStateData :: #state{},
-timeout() | hibernate} |
-{stop, Reason :: term(), NewStateData :: #state{}}).
+-spec(handle_event(Event :: term(), StateName :: atom(),
+	StateData :: #state{}) ->
+	{next_state, NextStateName :: atom(), NewStateData :: #state{}} |
+	{next_state, NextStateName :: atom(), NewStateData :: #state{},
+		timeout() | hibernate} |
+	{stop, Reason :: term(), NewStateData :: #state{}}).
 handle_event(_Event, StateName, State) ->
 	{next_state, StateName, State}.
 
@@ -207,23 +207,42 @@ handle_sync_event(_Event, _From, StateName, State) ->
 		timeout() | hibernate} |
 	{stop, Reason :: normal | term(), NewStateData :: term()}).
 handle_info({tcp, Socket, BinData}, _StateName, #state{socket = Socket} = State) ->
-	Message = #message{cmd = Cmd} = jiffy:encode(BinData),
-	case Cmd of
-		1 ->
-			Register = #register{username = Message#message.username, password = Message#message.password},
-			tcp_agent:wait_auth(Register, State);
-		2 ->
-			Login = #login{id = Message#message.id, password = Message#message.password},
-			tcp_agent:wait_auth(Login, State);
-		3 ->
-			Chat = #chat{id = Message#message.id, username = Message#message.username,
-				to_type = Message#message.to_type,
-				to_id = Message#message.to_id,
-				data = Message#message.data},
-			tcp_agent:wait_data(Chat, State);
-		_ ->
-			lager:info("error"),
-			{stop, "error cmd", State}
+	lager:info("*******************************************"),
+	try
+		Message = jiffy:decode(BinData, [return_maps]),
+		Cmd = maps:get(<<"cmd">>, Message),
+		lager:info("~p", [Cmd]),
+		lager:info("~p", [Message]),
+		case Cmd of
+			1 ->
+				UserName = maps:get(<<"username">>, Message),
+				PassWord = maps:get(<<"password">>, Message),
+				Register = #register{username = UserName, password = PassWord},
+				tcp_agent:wait_auth(Register, State);
+			2 ->
+				Id = maps:get(<<"id">>, Message),
+				PassWord = maps:get(<<"password">>, Message),
+				Login = #login{id = Id, password = PassWord},
+				tcp_agent:wait_auth(Login, State);
+			3 ->
+				Id = maps:get(<<"id">>, Message),
+				UserName = maps:get(<<"username">>, Message),
+				To_Type = maps:get(<<"to_type">>, Message),
+				To_Id = maps:get(<<"to_id">>, Message),
+				Data = maps:get(<<"data">>, Message),
+				
+				Chat = #chat{id = Id,  username = UserName,
+					to_type = To_Type,
+					to_id = To_Id,
+					data = Data},
+				tcp_agent:wait_data(Chat, State);
+			_ ->
+				lager:info("error"),
+				{stop, "error cmd", State}
+		end
+	catch
+		X:Y ->
+			lager:info("~p ~p", [X, Y])
 	end;
 
 handle_info(#tcp_agent_receive_chat{data = Data}, _StateName, #state{socket = Socket} = State) ->
@@ -231,16 +250,18 @@ handle_info(#tcp_agent_receive_chat{data = Data}, _StateName, #state{socket = So
 	{next_state, wait_data, State};
 
 handle_info({tcp_closed, Socket}, StateName, #state{socket = Socket} = State) ->
-	lager:info("tcp closed, uid: ~p, state: ~p", [get(uid), StateName]),
+	lager:info("tcp closed, state: ~p", [StateName]),
 	{stop, normal, State};
 
 handle_info({tcp_error, Socket}, StateName, #state{socket = Socket} = State) ->
-	lager:info("tcp error, uid: ~p, state: ~p", [get(uid), StateName]),
+	lager:info("tcp error, state: ~p", [StateName]),
 	{stop, normal, State};
 
 %%接受到不认识的消息,立刻断开.原因是unexpected_info
 handle_info(Info, _StateName, State) ->
-	lager:info("tcp_agent receive unexpected info: ~p, uid: ~p", [Info, get(uid)]),
+	lager:info("~p ", [State#state.socket]),
+	lager:info("~p ", [erlang:element(3, Info)]),
+	lager:info("tcp_agent receive unexpected info: ~p", [Info]),
 	{stop, "error tcp message", State}.
 
 %%--------------------------------------------------------------------
@@ -256,6 +277,7 @@ handle_info(Info, _StateName, State) ->
 -spec(terminate(Reason :: normal | shutdown | {shutdown, term()}
 | term(), StateName :: atom(), StateData :: term()) -> term()).
 terminate(_Reason, _StateName, _State) ->
+	lager:info("tcp_agent process is termianted"),
 	ok.
 
 %%--------------------------------------------------------------------

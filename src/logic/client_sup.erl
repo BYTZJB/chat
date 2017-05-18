@@ -62,10 +62,6 @@ init([]) ->
 	
 	SupFlags = {RestartStrategy, MaxRestarts, MaxSecondsBetweenRestarts},
 	
-	_Restart = permanent,
-	_Shutdown = 2000,
-	_Type = worker,
-	
 	lager:info("######## client_sup"),
 	
 	{ok, {SupFlags, []}}.

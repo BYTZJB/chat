@@ -32,7 +32,6 @@
 -spec(start_link() ->
 	{ok, Pid :: pid()} | ignore | {error, Reason :: term()}).
 start_link() ->
-	lager:info("######## AAAA"),
 	supervisor:start_link({local, ?SERVER}, ?MODULE, []).
 
 start_child() ->

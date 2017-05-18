@@ -21,43 +21,4 @@ init() ->
 	ets:new(group_pid, Opt_group_pid),
 	
 	mnesia:start(),
-%%	Reply = mnesia:create_schema([node()]),
-%%	lager:info("node: ~p", [node()]),
-%%	lager:info("reply: ~p", [Reply]),
-	
-	Param_ids = [{type, set}, {attributes, record_info(fields, ids)}],
-	case mnesia:force_load_table(ids) of
-		yes ->
-			ok;
-		_ ->
-			mnesia:create_table(client, Param_ids),
-			case mnesia:force_load_table(ids) of
-				yes -> ok;
-				_ ->
-					lager:info("error")
-			end
-	end,
-	Param_client = [{type, set}, {attributes, record_info(fields, client)}],
-	case mnesia:force_load_table(client) of
-		yes ->
-			ok;
-		_ ->
-			mnesia:create_table(client , Param_client),
-			case mnesia:force_load_table(client) of
-				yes -> ok;
-				_ ->
-					lager:info("error")
-			end
-	end,
-	Param_group = [{type, set}, {attributes, record_info(fields, group)}],
-	case mnesia:force_load_table(group) of
-		yes ->
-			ok;
-		_ ->
-			mnesia:create_table(group, Param_group),
-			case mnesia:force_load_table(group) of
-				yes -> ok;
-				_ ->
-					lager:info("error")
-			end
-	end.
+	mnesia:wait_for_tables([client, group, ids], 2000).

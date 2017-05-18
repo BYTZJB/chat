@@ -1,8 +1,15 @@
 {application,chat,
-             [{description,["hahahha"]},
+             [{description,[]},
               {vsn,"1"},
               {registered,[]},
-              {applications,[kernel,stdlib,lager, jiffy]},
+              {applications,[kernel,stdlib,lager]},
               {mod,{chat_app,[]}},
               {env,[]},
-              {modules,[]}]}.
+              {modules,[chat_app,chat_room_manager,chat_sup,client,
+                        client_manager,client_sup,control_sup,group,group_sup,
+                        id_generator,manager_client,manager_group,
+                        mod_control_sup,mod_group_sup,mod_mnesia,
+                        mod_tcp_agent,sup,tcp_acceptor,tcp_agent,
+                        tcp_agent_sup,test,test_id_generator,test_mnesia,
+                        test_tcp_acceptor,util_MessageParas,
+                        util_RoomInfoParas,util_SetInfoParas,util_datetime]}]}.

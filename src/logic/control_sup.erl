@@ -55,11 +55,13 @@ init([]) ->
 	Tcp_Agent_sup= {tcp_agent_sup, {tcp_agent_sup, start_link, []},
 		Restart, Shutdown, supervisor, [tcp_agent_sup]},
 	
-	Acceptor = {tcp_acceptor, {tcp_acceptor, start, []},
+	Acceptor = {tcp_acceptor, {tcp_acceptor, start_link, []},
 		Restart, Shutdown, worker, [tcp_acceptor]},
 	
+	Childes_Spec = [Id_generator, Group_sup, Client_sup, Tcp_Agent_sup, Acceptor],
+	
 	lager:info(""),
-	{ok, {SupFlags, [Id_generator, Group_sup, Client_sup, Tcp_Agent_sup, Acceptor]}}.
+	{ok, {SupFlags, Childes_Spec}}.
 
 %%%===================================================================
 %%% Internal functions

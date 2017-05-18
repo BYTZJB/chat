@@ -66,21 +66,18 @@ init([]) ->
 	Shutdown = 2000,
 	Type = worker,
 	
-%%	Ids = mod_group_sup:get_all_group(), %% todo  关于数据库的交互
-%%	lager:info("~p ~n", [Ids]),
-%%	False_Ids = [1,2,3],
-%%	Childes_Spec = lists:map(
-%%		fun(Elem) ->
-%%			{Elem, {group, start_link, [Elem]},
-%%				Restart, Shutdown, Type, [group]}
-%%		end, Ids
-%%	),
-%%	lager:info("~p ", [Childes_Spec]),
-%%	AChild = {'AName', {'AModule', start_link, []},
-%%		Restart, Shutdown, Type, ['AModule']},
+	Ids = mod_group_sup:get_all_group(),
+	lager:info("~p ~n", [Ids]),
+	Childes_Spec = lists:map(
+		fun(Group_Id) ->
+			{Group_Id, {group, start_link, [Group_Id]},
+				Restart, Shutdown, Type, [group]}
+		end, Ids
+	),
+	lager:info("~p ", [Childes_Spec]),
 	
 	lager:info("######## group_sup"),
-	{ok, {SupFlags, []}}. %%Childes_Spec}}. todo
+	{ok, {SupFlags, Childes_Spec}}.
 
 %%%===================================================================
 %%% Internal functions
