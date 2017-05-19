@@ -282,8 +282,9 @@ handle_info(Info, _StateName, State) ->
 %%--------------------------------------------------------------------
 -spec(terminate(Reason :: normal | shutdown | {shutdown, term()}
 | term(), StateName :: atom(), StateData :: term()) -> term()).
-terminate(_Reason, _StateName, #state{client_pid = Client_Pid} = State) ->
-	supervisor:terminate_child(client_sup, Client_Pid),
+terminate(_Reason, _StateName, #state{client_pid = Client_Pid} = _State) ->
+	Reply = supervisor:terminate_child(client_sup, Client_Pid),
+	lager:info("~p", [Reply]),
 	lager:info("tcp_agent process is termianted"),
 	ok.
 

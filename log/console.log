@@ -968,3 +968,152 @@
 2017-05-19 17:17:40.974 [info] <0.161.0>@tcp_agent:wait_auth:115 $$$$$$$$$$$$$$ end
 2017-05-19 17:18:03.014 [info] <0.161.0>@tcp_agent:handle_info:259 tcp closed, state: wait_data
 2017-05-19 17:18:03.014 [info] <0.161.0>@tcp_agent:terminate:287 tcp_agent process is termianted
+2017-05-19 17:25:53.643 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:25:53.643 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 17:25:54.288 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:25:54.291 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 17:25:54.291 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 17:25:54.301 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 17:25:54.344 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 17:25:54.344 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 17:25:54.344 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 17:25:54.354 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 17:25:54.363 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:37:05.353 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:37:05.353 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 17:37:05.886 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:37:05.889 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 17:37:05.889 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 17:37:05.911 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 17:37:05.954 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 17:37:05.954 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 17:37:05.954 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 17:37:05.963 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 17:37:05.973 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:52:12.379 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3750>
+2017-05-19 17:52:12.429 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:52:12.429 [info] <0.159.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3750>
+2017-05-19 17:52:32.356 [info] <0.159.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 17:52:32.356 [info] <0.159.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 17:52:32.356 [info] <0.159.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 17:53:40.906 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:53:40.906 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 17:53:41.579 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:53:41.583 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 17:53:41.583 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 17:53:41.598 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 17:53:41.629 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 17:53:41.629 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 17:53:41.629 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 17:53:41.638 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 17:53:41.659 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:57:02.524 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3744>
+2017-05-19 17:57:02.527 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:57:02.527 [info] <0.157.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3744>
+2017-05-19 17:57:32.262 [info] <0.157.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 17:57:32.262 [info] <0.157.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 17:57:32.262 [info] <0.157.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 17:57:40.579 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3755>
+2017-05-19 17:57:40.579 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:57:40.579 [info] <0.158.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3755>
+2017-05-19 17:58:02.110 [info] <0.158.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 17:58:02.110 [info] <0.158.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 17:58:02.110 [info] <0.158.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 17:58:25.219 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3756>
+2017-05-19 17:58:25.219 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:58:25.219 [info] <0.159.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3756>
+2017-05-19 17:58:54.280 [info] <0.159.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 17:58:54.280 [info] <0.159.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 17:58:54.280 [info] <0.159.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 17:59:11.717 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3757>
+2017-05-19 17:59:11.717 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:59:11.717 [info] <0.160.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3757>
+2017-05-19 17:59:13.576 [info] <0.160.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 17:59:13.613 [info] <0.160.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 17:59:13.613 [info] <0.160.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 17:59:13.613 [info] <0.160.0>@tcp_agent:handle_info:222 ####
+2017-05-19 17:59:13.613 [info] <0.160.0>@tcp_agent:wait_auth:97 
+2017-05-19 17:59:13.614 [info] <0.160.0>@tcp_agent:wait_auth:99 1
+2017-05-19 17:59:13.614 [info] <0.160.0>@mod_mnesia:add_new_client:45 #############
+2017-05-19 17:59:13.644 [info] <0.148.0>@client:start_link:45 ```````````````````````````````````````
+2017-05-19 17:59:13.644 [info] <0.162.0>@client:init:67 ```````````````````````````````````````
+2017-05-19 17:59:13.644 [info] <0.160.0>@tcp_agent:wait_auth:115 $$$$$$$$$$$$$$ end
+2017-05-19 17:59:29.022 [info] <0.160.0>@tcp_agent:handle_info:259 tcp closed, state: wait_data
+2017-05-19 17:59:29.022 [info] <0.160.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 17:59:29.022 [info] <0.160.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 18:08:21.139 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:08:21.139 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 18:08:21.778 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:08:21.781 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 18:08:21.781 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 18:08:21.791 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 18:08:21.823 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 18:08:21.823 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 18:08:21.823 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 18:08:21.832 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 18:08:21.842 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:08:30.978 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 18:08:31.015 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:08:31.015 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 18:09:03.813 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3753>
+2017-05-19 18:09:03.814 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:09:03.814 [info] <0.153.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3753>
+2017-05-19 18:09:38.943 [info] <0.152.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 18:09:38.943 [info] <0.152.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 18:09:38.943 [info] <0.152.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 18:09:39.403 [info] <0.153.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 18:09:39.403 [info] <0.153.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 18:09:39.403 [info] <0.153.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 18:12:22.527 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3754>
+2017-05-19 18:12:22.527 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:12:22.528 [info] <0.155.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3754>
+2017-05-19 18:14:02.858 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:14:02.858 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 18:14:03.235 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:14:03.238 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 18:14:03.238 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 18:14:03.239 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 18:14:03.244 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 18:14:03.244 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 18:14:03.244 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 18:14:03.245 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 18:14:03.246 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:16:01.414 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:16:01.414 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 18:16:01.857 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:16:01.860 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 18:16:01.860 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 18:16:01.872 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 18:16:01.915 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 18:16:01.915 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 18:16:01.915 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 18:16:01.925 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 18:16:01.934 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:16:13.497 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 18:16:13.530 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:16:13.530 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 18:16:31.593 [info] <0.152.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 18:16:31.593 [info] <0.152.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 18:16:31.593 [info] <0.152.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 18:18:20.411 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3753>
+2017-05-19 18:18:20.411 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:18:20.411 [info] <0.153.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3753>
+2017-05-19 18:18:40.626 [info] <0.153.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 18:18:40.626 [info] <0.153.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 18:18:40.626 [info] <0.153.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 18:19:56.023 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3754>
+2017-05-19 18:19:56.024 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:19:56.024 [info] <0.155.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3754>
+2017-05-19 18:20:00.811 [info] <0.155.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 18:20:00.853 [info] <0.155.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 18:20:00.853 [info] <0.155.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 18:20:00.854 [info] <0.155.0>@tcp_agent:handle_info:222 ####
+2017-05-19 18:20:00.854 [info] <0.155.0>@tcp_agent:wait_auth:97 
+2017-05-19 18:20:00.854 [info] <0.155.0>@tcp_agent:wait_auth:99 1
+2017-05-19 18:20:00.869 [info] <0.155.0>@mod_mnesia:add_new_client:45 #############
+2017-05-19 18:20:00.894 [info] <0.148.0>@client:start_link:45 ```````````````````````````````````````
+2017-05-19 18:20:00.894 [info] <0.157.0>@client:init:67 ```````````````````````````````````````
+2017-05-19 18:20:00.894 [info] <0.155.0>@tcp_agent:wait_auth:115 $$$$$$$$$$$$$$ end
+2017-05-19 18:20:32.941 [info] <0.155.0>@tcp_agent:handle_info:259 tcp closed, state: wait_data
+2017-05-19 18:20:32.941 [info] <0.155.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 18:20:32.941 [info] <0.155.0>@tcp_agent:terminate:288 tcp_agent process is termianted

@@ -47,7 +47,8 @@ add_new_client(Client) ->
 		fun() ->
 			mnesia:write(Client)
 		end,
-	mnesia:transaction(F).
+	Reply = mnesia:transaction(F),
+	lager:info("~p", [Reply]).
 
 get_group_keys() ->
 	do(qlc:q([E#group.id || E <- mnesia:table(group)])).
