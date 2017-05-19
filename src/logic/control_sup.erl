@@ -40,7 +40,7 @@ init([]) ->
 	Restart = permanent,
 	Shutdown = 2000,
 	
-	%% 新建各种表
+	%% 记载各种数据
 	mod_control_sup:init(),
 	
 	Id_generator = {id_generator, {id_generator, start_link, []},

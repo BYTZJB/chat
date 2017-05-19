@@ -32,7 +32,6 @@ init([]) ->
 
 get_new_id(IdType) ->
 	%%  将表加载到数据库中
-	mnesia:force_load_table(ids),
 	gen_server:call(?MODULE, {get_id, IdType}).
 
 %% 根据相应的Type返回对应的id

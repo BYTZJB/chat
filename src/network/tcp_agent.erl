@@ -33,7 +33,7 @@
 -record(state, {socket, client_pid}).
 -record(register, {username, password}).
 -record(login, {id, password}).
--record(chat, {id, username, to_type, to_id, data}).
+-record(chat, {id, to_type, to_id, data}).
 
 %%%===================================================================
 %%% API
@@ -94,7 +94,9 @@ wait_socket({go, Socket}, State) ->
 	{next_state, wait_auth, State#state{socket = Socket}}.
 
 wait_auth(#register{username = UserName, password = PassWord}, State) ->
+	lager:info(""),
 	Client_Id = id_generator:get_new_id(client),
+	lager:info("~p", [Client_Id]),
 	Client = #client{
 		id = Client_Id,
 		username = UserName,
@@ -109,6 +111,8 @@ wait_auth(#register{username = UserName, password = PassWord}, State) ->
 	%% 给用户生成对应的处理进程
 	%% 并与当前进程相结合
 	{ok, Client_Pid} = mod_tcp_agent:add_new_client(Client),
+	gen_server:call(Client_Pid, {get_tcp_agent_pid, #{tcp_agent_pid => self(), client_pid => Client_Id}}),
+	lager:info("$$$$$$$$$$$$$$ end"),
 	{next_state, wait_data, State#state{client_pid = Client_Pid}};
 
 wait_auth(#login{id = Id, password = PassWord1}, State) ->
@@ -140,10 +144,10 @@ wait_data(#chat{to_id = To_Id} = Chat, State) ->
 		end,
 	case Chat#chat.to_type of
 		1 ->
-			Client = #client_receive_chat{id = Chat#chat.to_id, username = Chat#chat.username, data = Chat#chat.data},
+			Client = #client_receive_chat{id = Chat#chat.to_id, data = Chat#chat.data},
 			To_Pid ! Client;
 		2 ->
-			Group = #group_receive_chat{id = Chat#chat.to_id, username = Chat#chat.username, data = Chat#chat.data},
+			Group = #group_receive_chat{id = Chat#chat.to_id, data = Chat#chat.data},
 			To_Pid ! Group;
 		_ ->
 			ok
@@ -214,24 +218,26 @@ handle_info({tcp, Socket, BinData}, _StateName, #state{socket = Socket} = State)
 		lager:info("~p", [Cmd]),
 		lager:info("~p", [Message]),
 		case Cmd of
-			1 ->
-				UserName = maps:get(<<"username">>, Message),
-				PassWord = maps:get(<<"password">>, Message),
+			<<"1">> ->
+				lager:info("####"),
+				UserName = binary_to_list(maps:get(<<"username">>, Message)),
+				PassWord = binary_to_list(maps:get(<<"password">>, Message)),
 				Register = #register{username = UserName, password = PassWord},
+				
 				tcp_agent:wait_auth(Register, State);
-			2 ->
-				Id = maps:get(<<"id">>, Message),
-				PassWord = maps:get(<<"password">>, Message),
+			<<"2">> ->
+				Id = binary_to_list(maps:get(<<"id">>, Message)),
+				PassWord = binary_to_list(maps:get(<<"password">>, Message)),
+				
 				Login = #login{id = Id, password = PassWord},
 				tcp_agent:wait_auth(Login, State);
-			3 ->
-				Id = maps:get(<<"id">>, Message),
-				UserName = maps:get(<<"username">>, Message),
-				To_Type = maps:get(<<"to_type">>, Message),
-				To_Id = maps:get(<<"to_id">>, Message),
-				Data = maps:get(<<"data">>, Message),
+			<<"3">> ->
+				Id = binary_to_list(maps:get(<<"id">>, Message)),
+				To_Type = binary_to_list(maps:get(<<"to_type">>, Message)),
+				To_Id = binary_to_list(maps:get(<<"to_id">>, Message)),
+				Data = binary_to_list(maps:get(<<"data">>, Message)),
 				
-				Chat = #chat{id = Id,  username = UserName,
+				Chat = #chat{id = Id,
 					to_type = To_Type,
 					to_id = To_Id,
 					data = Data},
@@ -276,7 +282,8 @@ handle_info(Info, _StateName, State) ->
 %%--------------------------------------------------------------------
 -spec(terminate(Reason :: normal | shutdown | {shutdown, term()}
 | term(), StateName :: atom(), StateData :: term()) -> term()).
-terminate(_Reason, _StateName, _State) ->
+terminate(_Reason, _StateName, #state{client_pid = Client_Pid} = State) ->
+	supervisor:terminate_child(client_sup, Client_Pid),
 	lager:info("tcp_agent process is termianted"),
 	ok.
 

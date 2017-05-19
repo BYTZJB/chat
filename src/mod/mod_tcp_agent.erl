@@ -16,9 +16,9 @@
 
 add_new_client(#client{id = Id}) ->
 	Restart = permanent,
-	Shutdown = 2000,
+	Shutdown = brutal_kill,
 	Type = worker,
 	
-	AChild = {Id, {client, start_link, [Id]},
+	AChild = {Id, {client, start_link, []},
 		Restart, Shutdown, Type, [client]},
-	{ok, _Child} = supervisor:start_child(tcp_agent_sup, [AChild]).
+	supervisor:start_child(client_sup, AChild).

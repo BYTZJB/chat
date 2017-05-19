@@ -8,6 +8,9 @@
         </parseTransforms>
       </configuration>
     </facet>
+    <facet type="Python" name="Python">
+      <configuration sdkName="Python 3.6.1 (/usr/local/bin/python3)" />
+    </facet>
   </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/ebin" />
@@ -21,7 +24,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="lager" />
-    <orderEntry type="module" module-name="jiffy" />
+    <orderEntry type="module" module-name="lager" exported="" />
+    <orderEntry type="module" module-name="jiffy" exported="" />
   </component>
 </module>

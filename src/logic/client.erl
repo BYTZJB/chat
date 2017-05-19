@@ -13,7 +13,9 @@
 -include("predefine.hrl").
 
 %% API
--export([start_link/0]).
+-export([
+	start_link/0
+	]).
 
 %% gen_server callbacks
 -export([init/1,
@@ -40,7 +42,8 @@
 -spec(start_link() ->
 	{ok, Pid :: pid()} | ignore | {error, Reason :: term()}).
 start_link() ->
-	gen_server:start_link({local, ?SERVER}, ?MODULE, [], []).
+	lager:info("```````````````````````````````````````"),
+	gen_server:start_link(?MODULE, [], []).
 
 %%%===================================================================
 %%% gen_server callbacks
@@ -61,6 +64,7 @@ start_link() ->
 	{ok, State :: #state{}} | {ok, State :: #state{}, timeout() | hibernate} |
 	{stop, Reason :: term()} | ignore).
 init([]) ->
+	lager:info("```````````````````````````````````````"),
 	{ok, #state{}}.
 
 %%--------------------------------------------------------------------
@@ -95,8 +99,8 @@ handle_call(_Request, _From, State) ->
 handle_cast(online, State) ->
 	{noreply, State};
 
-handle_cast({change_state, Client_id, Tcp_Agent_Pid}, State) ->
-	{noreply, State#{client_id => Client_id, tpc_agent_pid => Tcp_Agent_Pid }}.
+handle_cast({get_tcp_agent_pid, #{tcp_agent_pid := Tcp_Agent_Pid, client_id := Client_Id}}, State) ->
+	{noreply, State#{tcp_agent_pid => Tcp_Agent_Pid, self_id => Client_Id}}.
 
 %%--------------------------------------------------------------------
 %% @private

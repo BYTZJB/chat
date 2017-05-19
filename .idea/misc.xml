@@ -38,7 +38,7 @@
       <property name="caretWidth" class="java.lang.Integer" />
     </properties>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="Erlang 19" project-jdk-type="Erlang SDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" project-jdk-name="Erlang 19" project-jdk-type="Erlang SDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
 </project>
