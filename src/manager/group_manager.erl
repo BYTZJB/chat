@@ -4,9 +4,9 @@
 %%% @doc
 %%%
 %%% @end
-%%% Created : 14. 五月 2017 上午11:34
+%%% Created : 20. 五月 2017 下午7:34
 %%%-------------------------------------------------------------------
--module(chat_room_manager).
+-module(group_manager).
 -author("bytzjb").
 
 %% API
