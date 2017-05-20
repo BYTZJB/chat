@@ -30,7 +30,8 @@
 %% Chat Message
 %%============================
 -record(tcp_agent_receive_chat,{data}).
--record(client_receive_chat, {id, data}).
+-record(client_receive_client_chat, {client_id, data}).
+-record(client_receive_group_chat, {group_id, client_id, data}).
 -record(client_send_chat, {data}). %% 由client发送消息出去
 -record(group_receive_chat, {id, data}).
 -record(chat, {id, to_type, to_id, data}).

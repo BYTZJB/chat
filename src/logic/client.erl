@@ -27,7 +27,7 @@
 
 -define(SERVER, ?MODULE).
 
--record(state, {tcp_agent_pid, client_id , client_socket}).
+-record(state, {tcp_agent_pid, client_id, client_socket}).
 
 %%%===================================================================
 %%% API
@@ -124,25 +124,45 @@ handle_info(#client_send_chat{data = Chat}, State) ->
 	{To_Pid, To_Chat} =
 		case To_Type of
 			1 ->
-				[{_, Res}] = ets:lookup(client_pid, To_Id),
-				{Res, #client_receive_chat{id = Id, data = Data}};
+				%% 判断是不是自己的friend
+%%				[{_, Res}] = ets:lookup(client_pid, To_Id),
+				case ets:lookup(client_pid, To_Id) of
+					[{_, Res}] ->
+						{Res, #client_receive_client_chat{id = Id, data = Data}};
+					_ ->
+						{error, ""}
+				end;
 			2 ->
-				[{_, Res}] = ets:lookup(group_pid, To_Id),
-				{Res, #group_receive_chat{id = Id, data = Data}};
+				%% 判断是不是自己的group
+%%				[{_, Res}] = ets:lookup(group_pid, To_Id),
+				case ets:lookup(group_pid, To_Id) of
+					[{_, Res}] ->
+						{Res, #group_receive_chat{id = Id, data = Data}};
+					_ ->
+						{error, ""}
+				end;
 			_ ->
-				error
+				{error, ""}
 		end,
-	lager:info("~p", [To_Pid]),
-	lager:info("~p", [To_Chat]),
-	To_Pid ! To_Chat,
-	{noreply, State};
+	case {To_Pid, To_Chat} of
+		{error, _} ->
+			{noreply, State};
+		_ ->
+			To_Pid ! To_Chat
+	end;
 
 %% 接收别人传过来的消息,并发送给客户端
-handle_info(#client_receive_chat{id = Id, data = Data} , #state{client_socket = Socket} = State) ->
-	lager:info("receive message and send to socket"),
-	Message = "\n" ++ integer_to_list(Id) ++ " said: \n" ++ Data,
+handle_info(#client_receive_client_chat{client_id = Id, data = Data}, #state{client_socket = Socket} = State) ->
+	lager:info("receive message from client and send to socket"),
+	Message = "client " ++ integer_to_list(Id) ++ " said: \n" ++ Data,
 	lager:info("~p", [Socket]),
 	lager:info("~p", [Message]),
+	gen_tcp:send(Socket, Message),
+	{noreply, State};
+
+handle_info(#client_receive_group_chat{group_id = Group_Id, client_id = Client_Id, data = Data }, #state{client_socket = Socket} = State) ->
+	lager:info("receive message from group and send to socket"),
+	Message = "group " ++ integer_to_list(Group_Id) ++ "\n" ++ "client " ++integer_to_list(Client_Id) ++ " said:\n" ++ Data,
 	gen_tcp:send(Socket, Message),
 	{noreply, State}.
 

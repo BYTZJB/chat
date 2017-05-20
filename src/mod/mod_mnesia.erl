@@ -17,7 +17,10 @@
 	get_group_keys/0,
 	add_new_client/1,
 	get_client_password/1,
-	query_all_data/0
+	query_all_data/0,
+	get_friends/1,
+	get_groups/1,
+	get_members/1
 	]).
 
 get_client_password(Client_Id) ->
@@ -46,6 +49,15 @@ add_new_client(Client) ->
 	Reply = mnesia:transaction(F),
 	lager:info("add new client:~p", [Reply]).
 
+get_friends(Client_Id) ->
+	do(qlc:q([E#client.friends || E <- mnesia:table(client), E#client.id == Client_Id])).
+
+get_groups(Client_Id) ->
+	do(qlc:q([E#client.groups || E <- mnesia:table(client), E#client.id == Client_Id])).
+
+get_members(Group_Id) ->
+	do(qlc:q([E#group.members || E <- mnesia:table(group), E#group.id == Group_Id])).
+
 get_group_keys() ->
 	do(qlc:q([E#group.id || E <- mnesia:table(group)])).
 
@@ -54,3 +66,4 @@ do(Q) ->
 	{atomic, Val} = mnesia:transaction(F),
 	Val.
 
+	
