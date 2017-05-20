@@ -30,25 +30,21 @@ query_all_data() ->
 			Reply = do(qlc:q([E || E <- mnesia:table(TableName)])),
 			io:format("~p ~n", [Reply])
 		end, List).
-	
-
 
 do_this_once() ->
-	mnesia:create_schema([node()]),
 	mnesia:start(),
 	mnesia:create_table(client, [{attributes, record_info(fields, client)}]),
 	mnesia:create_table(group, [{attributes, record_info(fields, group)}]),
-	mnesia:create_table(ids, [{attributes, record_info(fields, ids)}]),
-	mnesia:stop().
+	mnesia:create_table(ids, [{attributes, record_info(fields, ids)}]).
 
 add_new_client(Client) ->
-	lager:info("#############"),
+	lager:info("~p", [Client]),
 	F =
 		fun() ->
 			mnesia:write(Client)
 		end,
 	Reply = mnesia:transaction(F),
-	lager:info("~p", [Reply]).
+	lager:info("add new client:~p", [Reply]).
 
 get_group_keys() ->
 	do(qlc:q([E#group.id || E <- mnesia:table(group)])).

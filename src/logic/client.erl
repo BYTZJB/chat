@@ -15,7 +15,7 @@
 %% API
 -export([
 	start_link/0
-	]).
+]).
 
 %% gen_server callbacks
 -export([init/1,
@@ -27,7 +27,7 @@
 
 -define(SERVER, ?MODULE).
 
--record(state, {tcp_agent_pid, self_id}).
+-record(state, {tcp_agent_pid, client_id , client_socket}).
 
 %%%===================================================================
 %%% API
@@ -42,7 +42,6 @@
 -spec(start_link() ->
 	{ok, Pid :: pid()} | ignore | {error, Reason :: term()}).
 start_link() ->
-	lager:info("```````````````````````````````````````"),
 	gen_server:start_link(?MODULE, [], []).
 
 %%%===================================================================
@@ -64,7 +63,7 @@ start_link() ->
 	{ok, State :: #state{}} | {ok, State :: #state{}, timeout() | hibernate} |
 	{stop, Reason :: term()} | ignore).
 init([]) ->
-	lager:info("```````````````````````````````````````"),
+	lager:info("success to create a client"),
 	{ok, #state{}}.
 
 %%--------------------------------------------------------------------
@@ -99,8 +98,10 @@ handle_call(_Request, _From, State) ->
 handle_cast(online, State) ->
 	{noreply, State};
 
-handle_cast({get_tcp_agent_pid, #{tcp_agent_pid := Tcp_Agent_Pid, client_id := Client_Id}}, State) ->
-	{noreply, State#{tcp_agent_pid => Tcp_Agent_Pid, self_id => Client_Id}}.
+%% 用于处理用户获得tcp_agent_pid,client_id
+handle_cast({get_state, #{tcp_agent_pid := Tcp_Agent_Pid, client_id := Client_Id, client_socket := Socket}}, State) ->
+	lager:info("client state: tcp_agent_pid ~p, client_id ~p, client_socket ~p", [Tcp_Agent_Pid, Client_Id, Socket]),
+	{noreply, State#state{tcp_agent_pid = Tcp_Agent_Pid, client_id = Client_Id, client_socket = Socket}}.
 
 %%--------------------------------------------------------------------
 %% @private
@@ -116,9 +117,33 @@ handle_cast({get_tcp_agent_pid, #{tcp_agent_pid := Tcp_Agent_Pid, client_id := C
 	{noreply, NewState :: #state{}} |
 	{noreply, NewState :: #state{}, timeout() | hibernate} |
 	{stop, Reason :: term(), NewState :: #state{}}).
-handle_info(#client_receive_chat{} = Client_receive_chat, #state{tcp_agent_pid = Tcp_Agent_Pid} = State) ->
-	Data = jiffy:decode(Client_receive_chat),
-	Tcp_Agent_Pid ! Data,
+%%  给群组或者客户端发送聊天信息
+handle_info(#client_send_chat{data = Chat}, State) ->
+	lager:info("send message to other client"),
+	#chat{id = Id, to_type = To_Type, to_id = To_Id, data = Data} = Chat,
+	{To_Pid, To_Chat} =
+		case To_Type of
+			1 ->
+				[{_, Res}] = ets:lookup(client_pid, To_Id),
+				{Res, #client_receive_chat{id = Id, data = Data}};
+			2 ->
+				[{_, Res}] = ets:lookup(group_pid, To_Id),
+				{Res, #group_receive_chat{id = Id, data = Data}};
+			_ ->
+				error
+		end,
+	lager:info("~p", [To_Pid]),
+	lager:info("~p", [To_Chat]),
+	To_Pid ! To_Chat,
+	{noreply, State};
+
+%% 接收别人传过来的消息,并发送给客户端
+handle_info(#client_receive_chat{id = Id, data = Data} , #state{client_socket = Socket} = State) ->
+	lager:info("receive message and send to socket"),
+	Message = "\n" ++ integer_to_list(Id) ++ " said: \n" ++ Data,
+	lager:info("~p", [Socket]),
+	lager:info("~p", [Message]),
+	gen_tcp:send(Socket, Message),
 	{noreply, State}.
 
 %%--------------------------------------------------------------------

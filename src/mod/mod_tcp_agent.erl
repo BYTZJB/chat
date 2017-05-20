@@ -14,8 +14,9 @@
 -export([add_new_client/1]).
 
 
-add_new_client(#client{id = Id}) ->
-	Restart = permanent,
+add_new_client(Id) ->
+	
+	Restart = temporary,
 	Shutdown = brutal_kill,
 	Type = worker,
 	

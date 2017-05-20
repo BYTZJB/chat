@@ -3,15 +3,37 @@
   <component name="ChangeListManager">
     <list default="true" id="af83b16d-30df-4f53-a134-fd816064157d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.rebar/erlcinfo" afterPath="$PROJECT_DIR$/.rebar/erlcinfo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/client.beam" afterPath="$PROJECT_DIR$/ebin/client.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/group.beam" afterPath="$PROJECT_DIR$/ebin/group.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/id_generator.beam" afterPath="$PROJECT_DIR$/ebin/id_generator.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/mod_control_sup.beam" afterPath="$PROJECT_DIR$/ebin/mod_control_sup.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/mod_group_sup.beam" afterPath="$PROJECT_DIR$/ebin/mod_group_sup.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/mod_mnesia.beam" afterPath="$PROJECT_DIR$/ebin/mod_mnesia.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/mod_tcp_agent.beam" afterPath="$PROJECT_DIR$/ebin/mod_tcp_agent.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/tcp_acceptor.beam" afterPath="$PROJECT_DIR$/ebin/tcp_acceptor.beam" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/tcp_agent.beam" afterPath="$PROJECT_DIR$/ebin/tcp_agent.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/test.beam" afterPath="$PROJECT_DIR$/ebin/test.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/test_mnesia.beam" afterPath="$PROJECT_DIR$/ebin/test_mnesia.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mnesia.yangwei@brucedeiMac.local/DECISION_TAB.LOG" afterPath="$PROJECT_DIR$/Mnesia.yangwei@brucedeiMac.local/DECISION_TAB.LOG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mnesia.yangwei@brucedeiMac.local/LATEST.LOG" afterPath="$PROJECT_DIR$/Mnesia.yangwei@brucedeiMac.local/LATEST.LOG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat.iml" afterPath="$PROJECT_DIR$/chat.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/predefine.hrl" afterPath="$PROJECT_DIR$/include/predefine.hrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/console.log" afterPath="$PROJECT_DIR$/log/console.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/crash.log" afterPath="$PROJECT_DIR$/log/crash.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/error.log" afterPath="$PROJECT_DIR$/log/error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logic/client.erl" afterPath="$PROJECT_DIR$/src/logic/client.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logic/control_sup.erl" afterPath="$PROJECT_DIR$/src/logic/control_sup.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logic/group.erl" afterPath="$PROJECT_DIR$/src/logic/group.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mod/mod_control_sup.erl" afterPath="$PROJECT_DIR$/src/mod/mod_control_sup.erl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mod/mod_mnesia.erl" afterPath="$PROJECT_DIR$/src/mod/mod_mnesia.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mod/mod_tcp_agent.erl" afterPath="$PROJECT_DIR$/src/mod/mod_tcp_agent.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/network/tcp_acceptor.erl" afterPath="$PROJECT_DIR$/src/network/tcp_acceptor.erl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/network/tcp_agent.erl" afterPath="$PROJECT_DIR$/src/network/tcp_agent.erl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/client_01.py" afterPath="$PROJECT_DIR$/src/test/client_01.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/client_02.py" afterPath="$PROJECT_DIR$/src/test/client_02.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/test_mnesia.erl" afterPath="$PROJECT_DIR$/src/test/test_mnesia.erl" />
     </list>
     <ignored path="$PROJECT_DIR$/.rebar3/" />
     <ignored path="$PROJECT_DIR$/_build/" />
@@ -27,83 +49,86 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="CLEAR_OUTPUT_DIRECTORY" value="false" />
   </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="chat" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="tcp_agent.erl" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/network/tcp_agent.erl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="79">
-                  <caret line="195" column="34" lean-forward="false" selection-start-line="195" selection-start-column="34" selection-end-line="195" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="mod_mnesia.erl" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/mod/mod_mnesia.erl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="576">
-                  <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="client_01.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/client_01.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="338">
-                  <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-                  <folding>
-                    <marker date="1495189366000" expanded="true" signature="714:1293" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="client.erl" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/logic/client.erl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-373">
-                  <caret line="101" column="76" lean-forward="false" selection-start-line="101" selection-start-column="76" selection-end-line="101" selection-end-column="76" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tcp_acceptor.erl" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/network/tcp_acceptor.erl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="89">
-                  <caret line="50" column="10" lean-forward="false" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="predefine.hrl" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/include/predefine.hrl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="17" column="66" lean-forward="true" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="tcp_agent.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/network/tcp_agent.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mod_tcp_agent.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mod/mod_tcp_agent.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.erl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/logic/client.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="137" column="3" lean-forward="false" selection-start-line="137" selection-start-column="3" selection-end-line="137" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mod_mnesia.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mod/mod_mnesia.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="control_sup.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/control_sup.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tcp_acceptor.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/network/tcp_acceptor.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="743">
+              <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="id_generator.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/id_generator.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -147,33 +172,41 @@
         <option value="$PROJECT_DIR$/src/logic/client_sup.erl" />
         <option value="$PROJECT_DIR$/src/network/tcp_agent_sup.erl" />
         <option value="$PROJECT_DIR$/deps/goldrush/rebar.config" />
-        <option value="$PROJECT_DIR$/src/test/test_mnesia.erl" />
         <option value="$PROJECT_DIR$/src/network/test_tcp_acceptor.erl" />
-        <option value="$PROJECT_DIR$/src/network/tcp_acceptor.erl" />
         <option value="$PROJECT_DIR$/src/test/hao.py" />
         <option value="$PROJECT_DIR$/src/test/client.py" />
+        <option value="$PROJECT_DIR$/src/test/client_01.py" />
+        <option value="$PROJECT_DIR$/src/test/test_mnesia.erl" />
+        <option value="$PROJECT_DIR$/src/logic/group.erl" />
+        <option value="$PROJECT_DIR$/log/console.log" />
+        <option value="$PROJECT_DIR$/include/predefine.hrl" />
+        <option value="$PROJECT_DIR$/src/mod/mod_control_sup.erl" />
         <option value="$PROJECT_DIR$/src/logic/id_generator.erl" />
         <option value="$PROJECT_DIR$/src/logic/control_sup.erl" />
-        <option value="$PROJECT_DIR$/log/console.log" />
-        <option value="$PROJECT_DIR$/src/mod/mod_control_sup.erl" />
-        <option value="$PROJECT_DIR$/src/mod/mod_tcp_agent.erl" />
-        <option value="$PROJECT_DIR$/src/logic/client.erl" />
-        <option value="$PROJECT_DIR$/src/test/client_01.py" />
-        <option value="$PROJECT_DIR$/src/network/tcp_agent.erl" />
+        <option value="$PROJECT_DIR$/src/network/tcp_acceptor.erl" />
         <option value="$PROJECT_DIR$/src/mod/mod_mnesia.erl" />
+        <option value="$PROJECT_DIR$/src/mod/mod_tcp_agent.erl" />
+        <option value="$PROJECT_DIR$/src/network/tcp_agent.erl" />
+        <option value="$PROJECT_DIR$/src/logic/client.erl" />
       </list>
     </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="chat/invalid/Python" />
+    </ignored-facets>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="977" />
+    <option name="height" value="972" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state />
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -189,6 +222,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,29 +249,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,8 +260,8 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="/usr/local/bin/python3" />
-    <property name="SearchEverywhereHistoryKey" value="mod_mnesia&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;pre&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/include/predefine.hrl&#10;mod_&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;client&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client.erl&#10;mod_tcp&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_tcp_agent.erl&#10;tcp_agent&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;mo&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_tcp_agent.erl&#10;tcp_acc&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;client.erl&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client.erl&#10;mod_con&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;conso&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;mod_control&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;control&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;tcp_acce&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;group&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/group_sup.erl&#10;console&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;tcp_agen&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;tcp_&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;predefine&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/include/predefine.hrl&#10;control_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;tcp_acceptor&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;group_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/group_sup.erl&#10;testm&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/test/test_mnesia.erl&#10;rebar&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/deps/goldrush/rebar.config&#10;tcp_agent_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent_sup.erl&#10;Tcp&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;client_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client_sup.erl&#10;test_mnesia&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/test/test_mnesia.erl&#10;id&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/id_generator.erl&#10;id_gen&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/id_generator.erl&#10;controlsup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;mod_control_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;con&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;acc&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="client&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client.erl&#10;tcp_agent&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;tcp_acceptor&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;id&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/id_generator.erl&#10;control&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;control_su&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;mod_control&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;predefine&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/include/predefine.hrl&#10;clie&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client.erl&#10;tcp_age&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;console&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;tcp_a&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;group&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/group.erl&#10;control_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;test&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/test/test_mnesia.erl&#10;prede&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/include/predefine.hrl&#10;mod_mnesia&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;mod_con&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;test_mnesia&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/test/test_mnesia.erl&#10;pre&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/include/predefine.hrl&#10;con&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;mod&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;tcp&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;c&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;console.log&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;mnesia&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;mod_&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;mod_tcp&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_tcp_agent.erl&#10;mo&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_tcp_agent.erl&#10;tcp_acc&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;client.erl&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client.erl&#10;conso&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;tcp_acce&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;tcp_agen&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;tcp_&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;group_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/group_sup.erl&#10;testm&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/test/test_mnesia.erl&#10;rebar&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/deps/goldrush/rebar.config&#10;tcp_agent_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent_sup.erl&#10;Tcp&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;client_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client_sup.erl&#10;id_gen&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/id_generator.erl&#10;controlsup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;mod_control_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;acc&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
@@ -585,35 +600,21 @@
       <method />
     </configuration>
     <configuration default="false" name="Unnamed" type="ErlangConsoleRunConfigurationType" factoryName="Erlang Console" singleton="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <option name="consoleArgs" value="-setcookie chat -name yangwei -pa $PROJECT_DIR$/ebin -pa $PROJECT_DIR$/deps/lager/ebin -pa $PROJECT_DIR$/deps/jiffy/ebin -pa $PROJECT_DIR$/deps/goldrush/ebin" />
+      <option name="consoleArgs" value="-setcookie chat -sname yangwei -pa $PROJECT_DIR$/ebin -pa $PROJECT_DIR$/deps/goldrush/ebin -pa $PROJECT_DIR$/deps/jiffy/ebin -pa $PROJECT_DIR$/deps/lager/ebin" />
       <option name="workingDirPath" value="$PROJECT_DIR$" />
       <module name="chat" />
       <method>
-        <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_compile" />
+        <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_rebar_comp" />
       </method>
     </configuration>
-    <configuration default="false" name="python" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="chat" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test/hao.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <list size="2">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Erlang Console.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Python.python" />
     </list>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -663,7 +664,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="977" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="972" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -671,23 +673,22 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29039547" sideWeight="0.5063898" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1211778" sideWeight="0.5021299" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29039547" sideWeight="0.49361023" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1220339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46022728" sideWeight="0.49361023" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1211778" sideWeight="0.4978701" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12353568" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1315229" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -695,6 +696,7 @@
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -702,7 +704,7 @@
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1211778" sideWeight="0.5021299" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -713,15 +715,17 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31022727" sideWeight="0.49361023" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1211778" sideWeight="0.4978701" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12193823" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13205537" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -738,14 +742,6 @@
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
               </option>
             </State>
           </value>
@@ -772,46 +768,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/logic/group_sup.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="75" column="3" lean-forward="false" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/network/tcp_acceptor.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3477">
-          <caret line="183" column="17" lean-forward="false" selection-start-line="183" selection-start-column="17" selection-end-line="183" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/client.py" />
     <entry file="file://$PROJECT_DIR$/src/mod/mod_tcp_agent.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/console.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log/console.log" />
     <entry file="file://$PROJECT_DIR$/src/mod/mod_mnesia.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -820,14 +785,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/client.py" />
     <entry file="file://$PROJECT_DIR$/src/network/tcp_agent.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -901,14 +859,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/console.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log/console.log" />
     <entry file="file://$PROJECT_DIR$/src/logic/control_sup.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1159">
@@ -1011,7 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,18 +972,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test_mnesia.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="110" column="23" lean-forward="false" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/hao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,54 +983,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mod/mod_control_sup.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/control_sup.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/id_generator.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="71" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/console.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="682" column="82" lean-forward="false" selection-start-line="682" selection-start-column="82" selection-end-line="682" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/client.py" />
     <entry file="file://$PROJECT_DIR$/src/test/_sup.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/client_01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test_mnesia.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1101,60 +1017,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/network/tcp_acceptor.erl">
+    <entry file="file://$PROJECT_DIR$/src/logic/group.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="50" column="10" lean-forward="false" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+        <state relative-caret-position="448">
+          <caret line="129" column="8" lean-forward="false" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/client.erl">
+    <entry file="file://$PROJECT_DIR$/log/console.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
-          <caret line="101" column="76" lean-forward="false" selection-start-line="101" selection-start-column="76" selection-end-line="101" selection-end-column="76" />
+        <state relative-caret-position="-2468">
+          <caret line="479" column="97" lean-forward="false" selection-start-line="479" selection-start-column="97" selection-end-line="479" selection-end-column="97" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mod/mod_tcp_agent.erl">
+    <entry file="file://$PROJECT_DIR$/src/mod/mod_control_sup.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        <state relative-caret-position="384">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/erlang/19.3/lib/erlang/lib/kernel-5.2/src/gen_tcp.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="267" column="12" lean-forward="false" selection-start-line="267" selection-start-column="12" selection-end-line="267" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/predefine.hrl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="66" lean-forward="true" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+        <state relative-caret-position="453">
+          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/client_01.py">
+    <entry file="file://$PROJECT_DIR$/src/logic/id_generator.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-          <folding>
-            <marker date="1495189366000" expanded="true" signature="714:1293" ph="..." />
-          </folding>
+        <state relative-caret-position="329">
+          <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/network/tcp_agent.erl">
+    <entry file="file://$PROJECT_DIR$/src/logic/control_sup.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="195" column="34" lean-forward="false" selection-start-line="195" selection-start-column="34" selection-end-line="195" selection-end-column="34" />
+        <state relative-caret-position="567">
+          <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/network/tcp_acceptor.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mod/mod_mnesia.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="471">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mod/mod_tcp_agent.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/network/tcp_agent.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/client.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="137" column="3" lean-forward="false" selection-start-line="137" selection-start-column="3" selection-end-line="137" selection-end-column="3" />
           <folding />
         </state>
       </provider>

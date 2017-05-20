@@ -118,8 +118,8 @@ handle_cast(online, State) ->
 	{noreply, NewState :: #state{}} |
 	{noreply, NewState :: #state{}, timeout() | hibernate} |
 	{stop, Reason :: term(), NewState :: #state{}}).
-handle_info(#group_receive_chat{id = Id, username = UserName, data = Data} = _Group_receive_chat, #state{id = Id} = State) ->
-	Client_receive_chat = #client_receive_chat{id = Id, username = UserName, data = Data},
+handle_info(#group_receive_chat{id = Id, data = Data} = _Group_receive_chat, #state{id = Id} = State) ->
+	Client_receive_chat = #client_receive_chat{id = Id, data = Data},
 	List = mod_mnesia:get_group_members(Id),
 	lists:foreach(
 		fun(Elem) ->

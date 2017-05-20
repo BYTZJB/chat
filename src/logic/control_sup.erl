@@ -60,7 +60,7 @@ init([]) ->
 	
 	Childes_Spec = [Id_generator, Group_sup, Client_sup, Tcp_Agent_sup, Acceptor],
 	
-	lager:info(""),
+	lager:info("Initialization all resources"),
 	{ok, {SupFlags, Childes_Spec}}.
 
 %%%===================================================================

@@ -14,22 +14,12 @@
 -export([init/0]).
 
 init() ->
-	Opt_client_pid= [public, set, named_table, {keypos, #client_pid.id}],
+	Opt_client_pid= [public, set, named_table, {keypos, 1}],
 	ets:new(client_pid, Opt_client_pid),
 	
-	Opt_group_pid = [public, set, named_table, {keypos, #group_pid.id}],
+	Opt_group_pid = [public, set, named_table, {keypos, 1}],
 	ets:new(group_pid, Opt_group_pid),
 	
-	mnesia:start(),
+	mod_mnesia:do_this_once(),
 	Reply = mnesia:wait_for_tables([client, group, ids], 2000),
-	lager:info("~p ", [Reply]),
-	case Reply of
-		{timeout, RecordList} ->
-			lists:foreach(
-				fun(Record) ->
-					Opt = [{attributes, record_info(fields, ids)}],
-					mnesia:create_table(Record, Opt)
-				end, RecordList);
-		_ ->
-			ok
-	end.
+	lager:info("load tables:~p ", [Reply]).

@@ -17,9 +17,9 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #创建一个socket
 s.connect(('127.0.0.1', 5678))                       #建立连接
 
 def receive_message(conn):
-    data = conn.recv(1024).encode()
-    json.loads(data)
+    data = conn.recv(1024)
     print(data)
+    receive_message(conn)
 
 t = threading.Thread(target=receive_message, args = (s,), name="Receive Message")
 print("客户端启动#####################")
@@ -43,12 +43,15 @@ while True:                                           #接受多次数据
 
     if data == "2" or data == 2:
         print("cmd 2")
-        s.send(json.dumps(login))
+        s.send(bytes(json.dumps(login)))
 
     if data == "3" or data == 3:
         print("cmd 3")
         message = input('请输入字符串')
         chat_context = {'cmd': '3', 'id': '1', 'to_type': '1', 'to_id': '2', 'data': message}
-        s.send(json.dumps(chat_context))
+        s.send(bytes(json.dumps(chat_context)))
+
+    if True:
+        continue
 
 s.close()                                             #关闭socket

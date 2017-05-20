@@ -178,7 +178,7 @@ get_listen_socket(Port) ->
 	end.
 
 process_Client_Socket(Socket) ->
-	lager:info("~p", [Socket]),
+	lager:info("this is the socket use to bind:~p", [Socket]),
 	Restart = temporary,
 	Shutdown = brutal_kill,
 	Child_Spec= {Socket, {tcp_agent, start_link, []},
@@ -186,6 +186,6 @@ process_Client_Socket(Socket) ->
 	{ok, Tcp_Agent_Child} =supervisor:start_child(tcp_agent_sup, Child_Spec),
 	gen_fsm:send_event(Tcp_Agent_Child, {go, Socket}),
 	gen_tcp:controlling_process(Socket, Tcp_Agent_Child),
-	lager:info(""),
+	lager:info("success to create tcp_agent and controlling_porcess it"),
 	ok.
 

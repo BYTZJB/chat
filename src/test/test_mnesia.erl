@@ -14,6 +14,7 @@
 %%            if we want to call qlc:q(...)
 
 -include_lib("stdlib/include/qlc.hrl").
+-include("predefine.hrl").
 
 
 -record(shop, {item, quantity, cost}).
@@ -173,3 +174,25 @@ add_plans() ->
 get_plan(PlanId) ->
 	F = fun() -> mnesia:read({design, PlanId}) end,
 	mnesia:transaction(F).
+
+add_new_client() ->
+	mnesia:start(),
+	mnesia:create_table(client, [{attributes, record_info(fields, client)}]),
+	mnesia:create_table(shop, [{attributes, record_info(fields, shop)}]),
+	Client = #client{id = 1000, username = "zst", password = "iyw", friends = [],  groups = []},
+	Shop = #shop{item = 50, quantity = "applie", cost = []},
+	F1 = fun() -> mnesia:write(Client) end,
+	Reply1 = mnesia:transaction(F1),
+	F2 = fun() -> mnesia:write(Shop) end,
+	Reply2 = mnesia:transaction(F2),
+	io:format("~p",[Reply1]),
+	io:format("~p",[Reply2]).
+	
+
+add_shop_item() ->
+	Row = #shop{item = "Apple", quantity = "applie", cost = "woc"},
+	F = fun() ->
+		mnesia:write(Row)
+	    end,
+	Reply = mnesia:transaction(F),
+	lager:info("~p", [Reply]).
