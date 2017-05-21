@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af83b16d-30df-4f53-a134-fd816064157d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.rebar/erlcinfo" afterPath="$PROJECT_DIR$/.rebar/erlcinfo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/client.beam" afterPath="$PROJECT_DIR$/ebin/client.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/client_manager.beam" afterPath="$PROJECT_DIR$/ebin/client_manager.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/group.beam" afterPath="$PROJECT_DIR$/ebin/group.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/id_generator.beam" afterPath="$PROJECT_DIR$/ebin/id_generator.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/mod_control_sup.beam" afterPath="$PROJECT_DIR$/ebin/mod_control_sup.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/mod_group_sup.beam" afterPath="$PROJECT_DIR$/ebin/mod_group_sup.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/mod_mnesia.beam" afterPath="$PROJECT_DIR$/ebin/mod_mnesia.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/mod_tcp_agent.beam" afterPath="$PROJECT_DIR$/ebin/mod_tcp_agent.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/tcp_acceptor.beam" afterPath="$PROJECT_DIR$/ebin/tcp_acceptor.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/tcp_agent.beam" afterPath="$PROJECT_DIR$/ebin/tcp_agent.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/test.beam" afterPath="$PROJECT_DIR$/ebin/test.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/test_mnesia.beam" afterPath="$PROJECT_DIR$/ebin/test_mnesia.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebin/chat.app" afterPath="$PROJECT_DIR$/ebin/chat.app" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/console.log" afterPath="$PROJECT_DIR$/log/console.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/crash.log" afterPath="$PROJECT_DIR$/log/crash.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/error.log" afterPath="$PROJECT_DIR$/log/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logic/client.erl" afterPath="$PROJECT_DIR$/src/logic/client.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/client_01.py" afterPath="$PROJECT_DIR$/src/test/client_01.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/client_02.py" afterPath="$PROJECT_DIR$/src/test/client_02.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.rebar3/" />
     <ignored path="$PROJECT_DIR$/_build/" />
@@ -46,11 +31,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5132218">
       <split-first>
         <leaf>
-          <file leaf-file-name="tcp_agent.erl" pinned="false" current-in-tab="false">
+          <file leaf-file-name="tcp_agent.erl" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/network/tcp_agent.erl">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-100">
-                  <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+                <state relative-caret-position="322">
+                  <caret line="107" column="16" lean-forward="false" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -66,11 +51,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="client.erl" pinned="false" current-in-tab="true">
+          <file leaf-file-name="client.erl" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/logic/client.erl">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="284">
-                  <caret line="159" column="23" lean-forward="true" selection-start-line="159" selection-start-column="23" selection-end-line="159" selection-end-column="23" />
+                <state relative-caret-position="470">
+                  <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
                   <folding>
                     <marker date="1495344241000" expanded="true" signature="3925:5669" ph="handle_info/2 -&gt; ..." />
                     <marker date="1495344241000" expanded="true" signature="5670:5740" ph="%% ..." />
@@ -94,6 +79,46 @@
                     <marker date="1495344241000" expanded="true" signature="6861:6883" ph="%%% ..." />
                     <marker date="1495344241000" expanded="true" signature="6884:6954" ph="%%% ..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="client_sup.erl" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/logic/client_sup.erl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-234">
+                  <caret line="0" column="69" lean-forward="false" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="control_sup.erl" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/logic/control_sup.erl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="184">
+                  <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tcp_acceptor.erl" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/network/tcp_acceptor.erl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="288">
+                  <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mod_control_sup.erl" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/mod/mod_control_sup.erl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -178,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/test/client.py" />
         <option value="$PROJECT_DIR$/src/test/client_01.py" />
         <option value="$PROJECT_DIR$/src/test/test_mnesia.erl" />
-        <option value="$PROJECT_DIR$/src/mod/mod_control_sup.erl" />
         <option value="$PROJECT_DIR$/src/logic/control_sup.erl" />
         <option value="$PROJECT_DIR$/src/network/tcp_acceptor.erl" />
         <option value="$PROJECT_DIR$/src/mod/mod_tcp_agent.erl" />
@@ -193,6 +217,7 @@
         <option value="$PROJECT_DIR$/src/logic/group.erl" />
         <option value="$PROJECT_DIR$/log/console.log" />
         <option value="$PROJECT_DIR$/src/logic/client.erl" />
+        <option value="$PROJECT_DIR$/src/mod/mod_control_sup.erl" />
       </list>
     </option>
   </component>
@@ -270,6 +295,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="network" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="mod" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -322,7 +365,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="tcp_agent&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;console&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;client&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client.erl&#10;:w&#9;null&#9;null&#10;pre&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/include/predefine.hrl&#10;tcp_acceptor&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;id&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/id_generator.erl&#10;control&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;control_su&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;mod_control&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;predefine&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/include/predefine.hrl&#10;clie&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client.erl&#10;tcp_age&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;tcp_a&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;group&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/group.erl&#10;control_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;test&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/test/test_mnesia.erl&#10;prede&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/include/predefine.hrl&#10;mod_mnesia&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;mod_con&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;test_mnesia&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/test/test_mnesia.erl&#10;con&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;mod&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;tcp&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;c&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;console.log&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;mnesia&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;mod_&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;mod_tcp&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_tcp_agent.erl&#10;mo&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_tcp_agent.erl&#10;tcp_acc&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;client.erl&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client.erl&#10;conso&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;tcp_acce&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;tcp_agen&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;tcp_&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;group_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/group_sup.erl&#10;testm&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/test/test_mnesia.erl&#10;rebar&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/deps/goldrush/rebar.config&#10;tcp_agent_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent_sup.erl&#10;Tcp&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;client_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client_sup.erl&#10;id_gen&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/id_generator.erl&#10;controlsup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;mod_control_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;acc&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl" />
+    <property name="SearchEverywhereHistoryKey" value="tcp_acceptor&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;tcp_agent&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;console&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;client&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client.erl&#10;:w&#9;null&#9;null&#10;pre&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/include/predefine.hrl&#10;id&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/id_generator.erl&#10;control&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;control_su&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;mod_control&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;predefine&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/include/predefine.hrl&#10;clie&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client.erl&#10;tcp_age&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;tcp_a&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;group&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/group.erl&#10;control_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;test&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/test/test_mnesia.erl&#10;prede&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/include/predefine.hrl&#10;mod_mnesia&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;mod_con&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;test_mnesia&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/test/test_mnesia.erl&#10;con&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;mod&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;tcp&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;c&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;console.log&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;mnesia&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;mod_&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_mnesia.erl&#10;mod_tcp&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_tcp_agent.erl&#10;mo&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_tcp_agent.erl&#10;tcp_acc&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;client.erl&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client.erl&#10;conso&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/log/console.log&#10;tcp_acce&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;tcp_agen&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;tcp_&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent.erl&#10;group_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/group_sup.erl&#10;testm&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/test/test_mnesia.erl&#10;rebar&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/deps/goldrush/rebar.config&#10;tcp_agent_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_agent_sup.erl&#10;Tcp&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl&#10;client_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/client_sup.erl&#10;id_gen&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/id_generator.erl&#10;controlsup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/logic/control_sup.erl&#10;mod_control_sup&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/mod/mod_control_sup.erl&#10;acc&#9;FILE&#9;file:///Users/bytzjb/IdeaProjects/chat/src/network/tcp_acceptor.erl" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
@@ -726,7 +769,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="972" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -736,13 +778,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1211778" sideWeight="0.5021299" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3181818" sideWeight="0.49361023" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5022727" sideWeight="0.49361023" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1211778" sideWeight="0.4978701" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.013312034" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16613418" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1046,14 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mod/mod_control_sup.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/erlang/19.3/lib/erlang/lib/kernel-5.2/src/gen_tcp.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -1078,26 +1112,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/control_sup.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/id_generator.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/client_sup.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="69" lean-forward="false" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -1142,30 +1160,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/network/tcp_acceptor.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/group.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="111" column="54" lean-forward="false" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/network/tcp_agent.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log/console.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
@@ -1184,8 +1178,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/client.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="159" column="23" lean-forward="true" selection-start-line="159" selection-start-column="23" selection-end-line="159" selection-end-column="23" />
+        <state relative-caret-position="470">
+          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
           <folding>
             <marker date="1495344241000" expanded="true" signature="3925:5669" ph="handle_info/2 -&gt; ..." />
             <marker date="1495344241000" expanded="true" signature="5670:5740" ph="%% ..." />
@@ -1209,6 +1203,54 @@
             <marker date="1495344241000" expanded="true" signature="6861:6883" ph="%%% ..." />
             <marker date="1495344241000" expanded="true" signature="6884:6954" ph="%%% ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/client_sup.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="0" column="69" lean-forward="false" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mod/mod_control_sup.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/group.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="111" column="54" lean-forward="false" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/control_sup.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/network/tcp_acceptor.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/network/tcp_agent.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="107" column="16" lean-forward="false" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
