@@ -98,10 +98,35 @@ handle_call(_Request, _From, State) ->
 handle_cast(online, State) ->
 	{noreply, State};
 
+handle_cast(#add_friend{id = Id, to_id = To_Id}, #state{client_id = To_Id = Client_Id, client_socket = Socket} = State) ->
+	lager:info("receive add friend request from other client"), %% todo 逻辑应该是直接将请求的to_id添加到自己的friends
+	MyFriends = mod_mnesia:get_friends(Client_Id),
+	Friend_Requests = mod_mnesia:get_friend_requests(Client_Id),
+	case lists:member(Id, MyFriends) or lists:member(Id, Friend_Requests) of
+		false ->
+			Client = mod_mnesia:get_client(Client_Id),
+			New_Client = Client#client{friend_requests = lists:append(Friend_Requests, [id])},
+			mod_mnesia:update_client(Client, New_Client),
+			Message = integer_to_list(Id) ++ "said:\nCan I be a friend with you?",
+			gen_tcp:send(Socket, Message);
+		true ->
+			ok
+	end,
+	{noreply, State};
+
 %% 用于处理用户获得tcp_agent_pid,client_id
 handle_cast({get_state, #{tcp_agent_pid := Tcp_Agent_Pid, client_id := Client_Id, client_socket := Socket}}, State) ->
 	lager:info("client state: tcp_agent_pid ~p, client_id ~p, client_socket ~p", [Tcp_Agent_Pid, Client_Id, Socket]),
-	{noreply, State#state{tcp_agent_pid = Tcp_Agent_Pid, client_id = Client_Id, client_socket = Socket}}.
+	{noreply, State#state{tcp_agent_pid = Tcp_Agent_Pid, client_id = Client_Id, client_socket = Socket}};
+
+%% 用于接受来自其他客户端的加好友的请求
+handle_cast(#new_friend{new_friend_id = New_Friend_Id}, #state{client_id = Client_Id} = State) ->
+	Client = #client{friends = Friends, friend_requests = Friends_Request} = mod_mnesia:get_client(Client_Id),
+	New_Friends = lists:append(Friends, [New_Friend_Id]),
+	New_Friends_Requests = lists:delete(New_Friend_Id, Friends_Request),
+	New_Client = Client#client{friends = New_Friends, friend_requests = New_Friends_Requests},
+	mod_mnesia:update_client(Client, New_Client),
+	{noreply, State}.
 
 %%--------------------------------------------------------------------
 %% @private
@@ -113,10 +138,18 @@ handle_cast({get_state, #{tcp_agent_pid := Tcp_Agent_Pid, client_id := Client_Id
 %%                                   {stop, Reason, State}
 %% @end
 %%--------------------------------------------------------------------
--spec(handle_info(Info :: timeout() | term(), State :: #state{}) ->
-	{noreply, NewState :: #state{}} |
-	{noreply, NewState :: #state{}, timeout() | hibernate} |
-	{stop, Reason :: term(), NewState :: #state{}}).
+
+handle_info(#add_friend{id = Id, to_id = To_Id} = Add_Friend, #state{client_id = Id} = State) ->
+	lager:info("send add friend request to other client"),
+	case ets:lookup(client_pid, To_Id) of
+		[{_, To_Pid}] ->
+			To_Pid ! Add_Friend;
+		_ ->
+			lager:info("the client not online")
+	end,
+	{noreply, State};
+
+
 %%  给群组或者客户端发送聊天信息
 handle_info(#client_send_chat{data = Chat}, State) ->
 	lager:info("send message to other client"),
@@ -127,18 +160,22 @@ handle_info(#client_send_chat{data = Chat}, State) ->
 				%% 判断是不是自己的friend
 %%				[{_, Res}] = ets:lookup(client_pid, To_Id),
 				lager:info("$$$$$$$$$$$$$$$$$$$$$$$$"),
+				Friends = mod_mnesia:get_friends(Id),
+				Judge1 = lists:member(To_Id, Friends),
 				case ets:lookup(client_pid, To_Id) of
-					[{_, Res}] ->
+					[{_, Res}] when Judge1->
 						{Res, #client_receive_client_chat{client_id = Id, data = Data}};
 					Err ->
-						lager:info("~p",[Err]),
+						lager:info("~p", [Err]),
 						{error, ""}
 				end;
 			2 ->
 				%% 判断是不是自己的group
 %%				[{_, Res}] = ets:lookup(group_pid, To_Id),
+				Members = mod_mnesia:get_members(To_Id),
+				Judge2 = lists:member(Id, Members),
 				case ets:lookup(group_pid, To_Id) of
-					[{_, Res}] ->
+					[{_, Res}] when Judge2->
 						{Res, #group_receive_chat{id = Id, data = Data}};
 					_ ->
 						{error, ""}
@@ -149,7 +186,7 @@ handle_info(#client_send_chat{data = Chat}, State) ->
 	lager:info("~p ~p", [To_Pid, To_Chat]),
 	case {To_Pid, To_Chat} of
 		{error, _} ->
-			{noreply, State};
+			error;
 		_ ->
 			To_Pid ! To_Chat
 	end,
@@ -165,9 +202,9 @@ handle_info(#client_receive_client_chat{client_id = Id, data = Data}, #state{cli
 	lager:info("success send message"),
 	{noreply, State};
 
-handle_info(#client_receive_group_chat{group_id = Group_Id, client_id = Client_Id, data = Data }, #state{client_socket = Socket} = State) ->
+handle_info(#client_receive_group_chat{group_id = Group_Id, client_id = Client_Id, data = Data}, #state{client_socket = Socket} = State) ->
 	lager:info("receive message from group and send to socket"),
-	Message = "group " ++ integer_to_list(Group_Id) ++ "\n" ++ "client " ++integer_to_list(Client_Id) ++ " said:\n" ++ Data,
+	Message = "group " ++ integer_to_list(Group_Id) ++ "\n" ++ "client " ++ integer_to_list(Client_Id) ++ " said:\n" ++ Data,
 	gen_tcp:send(Socket, Message),
 	{noreply, State}.
 

@@ -179,7 +179,7 @@ add_new_client() ->
 	mnesia:start(),
 	mnesia:create_table(client, [{attributes, record_info(fields, client)}]),
 	mnesia:create_table(shop, [{attributes, record_info(fields, shop)}]),
-	Client = #client{id = 1000, username = "zst", password = "iyw", friends = [],  groups = []},
+	Client = #client{id = 1000, username = "zst", password = "iyw", friends = [],  groups = [], friend_requests = []},
 	Shop = #shop{item = 50, quantity = "applie", cost = []},
 	F1 = fun() -> mnesia:write(Client) end,
 	Reply1 = mnesia:transaction(F1),

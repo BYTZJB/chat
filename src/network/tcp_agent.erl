@@ -101,7 +101,8 @@ wait_auth(#register{username = UserName, password = PassWord} = Register, State)
 		username = UserName,
 		password = PassWord,
 		friends = [],
-		groups = []
+		groups = [],
+		friend_requests = []
 	},
 	%% 往数据库添加新的用户
 	mod_mnesia:add_new_client(Client),
@@ -153,8 +154,19 @@ wait_data(#chat{} = Chat, #state{client_pid = Client_Pid} = State) ->
 %%		_ ->
 %%			ok
 %%	end,
+	{next_state, wait_data, State};
+
+wait_data(#add_friend{} = Add_Friend, #state{client_pid = Client_Pid} = State) ->
+	lager:info("add friend begin...."),
+	gen_server:cast(Client_Pid, Add_Friend),
+	{next_state, wait_data, State};
+
+wait_data(#new_friend{} = New_Friend, #state{client_pid = Client_Pid} = State) ->
+	lager:info("i will get a new friend"),
+	gen_server:cast(Client_Pid, New_Friend),
 	{next_state, wait_data, State}.
 
+ 
 %%--------------------------------------------------------------------
 %% @private
 %% @doc
@@ -225,6 +237,7 @@ handle_info({tcp, Socket, BinData}, _StateName, #state{socket = Socket} = State)
 				
 				lager:info("call wait_auth to handle register"),
 				tcp_agent:wait_auth(Register, State);
+			
 			<<"2">> ->
 				Id = binary_to_list(maps:get(<<"id">>, Message)),
 				PassWord = binary_to_list(maps:get(<<"password">>, Message)),
@@ -232,6 +245,7 @@ handle_info({tcp, Socket, BinData}, _StateName, #state{socket = Socket} = State)
 				
 				lager:info("call wait_auth to handle login"),
 				tcp_agent:wait_auth(Login, State);
+			
 			<<"3">> ->
 				Id = binary_to_integer(maps:get(<<"id">>, Message)),
 				To_Type = binary_to_integer(maps:get(<<"to_type">>, Message)),
@@ -245,6 +259,16 @@ handle_info({tcp, Socket, BinData}, _StateName, #state{socket = Socket} = State)
 				
 				lager:info("call wait_data to handle chat"),
 				tcp_agent:wait_data(Chat, State);
+			
+			<<"4">> ->
+				New_Friend_Id = binary_to_integer(maps:get(<<"new_friend_id">>, Message)),
+				tcp_agent:wait_data(#new_friend{new_friend_id = New_Friend_Id},State);
+			
+			<<"5">> ->
+				Id = binary_to_integer(maps:get(<<"id">>, Message)),
+				To_Id = binary_to_integer(maps:get(<<"to_id">>, Message)),
+				tcp_agent:wait_data(#add_friend{id = Id, to_id = To_Id}, State);
+			
 			_ ->
 				lager:info("error cmd"),
 				{stop, "error cmd", State}

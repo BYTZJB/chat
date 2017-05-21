@@ -15,8 +15,8 @@
 %% {cmd => 1, username, password}
 %% {cmd => 2, id, password}
 %% {cmd => 3, id, username, to_type, to_id, data}
--record(message, {cmd, id, username, password, to_type, to_id, data}).
--record(client, {id, username, password, friends, groups}).
+-record(message, {cmd, id, username, password, to_type, to_id, data , new_friend_id}).
+-record(client, {id, username, password, friends, groups, friend_requests}).
 -record(group, {id, members}).
 -record(ids, {id_type, ids}).
 
@@ -35,3 +35,10 @@
 -record(client_send_chat, {data}). %% 由client发送消息出去
 -record(group_receive_chat, {id, data}).
 -record(chat, {id, to_type, to_id, data}).
+
+%%============================
+%% Action Message
+%%============================
+-record(add_friend, {id, to_id}).
+-record(add_group, {id, to_id}).
+-record(new_friend, {new_friend_id}).
