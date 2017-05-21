@@ -73,3 +73,27 @@
 2017-05-20 18:21:18.785 [error] <0.131.0> gen_server <0.131.0> terminated with reason: no match of right hand value [] in client:handle_info/2 line 127
 2017-05-20 18:21:18.850 [error] <0.131.0> CRASH REPORT Process <0.131.0> with 0 neighbours exited with reason: no match of right hand value [] in client:handle_info/2 line 127 in gen_server:terminate/7 line 812
 2017-05-20 18:21:18.850 [error] <0.124.0> Supervisor client_sup had child 1 started with {client,start_link,undefined} at <0.131.0> exit with reason no match of right hand value [] in client:handle_info/2 line 127 in context child_terminated
+2017-05-21 12:41:42.828 [error] <0.158.0> gen_server <0.158.0> terminated with reason: no match of right hand value 1 in client:handle_info/2 line 131
+2017-05-21 12:41:42.862 [error] <0.158.0> CRASH REPORT Process <0.158.0> with 0 neighbours exited with reason: no match of right hand value 1 in client:handle_info/2 line 131 in gen_server:terminate/7 line 812
+2017-05-21 12:41:42.862 [error] <0.124.0> Supervisor client_sup had child 1 started with {client,start_link,undefined} at <0.158.0> exit with reason no match of right hand value 1 in client:handle_info/2 line 131 in context child_terminated
+2017-05-21 12:43:35.132 [error] <0.130.0> gen_server <0.130.0> terminated with reason: bad return value: {client_receive_client_chat,1,"wo xihuan ni"}
+2017-05-21 12:43:35.154 [error] <0.130.0> CRASH REPORT Process <0.130.0> with 0 neighbours exited with reason: bad return value: {client_receive_client_chat,1,"wo xihuan ni"} in gen_server:terminate/7 line 812
+2017-05-21 12:43:35.154 [error] <0.124.0> Supervisor client_sup had child 1 started with {client,start_link,undefined} at <0.130.0> exit with reason bad return value: {client_receive_client_chat,1,"wo xihuan ni"} in context child_terminated
+2017-05-21 12:46:08.612 [error] <0.130.0> gen_server <0.130.0> terminated with reason: bad return value: {client_receive_client_chat,1,"wo xihuan ni"}
+2017-05-21 12:46:08.637 [error] <0.130.0> CRASH REPORT Process <0.130.0> with 0 neighbours exited with reason: bad return value: {client_receive_client_chat,1,"wo xihuan ni"} in gen_server:terminate/7 line 812
+2017-05-21 12:46:08.637 [error] <0.124.0> Supervisor client_sup had child 1 started with {client,start_link,undefined} at <0.130.0> exit with reason bad return value: {client_receive_client_chat,1,"wo xihuan ni"} in context child_terminated
+2017-05-21 12:47:39.052 [error] <0.158.0> gen_server <0.158.0> terminated with reason: bad return value: {client_receive_client_chat,1," wo xi huan ni"}
+2017-05-21 12:47:39.073 [error] <0.158.0> CRASH REPORT Process <0.158.0> with 0 neighbours exited with reason: bad return value: {client_receive_client_chat,1," wo xi huan ni"} in gen_server:terminate/7 line 812
+2017-05-21 12:47:39.073 [error] <0.124.0> Supervisor client_sup had child 1 started with {client,start_link,undefined} at <0.158.0> exit with reason bad return value: {client_receive_client_chat,1," wo xi huan ni"} in context child_terminated
+2017-05-21 12:50:46.732 [error] <0.153.0> gen_server <0.153.0> terminated with reason: bad return value: {client_receive_client_chat,1," wo xi huan ni"}
+2017-05-21 12:50:46.746 [error] <0.153.0> CRASH REPORT Process <0.153.0> with 0 neighbours exited with reason: bad return value: {client_receive_client_chat,1," wo xi huan ni"} in gen_server:terminate/7 line 812
+2017-05-21 12:50:46.746 [error] <0.124.0> Supervisor client_sup had child 1 started with {client,start_link,undefined} at <0.153.0> exit with reason bad return value: {client_receive_client_chat,1," wo xi huan ni"} in context child_terminated
+2017-05-21 13:01:49.900 [error] <0.131.0> gen_server <0.131.0> terminated with reason: bad return value: {client_receive_client_chat,1,"wo xihuan ni"}
+2017-05-21 13:01:49.955 [error] <0.131.0> CRASH REPORT Process <0.131.0> with 0 neighbours exited with reason: bad return value: {client_receive_client_chat,1,"wo xihuan ni"} in gen_server:terminate/7 line 812
+2017-05-21 13:01:49.955 [error] <0.124.0> Supervisor client_sup had child 1 started with {client,start_link,undefined} at <0.131.0> exit with reason bad return value: {client_receive_client_chat,1,"wo xihuan ni"} in context child_terminated
+2017-05-21 13:20:21.932 [error] <0.130.0> gen_server <0.130.0> terminated with reason: bad return value: {client_receive_client_chat,1,"wo xi huan ni"}
+2017-05-21 13:20:21.945 [error] <0.130.0> CRASH REPORT Process <0.130.0> with 0 neighbours exited with reason: bad return value: {client_receive_client_chat,1,"wo xi huan ni"} in gen_server:terminate/7 line 812
+2017-05-21 13:20:21.945 [error] <0.124.0> Supervisor client_sup had child 1 started with {client,start_link,undefined} at <0.130.0> exit with reason bad return value: {client_receive_client_chat,1,"wo xi huan ni"} in context child_terminated
+2017-05-21 13:21:42.436 [error] <0.131.0> gen_server <0.131.0> terminated with reason: bad return value: {client_receive_client_chat,1,"wo xihuan ni"}
+2017-05-21 13:21:42.438 [error] <0.131.0> CRASH REPORT Process <0.131.0> with 0 neighbours exited with reason: bad return value: {client_receive_client_chat,1,"wo xihuan ni"} in gen_server:terminate/7 line 812
+2017-05-21 13:21:42.438 [error] <0.124.0> Supervisor client_sup had child 1 started with {client,start_link,undefined} at <0.131.0> exit with reason bad return value: {client_receive_client_chat,1,"wo xihuan ni"} in context child_terminated

@@ -655,3 +655,227 @@ Bad value on output port 'tcp_inet'
      Reason:     {{badmatch,[]},[{client,handle_info,2,[{file,"src/logic/client.erl"},{line,127}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
      Offender:   [{pid,<0.131.0>},{id,1},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
 
+2017-05-21 12:41:42 =ERROR REPORT====
+** Generic server <0.158.0> terminating 
+** Last message in was {client_send_chat,{chat,1,1,2,"wo xihuan ni"}}
+** When Server state == {state,<0.156.0>,1,#Port<0.4370>}
+** Reason for termination == 
+** {{badmatch,1},[{client,handle_info,2,[{file,"src/logic/client.erl"},{line,131}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-05-21 12:41:42 =CRASH REPORT====
+  crasher:
+    initial call: client:init/1
+    pid: <0.158.0>
+    registered_name: []
+    exception exit: {{{badmatch,1},[{client,handle_info,2,[{file,"src/logic/client.erl"},{line,131}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [client_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.124.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 865
+  neighbours:
+2017-05-21 12:41:42 =SUPERVISOR REPORT====
+     Supervisor: {local,client_sup}
+     Context:    child_terminated
+     Reason:     {{badmatch,1},[{client,handle_info,2,[{file,"src/logic/client.erl"},{line,131}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.158.0>},{id,1},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-21 12:43:35 =ERROR REPORT====
+** Generic server <0.130.0> terminating 
+** Last message in was {client_send_chat,{chat,1,1,2,"wo xihuan ni"}}
+** When Server state == {state,<0.128.0>,1,#Port<0.3682>}
+** Reason for termination == 
+** {bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}}
+2017-05-21 12:43:35 =CRASH REPORT====
+  crasher:
+    initial call: client:init/1
+    pid: <0.130.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [client_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.124.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 838
+  neighbours:
+2017-05-21 12:43:35 =SUPERVISOR REPORT====
+     Supervisor: {local,client_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}}
+     Offender:   [{pid,<0.130.0>},{id,1},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-21 12:46:08 =ERROR REPORT====
+** Generic server <0.130.0> terminating 
+** Last message in was {client_send_chat,{chat,1,1,2,"wo xihuan ni"}}
+** When Server state == {state,<0.128.0>,1,#Port<0.3682>}
+** Reason for termination == 
+** {bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}}
+2017-05-21 12:46:08 =CRASH REPORT====
+  crasher:
+    initial call: client:init/1
+    pid: <0.130.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [client_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.124.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 835
+  neighbours:
+2017-05-21 12:46:08 =SUPERVISOR REPORT====
+     Supervisor: {local,client_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}}
+     Offender:   [{pid,<0.130.0>},{id,1},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-21 12:47:39 =ERROR REPORT====
+** Generic server <0.158.0> terminating 
+** Last message in was {client_send_chat,{chat,1,1,2," wo xi huan ni"}}
+** When Server state == {state,<0.155.0>,1,#Port<0.4418>}
+** Reason for termination == 
+** {bad_return_value,{client_receive_client_chat,1," wo xi huan ni"}}
+2017-05-21 12:47:39 =CRASH REPORT====
+  crasher:
+    initial call: client:init/1
+    pid: <0.158.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{client_receive_client_chat,1," wo xi huan ni"}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [client_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.124.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 837
+  neighbours:
+2017-05-21 12:47:39 =SUPERVISOR REPORT====
+     Supervisor: {local,client_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{client_receive_client_chat,1," wo xi huan ni"}}
+     Offender:   [{pid,<0.158.0>},{id,1},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-21 12:50:46 =ERROR REPORT====
+** Generic server <0.153.0> terminating 
+** Last message in was {client_send_chat,{chat,1,1,2," wo xi huan ni"}}
+** When Server state == {state,<0.150.0>,1,#Port<0.4370>}
+** Reason for termination == 
+** {bad_return_value,{client_receive_client_chat,1," wo xi huan ni"}}
+2017-05-21 12:50:46 =CRASH REPORT====
+  crasher:
+    initial call: client:init/1
+    pid: <0.153.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{client_receive_client_chat,1," wo xi huan ni"}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [client_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.124.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 836
+  neighbours:
+2017-05-21 12:50:46 =SUPERVISOR REPORT====
+     Supervisor: {local,client_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{client_receive_client_chat,1," wo xi huan ni"}}
+     Offender:   [{pid,<0.153.0>},{id,1},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-21 13:01:49 =ERROR REPORT====
+** Generic server <0.131.0> terminating 
+** Last message in was {client_send_chat,{chat,1,1,2,"wo xihuan ni"}}
+** When Server state == {state,<0.128.0>,1,#Port<0.3682>}
+** Reason for termination == 
+** {bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}}
+2017-05-21 13:01:49 =CRASH REPORT====
+  crasher:
+    initial call: client:init/1
+    pid: <0.131.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [client_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.124.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 1188
+  neighbours:
+2017-05-21 13:01:49 =SUPERVISOR REPORT====
+     Supervisor: {local,client_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}}
+     Offender:   [{pid,<0.131.0>},{id,1},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-21 13:20:21 =ERROR REPORT====
+** Generic server <0.130.0> terminating 
+** Last message in was {client_send_chat,{chat,1,1,2,"wo xi huan ni"}}
+** When Server state == {state,<0.128.0>,1,#Port<0.3682>}
+** Reason for termination == 
+** {bad_return_value,{client_receive_client_chat,1,"wo xi huan ni"}}
+2017-05-21 13:20:21 =CRASH REPORT====
+  crasher:
+    initial call: client:init/1
+    pid: <0.130.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{client_receive_client_chat,1,"wo xi huan ni"}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [client_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.124.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1297
+  neighbours:
+2017-05-21 13:20:21 =SUPERVISOR REPORT====
+     Supervisor: {local,client_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{client_receive_client_chat,1,"wo xi huan ni"}}
+     Offender:   [{pid,<0.130.0>},{id,1},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-21 13:21:42 =ERROR REPORT====
+** Generic server <0.131.0> terminating 
+** Last message in was {client_send_chat,{chat,1,1,2,"wo xihuan ni"}}
+** When Server state == {state,<0.128.0>,1,#Port<0.3682>}
+** Reason for termination == 
+** {bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}}
+2017-05-21 13:21:42 =CRASH REPORT====
+  crasher:
+    initial call: client:init/1
+    pid: <0.131.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [client_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.124.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 1580
+  neighbours:
+2017-05-21 13:21:42 =SUPERVISOR REPORT====
+     Supervisor: {local,client_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}}
+     Offender:   [{pid,<0.131.0>},{id,1},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+

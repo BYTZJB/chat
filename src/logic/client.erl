@@ -126,10 +126,12 @@ handle_info(#client_send_chat{data = Chat}, State) ->
 			1 ->
 				%% 判断是不是自己的friend
 %%				[{_, Res}] = ets:lookup(client_pid, To_Id),
+				lager:info("$$$$$$$$$$$$$$$$$$$$$$$$"),
 				case ets:lookup(client_pid, To_Id) of
 					[{_, Res}] ->
-						{Res, #client_receive_client_chat{id = Id, data = Data}};
-					_ ->
+						{Res, #client_receive_client_chat{client_id = Id, data = Data}};
+					Err ->
+						lager:info("~p",[Err]),
 						{error, ""}
 				end;
 			2 ->
@@ -144,12 +146,14 @@ handle_info(#client_send_chat{data = Chat}, State) ->
 			_ ->
 				{error, ""}
 		end,
+	lager:info("~p ~p", [To_Pid, To_Chat]),
 	case {To_Pid, To_Chat} of
 		{error, _} ->
 			{noreply, State};
 		_ ->
 			To_Pid ! To_Chat
-	end;
+	end,
+	{noreply, State};
 
 %% 接收别人传过来的消息,并发送给客户端
 handle_info(#client_receive_client_chat{client_id = Id, data = Data}, #state{client_socket = Socket} = State) ->
@@ -158,6 +162,7 @@ handle_info(#client_receive_client_chat{client_id = Id, data = Data}, #state{cli
 	lager:info("~p", [Socket]),
 	lager:info("~p", [Message]),
 	gen_tcp:send(Socket, Message),
+	lager:info("success send message"),
 	{noreply, State};
 
 handle_info(#client_receive_group_chat{group_id = Group_Id, client_id = Client_Id, data = Data }, #state{client_socket = Socket} = State) ->
@@ -179,7 +184,8 @@ handle_info(#client_receive_group_chat{group_id = Group_Id, client_id = Client_I
 %%--------------------------------------------------------------------
 -spec(terminate(Reason :: (normal | shutdown | {shutdown, term()} | term()),
 	State :: #state{}) -> term()).
-terminate(_Reason, _State) ->
+terminate(Reason, _State) ->
+	lager:info("~p", [Reason]),
 	ok.
 
 %%--------------------------------------------------------------------
