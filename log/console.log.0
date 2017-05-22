@@ -1,0 +1,1119 @@
+2017-05-18 20:22:58.293 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3766>
+2017-05-18 20:22:58.293 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:22:58.293 [info] <0.154.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3766>
+2017-05-18 20:22:58.294 [info] <0.154.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:22:58.294 [info] <0.154.0>@tcp_agent:terminate:264 tcp_agent process is termianted
+2017-05-18 20:22:58.294 [error] <0.154.0> gen_fsm <0.154.0> in state wait_auth terminated with reason: no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212
+2017-05-18 20:22:58.294 [error] <0.154.0> CRASH REPORT Process <0.154.0> with 0 neighbours exited with reason: no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212 in gen_fsm:terminate/7 line 559
+2017-05-18 20:22:58.294 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3766> started with {tcp_agent,start_link,undefined} at <0.154.0> exit with reason no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212 in context child_terminated
+2017-05-18 20:23:28.877 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3768>
+2017-05-18 20:23:28.877 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:23:28.877 [info] <0.155.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3768>
+2017-05-18 20:23:28.877 [info] <0.155.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:23:28.877 [info] <0.155.0>@tcp_agent:terminate:264 tcp_agent process is termianted
+2017-05-18 20:23:28.877 [error] <0.155.0> gen_fsm <0.155.0> in state wait_auth terminated with reason: no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212
+2017-05-18 20:23:28.877 [error] <0.155.0> CRASH REPORT Process <0.155.0> with 0 neighbours exited with reason: no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212 in gen_fsm:terminate/7 line 559
+2017-05-18 20:23:28.877 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3768> started with {tcp_agent,start_link,undefined} at <0.155.0> exit with reason no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212 in context child_terminated
+2017-05-18 20:24:19.645 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3769>
+2017-05-18 20:24:19.645 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:24:19.645 [info] <0.157.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3769>
+2017-05-18 20:24:19.645 [info] <0.157.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:24:19.645 [info] <0.157.0>@tcp_agent:terminate:264 tcp_agent process is termianted
+2017-05-18 20:24:19.646 [error] <0.157.0> gen_fsm <0.157.0> in state wait_auth terminated with reason: no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212
+2017-05-18 20:24:19.646 [error] <0.157.0> CRASH REPORT Process <0.157.0> with 0 neighbours exited with reason: no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212 in gen_fsm:terminate/7 line 559
+2017-05-18 20:24:19.646 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3769> started with {tcp_agent,start_link,undefined} at <0.157.0> exit with reason no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212 in context child_terminated
+2017-05-18 20:25:14.148 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3770>
+2017-05-18 20:25:14.148 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:25:14.148 [info] <0.158.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3770>
+2017-05-18 20:25:14.148 [info] <0.158.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:25:14.148 [info] <0.158.0>@tcp_agent:terminate:264 tcp_agent process is termianted
+2017-05-18 20:25:14.148 [error] <0.158.0> gen_fsm <0.158.0> in state wait_auth terminated with reason: no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212
+2017-05-18 20:25:14.148 [error] <0.158.0> CRASH REPORT Process <0.158.0> with 0 neighbours exited with reason: no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212 in gen_fsm:terminate/7 line 559
+2017-05-18 20:25:14.148 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3770> started with {tcp_agent,start_link,undefined} at <0.158.0> exit with reason no match of right hand value #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>} in tcp_agent:handle_info/3 line 212 in context child_terminated
+2017-05-18 20:26:22.886 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:26:22.886 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-18 20:26:23.375 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:26:25.375 [info] <0.99.0>@control_sup:init:63 
+2017-05-18 20:26:25.438 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-18 20:26:25.464 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-18 20:26:25.464 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-18 20:26:25.464 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-18 20:26:25.474 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-18 20:26:25.485 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:26:50.650 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-18 20:26:50.653 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:26:50.653 [info] <0.151.0>@tcp_agent:handle_info:247 undefined 
+2017-05-18 20:26:50.653 [info] <0.151.0>@tcp_agent:handle_info:248 <<"{\"username\": \"yangwei\", \"password\": \"123\", \"cmd\": 1}">> 
+2017-05-18 20:26:50.653 [info] <0.151.0>@tcp_agent:handle_info:249 tcp_agent receive unexpected info: {tcp,#Port<0.3742>,<<"{\"username\": \"yangwei\", \"password\": \"123\", \"cmd\": 1}">>}
+2017-05-18 20:26:50.653 [info] <0.151.0>@tcp_agent:terminate:265 tcp_agent process is termianted
+2017-05-18 20:26:50.653 [error] <0.151.0> gen_fsm <0.151.0> in state wait_socket terminated with reason: "error tcp message"
+2017-05-18 20:26:50.668 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: "error tcp message" in gen_fsm:terminate/7 line 559
+2017-05-18 20:26:50.668 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason "error tcp message" in context child_terminated
+2017-05-18 20:27:00.491 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3761>
+2017-05-18 20:27:00.491 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:27:00.491 [info] <0.152.0>@tcp_agent:handle_info:247 undefined 
+2017-05-18 20:27:00.491 [info] <0.152.0>@tcp_agent:handle_info:248 <<"{\"username\": \"yangwei\", \"password\": \"123\", \"cmd\": 1}">> 
+2017-05-18 20:27:00.491 [info] <0.152.0>@tcp_agent:handle_info:249 tcp_agent receive unexpected info: {tcp,#Port<0.3761>,<<"{\"username\": \"yangwei\", \"password\": \"123\", \"cmd\": 1}">>}
+2017-05-18 20:27:00.491 [info] <0.152.0>@tcp_agent:terminate:265 tcp_agent process is termianted
+2017-05-18 20:27:00.491 [error] <0.152.0> gen_fsm <0.152.0> in state wait_socket terminated with reason: "error tcp message"
+2017-05-18 20:27:00.491 [error] <0.152.0> CRASH REPORT Process <0.152.0> with 0 neighbours exited with reason: "error tcp message" in gen_fsm:terminate/7 line 559
+2017-05-18 20:27:00.491 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3761> started with {tcp_agent,start_link,undefined} at <0.152.0> exit with reason "error tcp message" in context child_terminated
+2017-05-18 20:27:06.069 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3762>
+2017-05-18 20:27:06.070 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:27:06.070 [info] <0.153.0>@tcp_agent:handle_info:247 undefined 
+2017-05-18 20:27:06.070 [info] <0.153.0>@tcp_agent:handle_info:248 <<"{\"username\": \"yangwei\", \"password\": \"123\", \"cmd\": 1}">> 
+2017-05-18 20:27:06.070 [info] <0.153.0>@tcp_agent:handle_info:249 tcp_agent receive unexpected info: {tcp,#Port<0.3762>,<<"{\"username\": \"yangwei\", \"password\": \"123\", \"cmd\": 1}">>}
+2017-05-18 20:27:06.070 [info] <0.153.0>@tcp_agent:terminate:265 tcp_agent process is termianted
+2017-05-18 20:27:06.070 [error] <0.153.0> gen_fsm <0.153.0> in state wait_socket terminated with reason: "error tcp message"
+2017-05-18 20:27:06.070 [error] <0.153.0> CRASH REPORT Process <0.153.0> with 0 neighbours exited with reason: "error tcp message" in gen_fsm:terminate/7 line 559
+2017-05-18 20:27:06.070 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3762> started with {tcp_agent,start_link,undefined} at <0.153.0> exit with reason "error tcp message" in context child_terminated
+2017-05-18 20:27:34.106 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3763>
+2017-05-18 20:27:34.106 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:27:34.106 [info] <0.154.0>@tcp_agent:handle_info:247 undefined 
+2017-05-18 20:27:34.106 [info] <0.154.0>@tcp_agent:handle_info:248 <<"{\"username\": \"yangwei\", \"password\": \"123\", \"cmd\": 1}">> 
+2017-05-18 20:27:34.107 [info] <0.154.0>@tcp_agent:handle_info:249 tcp_agent receive unexpected info: {tcp,#Port<0.3763>,<<"{\"username\": \"yangwei\", \"password\": \"123\", \"cmd\": 1}">>}
+2017-05-18 20:27:34.107 [info] <0.154.0>@tcp_agent:terminate:265 tcp_agent process is termianted
+2017-05-18 20:27:34.107 [error] <0.154.0> gen_fsm <0.154.0> in state wait_socket terminated with reason: "error tcp message"
+2017-05-18 20:27:34.107 [error] <0.154.0> CRASH REPORT Process <0.154.0> with 0 neighbours exited with reason: "error tcp message" in gen_fsm:terminate/7 line 559
+2017-05-18 20:27:34.107 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3763> started with {tcp_agent,start_link,undefined} at <0.154.0> exit with reason "error tcp message" in context child_terminated
+2017-05-18 20:28:22.678 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:28:22.678 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-18 20:28:23.052 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:28:25.053 [info] <0.99.0>@control_sup:init:63 
+2017-05-18 20:28:25.086 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-18 20:28:25.113 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-18 20:28:25.113 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-18 20:28:25.113 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-18 20:28:25.122 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-18 20:28:25.124 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:28:29.304 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-18 20:28:29.308 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:28:29.308 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-18 20:28:29.308 [info] <0.151.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:28:29.308 [info] <0.151.0>@tcp_agent:handle_info:214 "yangwei"
+2017-05-18 20:28:29.308 [info] <0.151.0>@tcp_agent:handle_info:229 error
+2017-05-18 20:28:29.308 [info] <0.151.0>@tcp_agent:terminate:265 tcp_agent process is termianted
+2017-05-18 20:28:29.308 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: "error cmd"
+2017-05-18 20:28:29.316 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: "error cmd" in gen_fsm:terminate/7 line 559
+2017-05-18 20:28:29.316 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason "error cmd" in context child_terminated
+2017-05-18 20:32:15.785 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:32:15.785 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-18 20:32:16.309 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:32:18.309 [info] <0.99.0>@control_sup:init:63 
+2017-05-18 20:32:18.326 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-18 20:32:18.353 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-18 20:32:18.353 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-18 20:32:18.353 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-18 20:32:18.363 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-18 20:32:18.372 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:32:21.650 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-18 20:32:21.653 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:32:21.653 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-18 20:32:21.653 [info] <0.151.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:32:21.673 [info] <0.151.0>@tcp_agent:handle_info:234 error {badmatch,#{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>}}
+2017-05-18 20:32:21.674 [info] <0.151.0>@tcp_agent:terminate:269 tcp_agent process is termianted
+2017-05-18 20:32:21.674 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-18 20:32:21.801 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-18 20:32:21.801 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-18 20:36:18.098 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:36:18.098 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-18 20:36:18.593 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:36:20.594 [info] <0.99.0>@control_sup:init:63 
+2017-05-18 20:36:20.634 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-18 20:36:20.661 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-18 20:36:20.661 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-18 20:36:20.661 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-18 20:36:20.670 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-18 20:36:20.680 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:36:28.558 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-18 20:36:28.575 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:36:28.575 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-18 20:36:28.575 [info] <0.151.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:36:28.602 [info] <0.151.0>@tcp_agent:handle_info:234 error badarg
+2017-05-18 20:36:28.602 [info] <0.151.0>@tcp_agent:terminate:269 tcp_agent process is termianted
+2017-05-18 20:36:28.602 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-18 20:36:28.675 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-18 20:36:28.675 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-18 20:37:27.503 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:37:27.503 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-18 20:37:27.887 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:37:29.888 [info] <0.99.0>@control_sup:init:63 
+2017-05-18 20:37:29.889 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-18 20:37:29.895 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-18 20:37:29.895 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-18 20:37:29.895 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-18 20:37:29.896 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-18 20:37:29.897 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:37:34.407 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-18 20:37:34.410 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:37:34.410 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-18 20:37:34.410 [info] <0.151.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:37:34.414 [info] <0.151.0>@tcp_agent:handle_info:235 error badarg
+2017-05-18 20:37:34.414 [info] <0.151.0>@tcp_agent:terminate:270 tcp_agent process is termianted
+2017-05-18 20:37:34.414 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-18 20:37:34.415 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-18 20:37:34.415 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-18 20:38:21.020 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:38:21.020 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-18 20:38:21.440 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:38:23.441 [info] <0.99.0>@control_sup:init:63 
+2017-05-18 20:38:23.442 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-18 20:38:23.448 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-18 20:38:23.448 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-18 20:38:23.448 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-18 20:38:23.449 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-18 20:38:23.450 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:38:24.944 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-18 20:38:24.948 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:38:24.948 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-18 20:38:24.948 [info] <0.151.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:38:24.951 [info] <0.151.0>@tcp_agent:handle_info:234 error {badmatch,#{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>}}
+2017-05-18 20:38:24.951 [info] <0.151.0>@tcp_agent:terminate:269 tcp_agent process is termianted
+2017-05-18 20:38:24.952 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-18 20:38:24.953 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-18 20:38:24.953 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-18 20:39:18.961 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:39:18.961 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-18 20:39:19.327 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:39:21.328 [info] <0.99.0>@control_sup:init:63 
+2017-05-18 20:39:21.330 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-18 20:39:21.335 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-18 20:39:21.335 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-18 20:39:21.335 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-18 20:39:21.336 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-18 20:39:21.338 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:39:23.646 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-18 20:39:23.650 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:39:23.650 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-18 20:39:23.650 [info] <0.151.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:39:23.662 [info] <0.151.0>@tcp_agent:handle_info:234 error badarg
+2017-05-18 20:39:23.662 [info] <0.151.0>@tcp_agent:terminate:269 tcp_agent process is termianted
+2017-05-18 20:39:23.662 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-18 20:39:23.664 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-18 20:39:23.664 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-18 20:41:50.448 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:41:50.448 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-18 20:41:50.920 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:41:52.921 [info] <0.99.0>@control_sup:init:63 
+2017-05-18 20:41:52.933 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-18 20:41:52.960 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-18 20:41:52.960 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-18 20:41:52.960 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-18 20:41:52.969 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-18 20:41:52.979 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:41:57.890 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-18 20:41:57.894 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:41:57.894 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-18 20:41:57.894 [info] <0.151.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:41:57.913 [info] <0.151.0>@tcp_agent:handle_info:234 error {badmatch,#{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>}}
+2017-05-18 20:41:57.913 [info] <0.151.0>@tcp_agent:terminate:269 tcp_agent process is termianted
+2017-05-18 20:41:57.913 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-18 20:41:57.930 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-18 20:41:57.930 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-18 20:43:58.135 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:43:58.135 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-18 20:43:58.757 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:44:00.758 [info] <0.99.0>@control_sup:init:63 
+2017-05-18 20:44:00.770 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-18 20:44:00.797 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-18 20:44:00.797 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-18 20:44:00.797 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-18 20:44:00.807 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-18 20:44:00.816 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:44:02.794 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-18 20:44:02.797 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:44:02.797 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-18 20:44:02.797 [info] <0.151.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:44:02.818 [info] <0.151.0>@tcp_agent:handle_info:236 error undef
+2017-05-18 20:44:02.818 [info] <0.151.0>@tcp_agent:terminate:271 tcp_agent process is termianted
+2017-05-18 20:44:02.818 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-18 20:44:02.833 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-18 20:44:02.834 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-18 20:45:11.176 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:45:11.176 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-18 20:45:11.567 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:45:13.567 [info] <0.99.0>@control_sup:init:63 
+2017-05-18 20:45:13.583 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-18 20:45:13.610 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-18 20:45:13.610 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-18 20:45:13.610 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-18 20:45:13.620 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-18 20:45:13.630 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-18 20:45:18.174 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-18 20:45:18.178 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-18 20:45:18.178 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-18 20:45:18.178 [info] <0.151.0>@tcp_agent:handle_info:211 *******************************************
+2017-05-18 20:45:18.197 [info] <0.151.0>@tcp_agent:handle_info:215 1
+2017-05-18 20:45:18.197 [info] <0.151.0>@tcp_agent:handle_info:216 #{<<"cmd">> => 1,<<"password">> => <<"123">>,<<"username">> => <<"yangwei">>}
+2017-05-18 20:45:18.197 [info] <0.151.0>@tcp_agent:handle_info:236 error {badrecord,message}
+2017-05-18 20:45:18.197 [info] <0.151.0>@tcp_agent:terminate:271 tcp_agent process is termianted
+2017-05-18 20:45:18.197 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-18 20:45:18.215 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-18 20:45:18.215 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 11:02:23.332 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 11:02:23.332 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 11:02:23.997 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 11:02:25.997 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 11:02:26.012 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-19 11:02:26.039 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-19 11:02:26.039 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-19 11:02:26.039 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-19 11:02:26.048 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-19 11:02:26.058 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 11:17:49.660 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 11:17:49.772 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 11:17:49.772 [info] <0.156.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 11:17:54.541 [info] <0.156.0>@tcp_agent:handle_info:210 *******************************************
+2017-05-19 11:17:54.606 [info] <0.156.0>@tcp_agent:handle_info:245 throw {error,{1,invalid_json}}
+2017-05-19 11:17:54.606 [info] <0.156.0>@tcp_agent:terminate:280 tcp_agent process is termianted
+2017-05-19 11:17:54.606 [error] <0.156.0> gen_fsm <0.156.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 11:17:54.715 [error] <0.156.0> CRASH REPORT Process <0.156.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 11:17:54.715 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.156.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 11:17:56.321 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3765>
+2017-05-19 11:17:56.321 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 11:17:56.321 [info] <0.158.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3765>
+2017-05-19 11:17:57.309 [info] <0.158.0>@tcp_agent:handle_info:253 tcp closed, state: wait_auth
+2017-05-19 11:17:57.309 [info] <0.158.0>@tcp_agent:terminate:280 tcp_agent process is termianted
+2017-05-19 11:18:13.468 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3766>
+2017-05-19 11:18:13.469 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 11:18:13.469 [info] <0.159.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3766>
+2017-05-19 11:18:20.710 [info] <0.159.0>@tcp_agent:handle_info:210 *******************************************
+2017-05-19 11:18:20.710 [info] <0.159.0>@tcp_agent:handle_info:245 throw {error,{1,invalid_json}}
+2017-05-19 11:18:20.710 [info] <0.159.0>@tcp_agent:terminate:280 tcp_agent process is termianted
+2017-05-19 11:18:20.710 [error] <0.159.0> gen_fsm <0.159.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 11:18:20.710 [error] <0.159.0> CRASH REPORT Process <0.159.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 11:18:20.710 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3766> started with {tcp_agent,start_link,undefined} at <0.159.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 11:18:39.265 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3767>
+2017-05-19 11:18:39.265 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 11:18:39.265 [info] <0.160.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3767>
+2017-05-19 11:18:40.378 [info] <0.160.0>@tcp_agent:handle_info:253 tcp closed, state: wait_auth
+2017-05-19 11:18:40.378 [info] <0.160.0>@tcp_agent:terminate:280 tcp_agent process is termianted
+2017-05-19 11:18:43.787 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3768>
+2017-05-19 11:18:43.787 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 11:18:43.787 [info] <0.161.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3768>
+2017-05-19 11:18:45.237 [info] <0.161.0>@tcp_agent:handle_info:253 tcp closed, state: wait_auth
+2017-05-19 11:18:45.237 [info] <0.161.0>@tcp_agent:terminate:280 tcp_agent process is termianted
+2017-05-19 11:18:54.172 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3769>
+2017-05-19 11:18:54.172 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 11:18:54.172 [info] <0.162.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3769>
+2017-05-19 11:18:57.163 [info] <0.162.0>@tcp_agent:handle_info:253 tcp closed, state: wait_auth
+2017-05-19 11:18:57.163 [info] <0.162.0>@tcp_agent:terminate:280 tcp_agent process is termianted
+2017-05-19 11:19:03.206 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3770>
+2017-05-19 11:19:03.206 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 11:19:03.206 [info] <0.163.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3770>
+2017-05-19 11:19:07.221 [info] <0.163.0>@tcp_agent:handle_info:253 tcp closed, state: wait_auth
+2017-05-19 11:19:07.221 [info] <0.163.0>@tcp_agent:terminate:280 tcp_agent process is termianted
+2017-05-19 11:19:25.538 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3771>
+2017-05-19 11:19:25.538 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 11:19:25.538 [info] <0.164.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3771>
+2017-05-19 11:19:31.747 [info] <0.164.0>@tcp_agent:handle_info:253 tcp closed, state: wait_auth
+2017-05-19 11:19:31.747 [info] <0.164.0>@tcp_agent:terminate:280 tcp_agent process is termianted
+2017-05-19 11:52:20.030 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 11:52:20.030 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 11:52:20.627 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 11:52:22.627 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 11:52:22.671 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-19 11:52:22.698 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-19 11:52:22.698 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-19 11:52:22.698 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-19 11:52:22.707 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-19 11:52:22.717 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 11:52:31.140 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 11:52:31.192 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 11:52:31.192 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 11:54:42.333 [info] <0.151.0>@tcp_agent:handle_info:210 *******************************************
+2017-05-19 11:54:42.379 [info] <0.151.0>@tcp_agent:handle_info:214 <<"1">>
+2017-05-19 11:54:42.379 [info] <0.151.0>@tcp_agent:handle_info:215 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 11:54:42.379 [info] <0.151.0>@tcp_agent:handle_info:239 error
+2017-05-19 11:54:42.379 [info] <0.151.0>@tcp_agent:terminate:279 tcp_agent process is termianted
+2017-05-19 11:54:42.379 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: "error cmd"
+2017-05-19 11:54:42.416 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: "error cmd" in gen_fsm:terminate/7 line 559
+2017-05-19 11:54:42.417 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason "error cmd" in context child_terminated
+2017-05-19 14:14:09.982 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:14:09.982 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:14:10.738 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:14:12.738 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:14:12.772 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:14:12.799 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-19 14:14:12.799 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-19 14:14:12.799 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:14:12.809 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:14:12.819 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:18:16.553 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 14:18:16.656 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:18:16.656 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 14:18:23.187 [info] <0.152.0>@tcp_agent:handle_info:210 *******************************************
+2017-05-19 14:18:23.273 [info] <0.152.0>@tcp_agent:handle_info:214 <<"1">>
+2017-05-19 14:18:23.273 [info] <0.152.0>@tcp_agent:handle_info:215 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 14:18:23.273 [info] <0.152.0>@tcp_agent:handle_info:244 error {badmatch,<<"zst">>}
+2017-05-19 14:18:23.273 [info] <0.152.0>@tcp_agent:terminate:279 tcp_agent process is termianted
+2017-05-19 14:18:23.273 [error] <0.152.0> gen_fsm <0.152.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 14:18:23.311 [error] <0.152.0> CRASH REPORT Process <0.152.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 14:18:23.311 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.152.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 14:19:48.220 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:19:48.220 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:19:48.904 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:19:50.904 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:19:50.916 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:19:50.943 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-19 14:19:50.943 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-19 14:19:50.943 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:19:50.953 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:19:50.962 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:19:55.685 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 14:19:55.688 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:19:55.688 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 14:19:57.636 [info] <0.151.0>@tcp_agent:handle_info:210 *******************************************
+2017-05-19 14:19:57.651 [info] <0.151.0>@tcp_agent:handle_info:214 <<"1">>
+2017-05-19 14:19:57.651 [info] <0.151.0>@tcp_agent:handle_info:215 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 14:19:57.651 [info] <0.151.0>@tcp_agent:handle_info:218 ####
+2017-05-19 14:19:57.651 [info] <0.151.0>@tcp_agent:handle_info:247 error {badmatch,<<"zst">>}
+2017-05-19 14:19:57.651 [info] <0.151.0>@tcp_agent:terminate:282 tcp_agent process is termianted
+2017-05-19 14:19:57.651 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 14:19:57.680 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 14:19:57.680 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 14:21:24.401 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:21:24.401 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:21:24.967 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:21:26.967 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:21:26.997 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:21:27.046 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-19 14:21:27.046 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-19 14:21:27.046 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:21:27.056 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:21:27.065 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:21:30.432 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 14:21:30.435 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:21:30.435 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 14:21:31.714 [info] <0.151.0>@tcp_agent:handle_info:210 *******************************************
+2017-05-19 14:21:31.743 [info] <0.151.0>@tcp_agent:handle_info:214 <<"1">>
+2017-05-19 14:21:31.743 [info] <0.151.0>@tcp_agent:handle_info:215 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 14:21:31.743 [info] <0.151.0>@tcp_agent:handle_info:218 ####
+2017-05-19 14:21:31.743 [info] <0.151.0>@tcp_agent:handle_info:221 <<"zst">> <<"iyw">>
+2017-05-19 14:21:31.743 [info] <0.151.0>@tcp_agent:handle_info:247 error {badmatch,{register,<<"zst">>,<<"iyw">>}}
+2017-05-19 14:21:31.743 [info] <0.151.0>@tcp_agent:terminate:282 tcp_agent process is termianted
+2017-05-19 14:21:31.744 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 14:21:31.761 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 14:21:31.761 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 14:22:54.904 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:22:54.904 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:22:55.645 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:22:57.646 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:22:57.677 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:22:57.727 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-19 14:22:57.727 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-19 14:22:57.727 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:22:57.736 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:22:57.746 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:23:01.524 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 14:23:01.527 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:23:01.527 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 14:23:03.271 [info] <0.151.0>@tcp_agent:handle_info:210 *******************************************
+2017-05-19 14:23:03.300 [info] <0.151.0>@tcp_agent:handle_info:214 <<"1">>
+2017-05-19 14:23:03.300 [info] <0.151.0>@tcp_agent:handle_info:215 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 14:23:03.300 [info] <0.151.0>@tcp_agent:handle_info:218 ####
+2017-05-19 14:23:03.300 [info] <0.151.0>@tcp_agent:handle_info:221 "zst" <<"iyw">>
+2017-05-19 14:23:03.300 [info] <0.151.0>@tcp_agent:handle_info:247 error {badmatch,{register,"zst",<<"iyw">>}}
+2017-05-19 14:23:03.300 [info] <0.151.0>@tcp_agent:terminate:282 tcp_agent process is termianted
+2017-05-19 14:23:03.300 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 14:23:03.330 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 14:23:03.330 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 14:23:45.694 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:23:45.694 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:23:46.313 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:23:48.313 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:23:48.379 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:23:48.406 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-19 14:23:48.406 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-19 14:23:48.406 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:23:48.427 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:23:48.436 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:23:52.021 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 14:23:52.024 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:23:52.024 [info] <0.151.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 14:23:53.382 [info] <0.151.0>@tcp_agent:handle_info:210 *******************************************
+2017-05-19 14:23:53.414 [info] <0.151.0>@tcp_agent:handle_info:214 <<"1">>
+2017-05-19 14:23:53.414 [info] <0.151.0>@tcp_agent:handle_info:215 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 14:23:53.414 [info] <0.151.0>@tcp_agent:handle_info:218 ####
+2017-05-19 14:23:53.414 [info] <0.151.0>@tcp_agent:handle_info:221 "zst" "iyw"
+2017-05-19 14:23:53.414 [info] <0.151.0>@tcp_agent:handle_info:223 ###############
+2017-05-19 14:23:53.414 [info] <0.144.0>@id_generator:handle_call:58 run transaction error {no_exists,ids} 
+2017-05-19 14:23:53.437 [info] <0.151.0>@tcp_agent:handle_info:247 error {badmatch,{error,{invalid_child_spec,[{0,{client,start_link,[0]},permanent,2000,worker,[client]}]}}}
+2017-05-19 14:23:53.437 [info] <0.151.0>@tcp_agent:terminate:282 tcp_agent process is termianted
+2017-05-19 14:23:53.437 [error] <0.151.0> gen_fsm <0.151.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 14:23:53.598 [error] <0.151.0> CRASH REPORT Process <0.151.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 14:23:53.598 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.151.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 14:29:21.227 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:29:21.227 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:29:21.745 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:29:23.746 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:29:23.756 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:29:23.783 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-19 14:29:23.783 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-19 14:29:23.783 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:29:23.793 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:29:23.802 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:29:53.214 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3750>
+2017-05-19 14:29:53.217 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:29:53.217 [info] <0.153.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3750>
+2017-05-19 14:29:55.630 [info] <0.153.0>@tcp_agent:handle_info:257 tcp closed, state: wait_auth
+2017-05-19 14:29:55.630 [info] <0.153.0>@tcp_agent:terminate:284 tcp_agent process is termianted
+2017-05-19 14:29:59.325 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3761>
+2017-05-19 14:29:59.326 [info] <0.149.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:29:59.326 [info] <0.154.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3761>
+2017-05-19 14:30:01.278 [info] <0.154.0>@tcp_agent:handle_info:212 *******************************************
+2017-05-19 14:30:01.302 [info] <0.154.0>@tcp_agent:handle_info:216 <<"1">>
+2017-05-19 14:30:01.302 [info] <0.154.0>@tcp_agent:handle_info:217 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 14:30:01.302 [info] <0.154.0>@tcp_agent:handle_info:220 ####
+2017-05-19 14:30:01.302 [info] <0.154.0>@tcp_agent:wait_auth:97 
+2017-05-19 14:30:01.302 [info] <0.144.0>@id_generator:handle_call:58 run transaction error {no_exists,ids} 
+2017-05-19 14:30:01.302 [info] <0.154.0>@tcp_agent:wait_auth:99 
+2017-05-19 14:30:01.321 [info] <0.154.0>@tcp_agent:handle_info:249 error {badmatch,{error,{invalid_child_spec,[{0,{client,start_link,[0]},permanent,2000,worker,[client]}]}}}
+2017-05-19 14:30:01.321 [info] <0.154.0>@tcp_agent:terminate:284 tcp_agent process is termianted
+2017-05-19 14:30:01.321 [error] <0.154.0> gen_fsm <0.154.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 14:30:01.443 [error] <0.154.0> CRASH REPORT Process <0.154.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 14:30:01.443 [error] <0.148.0> Supervisor tcp_agent_sup had child #Port<0.3761> started with {tcp_agent,start_link,undefined} at <0.154.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 14:32:04.344 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:32:04.344 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:32:05.263 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:32:07.263 [info] <0.99.0>@mod_control_sup:init:25 {timeout,[ids]} 
+2017-05-19 14:32:07.263 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:32:07.264 [info] <0.144.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:32:07.299 [info] <0.145.0>@group_sup:init:70 [] 
+2017-05-19 14:32:07.299 [info] <0.145.0>@group_sup:init:77 [] 
+2017-05-19 14:32:07.299 [info] <0.145.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:32:07.309 [info] <0.147.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:32:07.318 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:40:05.485 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:40:05.485 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:40:06.129 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:40:08.232 [info] <0.99.0>@mod_control_sup:init:35 {timeout,[ids]} 
+2017-05-19 14:40:08.232 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:40:08.261 [info] <0.148.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:40:08.292 [info] <0.149.0>@group_sup:init:70 [] 
+2017-05-19 14:40:08.292 [info] <0.149.0>@group_sup:init:77 [] 
+2017-05-19 14:40:08.292 [info] <0.149.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:40:08.301 [info] <0.151.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:40:08.311 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:40:29.167 [info] <0.31.0> Application mnesia exited with reason: stopped
+2017-05-19 14:40:45.981 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:40:45.981 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:40:46.651 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:40:46.654 [info] <0.99.0>@mod_control_sup:init:35 ok 
+2017-05-19 14:40:46.654 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:40:46.654 [info] <0.148.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:40:46.704 [info] <0.149.0>@group_sup:init:70 [] 
+2017-05-19 14:40:46.704 [info] <0.149.0>@group_sup:init:77 [] 
+2017-05-19 14:40:46.704 [info] <0.149.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:40:46.714 [info] <0.151.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:40:46.723 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:42:09.470 [info] <0.153.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3743>
+2017-05-19 14:42:09.499 [info] <0.153.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:42:09.499 [info] <0.155.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3743>
+2017-05-19 14:42:11.737 [info] <0.155.0>@tcp_agent:handle_info:212 *******************************************
+2017-05-19 14:42:11.782 [info] <0.155.0>@tcp_agent:handle_info:216 <<"1">>
+2017-05-19 14:42:11.782 [info] <0.155.0>@tcp_agent:handle_info:217 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 14:42:11.782 [info] <0.155.0>@tcp_agent:handle_info:220 ####
+2017-05-19 14:42:11.782 [info] <0.155.0>@tcp_agent:wait_auth:97 
+2017-05-19 14:42:11.783 [info] <0.155.0>@tcp_agent:wait_auth:99 
+2017-05-19 14:42:11.799 [info] <0.155.0>@tcp_agent:handle_info:249 error {badmatch,{error,{invalid_child_spec,[{1,{client,start_link,[1]},permanent,2000,worker,[client]}]}}}
+2017-05-19 14:42:11.799 [info] <0.155.0>@tcp_agent:terminate:284 tcp_agent process is termianted
+2017-05-19 14:42:11.799 [error] <0.155.0> gen_fsm <0.155.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 14:42:11.898 [error] <0.155.0> CRASH REPORT Process <0.155.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 14:42:11.898 [error] <0.152.0> Supervisor tcp_agent_sup had child #Port<0.3743> started with {tcp_agent,start_link,undefined} at <0.155.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 14:52:47.003 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:52:47.003 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:52:47.636 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:52:47.639 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 14:52:47.639 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:52:47.662 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:52:47.715 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 14:52:47.715 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 14:52:47.715 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:52:47.736 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:52:47.757 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:52:56.568 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 14:52:56.572 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:52:56.572 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 14:52:58.717 [info] <0.152.0>@tcp_agent:handle_info:213 *******************************************
+2017-05-19 14:52:58.736 [info] <0.152.0>@tcp_agent:handle_info:217 <<"1">>
+2017-05-19 14:52:58.736 [info] <0.152.0>@tcp_agent:handle_info:218 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 14:52:58.736 [info] <0.152.0>@tcp_agent:handle_info:221 ####
+2017-05-19 14:52:58.736 [info] <0.152.0>@tcp_agent:wait_auth:97 
+2017-05-19 14:52:58.736 [info] <0.152.0>@tcp_agent:wait_auth:99 ~p
+2017-05-19 14:52:58.753 [info] <0.152.0>@tcp_agent:handle_info:250 error {badmatch,{error,{invalid_child_spec,[{1,{client,start_link,[1]},permanent,2000,worker,[client]}]}}}
+2017-05-19 14:52:58.753 [info] <0.152.0>@tcp_agent:terminate:285 tcp_agent process is termianted
+2017-05-19 14:52:58.753 [error] <0.152.0> gen_fsm <0.152.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 14:52:58.863 [error] <0.152.0> CRASH REPORT Process <0.152.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 14:52:58.864 [error] <0.149.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.152.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 14:54:04.500 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:54:04.500 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:54:05.012 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:54:05.015 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 14:54:05.015 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:54:05.031 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:54:05.073 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 14:54:05.073 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 14:54:05.073 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:54:05.083 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:54:05.092 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:54:12.326 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 14:54:12.330 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:54:12.330 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 14:54:13.702 [info] <0.152.0>@tcp_agent:handle_info:213 *******************************************
+2017-05-19 14:54:13.747 [info] <0.152.0>@tcp_agent:handle_info:217 <<"1">>
+2017-05-19 14:54:13.747 [info] <0.152.0>@tcp_agent:handle_info:218 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 14:54:13.747 [info] <0.152.0>@tcp_agent:handle_info:221 ####
+2017-05-19 14:54:13.747 [info] <0.152.0>@tcp_agent:wait_auth:97 
+2017-05-19 14:54:13.748 [info] <0.152.0>@tcp_agent:wait_auth:99 1
+2017-05-19 14:54:13.766 [info] <0.152.0>@tcp_agent:handle_info:250 error {badmatch,{error,{invalid_child_spec,[{1,{client,start_link,[1]},permanent,2000,worker,[client]}]}}}
+2017-05-19 14:54:13.766 [info] <0.152.0>@tcp_agent:terminate:285 tcp_agent process is termianted
+2017-05-19 14:54:13.766 [error] <0.152.0> gen_fsm <0.152.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 14:54:13.966 [error] <0.152.0> CRASH REPORT Process <0.152.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 14:54:13.966 [error] <0.149.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.152.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 14:56:16.177 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:56:16.177 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:56:16.775 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:56:16.779 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 14:56:16.779 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:56:16.790 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:56:16.823 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 14:56:16.823 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 14:56:16.823 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:56:16.831 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:56:16.841 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:56:24.386 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 14:56:24.414 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:56:24.414 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 14:56:25.494 [info] <0.152.0>@tcp_agent:handle_info:213 *******************************************
+2017-05-19 14:56:25.520 [info] <0.152.0>@tcp_agent:handle_info:217 <<"1">>
+2017-05-19 14:56:25.520 [info] <0.152.0>@tcp_agent:handle_info:218 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 14:56:25.520 [info] <0.152.0>@tcp_agent:handle_info:221 ####
+2017-05-19 14:56:25.520 [info] <0.152.0>@tcp_agent:wait_auth:97 
+2017-05-19 14:56:25.520 [info] <0.152.0>@tcp_agent:wait_auth:99 1
+2017-05-19 14:56:25.521 [info] <0.152.0>@mod_mnesia:add_new_client:30 #############
+2017-05-19 14:56:25.522 [info] <0.152.0>@tcp_agent:handle_info:250 error {badmatch,{error,{invalid_child_spec,[{1,{client,start_link,[1]},permanent,2000,worker,[client]}]}}}
+2017-05-19 14:56:25.522 [info] <0.152.0>@tcp_agent:terminate:285 tcp_agent process is termianted
+2017-05-19 14:56:25.522 [error] <0.152.0> gen_fsm <0.152.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 14:56:25.637 [error] <0.152.0> CRASH REPORT Process <0.152.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 14:56:25.637 [error] <0.149.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.152.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 14:58:56.604 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:58:56.604 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:58:57.083 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:58:57.087 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 14:58:57.087 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:58:57.118 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:58:57.194 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 14:58:57.194 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 14:58:57.194 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:58:57.225 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:58:57.257 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:59:03.002 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 14:59:03.030 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 14:59:03.030 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 14:59:04.014 [info] <0.152.0>@tcp_agent:handle_info:213 *******************************************
+2017-05-19 14:59:04.045 [info] <0.152.0>@tcp_agent:handle_info:217 <<"1">>
+2017-05-19 14:59:04.045 [info] <0.152.0>@tcp_agent:handle_info:218 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 14:59:04.045 [info] <0.152.0>@tcp_agent:handle_info:221 ####
+2017-05-19 14:59:04.045 [info] <0.152.0>@tcp_agent:wait_auth:97 
+2017-05-19 14:59:04.046 [info] <0.152.0>@tcp_agent:wait_auth:99 1
+2017-05-19 14:59:04.052 [info] <0.152.0>@mod_mnesia:add_new_client:30 #############
+2017-05-19 14:59:04.053 [info] <0.152.0>@tcp_agent:handle_info:250 exit {noproc,{gen_server,call,[tcp_client_sup,{start_child,[{1,{client,start_link,[1]},permanent,2000,worker,[client]}]},infinity]}}
+2017-05-19 14:59:04.053 [info] <0.152.0>@tcp_agent:terminate:285 tcp_agent process is termianted
+2017-05-19 14:59:04.053 [error] <0.152.0> gen_fsm <0.152.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 14:59:04.175 [error] <0.152.0> CRASH REPORT Process <0.152.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 14:59:04.175 [error] <0.149.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.152.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 14:59:36.222 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:59:36.222 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 14:59:36.688 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 14:59:36.692 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 14:59:36.692 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 14:59:36.693 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 14:59:36.728 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 14:59:36.728 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 14:59:36.728 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 14:59:36.738 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 14:59:36.747 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:00:17.695 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:00:17.695 [info] <0.118.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 15:00:18.301 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:00:18.304 [info] <0.119.0>@mod_control_sup:init:25 ok 
+2017-05-19 15:00:18.304 [info] <0.119.0>@control_sup:init:63 
+2017-05-19 15:00:18.320 [info] <0.165.0>@id_generator:init:30 ########### id_generator
+2017-05-19 15:00:18.363 [info] <0.166.0>@group_sup:init:70 [] 
+2017-05-19 15:00:18.363 [info] <0.166.0>@group_sup:init:77 [] 
+2017-05-19 15:00:18.363 [info] <0.166.0>@group_sup:init:79 ######## group_sup
+2017-05-19 15:00:18.372 [info] <0.168.0>@client_sup:init:65 ######## client_sup
+2017-05-19 15:00:18.382 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:00:25.592 [info] <0.170.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.4430>
+2017-05-19 15:00:25.622 [info] <0.170.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 15:00:25.622 [info] <0.172.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.4430>
+2017-05-19 15:00:26.807 [info] <0.172.0>@tcp_agent:handle_info:213 *******************************************
+2017-05-19 15:00:26.862 [info] <0.172.0>@tcp_agent:handle_info:217 <<"1">>
+2017-05-19 15:00:26.862 [info] <0.172.0>@tcp_agent:handle_info:218 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 15:00:26.862 [info] <0.172.0>@tcp_agent:handle_info:221 ####
+2017-05-19 15:00:26.862 [info] <0.172.0>@tcp_agent:wait_auth:97 
+2017-05-19 15:00:26.862 [info] <0.172.0>@tcp_agent:wait_auth:99 1
+2017-05-19 15:00:26.877 [info] <0.172.0>@mod_mnesia:add_new_client:30 #############
+2017-05-19 15:00:26.878 [info] <0.172.0>@tcp_agent:handle_info:250 error {badmatch,{error,{invalid_child_spec,[{1,{client,start_link,[1]},permanent,2000,worker,[client]}]}}}
+2017-05-19 15:00:26.878 [info] <0.172.0>@tcp_agent:terminate:285 tcp_agent process is termianted
+2017-05-19 15:00:26.878 [error] <0.172.0> gen_fsm <0.172.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 15:00:26.891 [error] <0.172.0> CRASH REPORT Process <0.172.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 15:00:26.891 [error] <0.169.0> Supervisor tcp_agent_sup had child #Port<0.4430> started with {tcp_agent,start_link,undefined} at <0.172.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 15:08:53.700 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:08:53.700 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 15:08:54.338 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:08:54.341 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 15:08:54.341 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 15:08:54.358 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 15:08:54.401 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 15:08:54.401 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 15:08:54.401 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 15:08:54.411 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 15:08:54.420 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:09:03.531 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 15:09:03.535 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 15:09:03.535 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 15:09:05.035 [info] <0.152.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 15:09:05.054 [info] <0.152.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 15:09:05.054 [info] <0.152.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 15:09:05.054 [info] <0.152.0>@tcp_agent:handle_info:222 ####
+2017-05-19 15:09:05.054 [info] <0.152.0>@tcp_agent:wait_auth:97 
+2017-05-19 15:09:05.054 [info] <0.152.0>@tcp_agent:wait_auth:99 1
+2017-05-19 15:09:05.070 [info] <0.152.0>@mod_mnesia:add_new_client:30 #############
+2017-05-19 15:09:05.071 [info] <0.152.0>@tcp_agent:handle_info:251 error {badmatch,{error,{invalid_child_spec,[{1,{client,start_link,[1]},permanent,2000,worker,[client]}]}}}
+2017-05-19 15:09:05.071 [info] <0.152.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 15:09:05.071 [error] <0.152.0> gen_fsm <0.152.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 15:09:05.205 [error] <0.152.0> CRASH REPORT Process <0.152.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 15:09:05.205 [error] <0.149.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.152.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 15:11:02.482 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:11:02.482 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 15:11:02.945 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:11:02.948 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 15:11:02.949 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 15:11:02.962 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 15:11:03.005 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 15:11:03.005 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 15:11:03.005 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 15:11:03.015 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 15:11:03.035 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:11:09.958 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 15:11:09.986 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 15:11:09.986 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 15:11:10.987 [info] <0.152.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 15:11:11.003 [info] <0.152.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 15:11:11.003 [info] <0.152.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 15:11:11.003 [info] <0.152.0>@tcp_agent:handle_info:222 ####
+2017-05-19 15:11:11.003 [info] <0.152.0>@tcp_agent:wait_auth:97 
+2017-05-19 15:11:11.004 [info] <0.152.0>@tcp_agent:wait_auth:99 1
+2017-05-19 15:11:11.019 [info] <0.152.0>@mod_mnesia:add_new_client:30 #############
+2017-05-19 15:11:11.037 [info] <0.152.0>@tcp_agent:handle_info:251 error {badmatch,{error,{invalid_child_spec,[{1,{client,start_link,[1]},permanent,2000,worker,[client]}]}}}
+2017-05-19 15:11:11.037 [info] <0.152.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 15:11:11.037 [error] <0.152.0> gen_fsm <0.152.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 15:11:11.119 [error] <0.152.0> CRASH REPORT Process <0.152.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 15:11:11.119 [error] <0.149.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.152.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 15:15:46.202 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:15:46.202 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 15:15:46.849 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:15:46.853 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 15:15:46.853 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 15:15:46.882 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 15:15:46.925 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 15:15:46.925 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 15:15:46.925 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 15:15:46.934 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 15:15:46.944 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:15:52.911 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 15:15:52.939 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 15:15:52.940 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 15:15:54.333 [info] <0.152.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 15:15:54.377 [info] <0.152.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 15:15:54.377 [info] <0.152.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 15:15:54.377 [info] <0.152.0>@tcp_agent:handle_info:222 ####
+2017-05-19 15:15:54.377 [info] <0.152.0>@tcp_agent:wait_auth:97 
+2017-05-19 15:15:54.378 [info] <0.152.0>@tcp_agent:wait_auth:99 1
+2017-05-19 15:15:54.394 [info] <0.152.0>@mod_mnesia:add_new_client:30 #############
+2017-05-19 15:15:54.395 [info] <0.152.0>@tcp_agent:handle_info:251 error {badmatch,{error,{invalid_child_spec,[{1,{client,start_link,[]},permanent,2000,worker,[client]}]}}}
+2017-05-19 15:15:54.395 [info] <0.152.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 15:15:54.395 [error] <0.152.0> gen_fsm <0.152.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 15:15:54.506 [error] <0.152.0> CRASH REPORT Process <0.152.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 15:15:54.506 [error] <0.149.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.152.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 15:19:17.531 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:19:17.531 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 15:19:18.109 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:19:18.113 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 15:19:18.113 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 15:19:18.133 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 15:19:18.176 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 15:19:18.176 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 15:19:18.176 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 15:19:18.185 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 15:19:18.195 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:19:24.462 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 15:19:24.490 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 15:19:24.490 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 15:19:52.233 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:19:52.233 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 15:19:52.650 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:19:52.653 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 15:19:52.653 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 15:19:52.654 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 15:19:52.659 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 15:19:52.659 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 15:19:52.659 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 15:19:52.660 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 15:19:52.661 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:20:21.080 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.4478>
+2017-05-19 15:20:21.126 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 15:20:21.126 [info] <0.184.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.4478>
+2017-05-19 15:20:24.202 [info] <0.184.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 15:20:24.253 [info] <0.184.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 15:20:24.253 [info] <0.184.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 15:20:24.253 [info] <0.184.0>@tcp_agent:handle_info:222 ####
+2017-05-19 15:20:24.253 [info] <0.184.0>@tcp_agent:wait_auth:97 
+2017-05-19 15:20:24.253 [info] <0.184.0>@tcp_agent:wait_auth:99 1
+2017-05-19 15:20:24.269 [info] <0.184.0>@mod_mnesia:add_new_client:30 #############
+2017-05-19 15:20:24.291 [info] <0.148.0>@client:start_link:45 ```````````````````````````````````````
+2017-05-19 15:20:24.291 [info] <0.187.0>@client:init:67 ```````````````````````````````````````
+2017-05-19 15:20:24.291 [info] <0.184.0>@tcp_agent:wait_auth:115 $$$$$$$$$$$$$$ end
+2017-05-19 15:24:37.818 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:24:37.818 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 15:24:38.357 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:24:38.360 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 15:24:38.360 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 15:24:38.376 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 15:24:38.419 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 15:24:38.419 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 15:24:38.419 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 15:24:38.429 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 15:24:38.438 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:24:43.270 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 15:24:43.300 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 15:24:43.300 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 15:24:44.846 [info] <0.152.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 15:24:44.870 [info] <0.152.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 15:24:44.870 [info] <0.152.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 15:24:44.870 [info] <0.152.0>@tcp_agent:handle_info:222 ####
+2017-05-19 15:24:44.870 [info] <0.152.0>@tcp_agent:wait_auth:97 
+2017-05-19 15:24:44.871 [info] <0.152.0>@tcp_agent:wait_auth:99 1
+2017-05-19 15:24:44.888 [info] <0.152.0>@mod_mnesia:add_new_client:30 #############
+2017-05-19 15:24:44.890 [info] <0.152.0>@tcp_agent:handle_info:251 error {badmatch,{error,{{'EXIT',{function_clause,[{client,start_link,[1],[{file,"src/logic/client.erl"},{line,42}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,handle_start_child,2,[{file,"supervisor.erl"},{line,724}]},{supervisor,handle_call,3,[{file,"supervisor.erl"},{line,422}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,647}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}},{child,undefined,1,{client,start_link,[1]},permanent,brutal_kill,worker,[client]}}}}
+2017-05-19 15:24:44.890 [info] <0.152.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 15:24:44.890 [error] <0.152.0> gen_fsm <0.152.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-19 15:24:44.965 [error] <0.152.0> CRASH REPORT Process <0.152.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-19 15:24:44.966 [error] <0.149.0> Supervisor tcp_agent_sup had child #Port<0.3742> started with {tcp_agent,start_link,undefined} at <0.152.0> exit with reason bad return value: ok in context child_terminated
+2017-05-19 15:25:44.509 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:25:44.509 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 15:25:45.392 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:25:45.408 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 15:25:45.408 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 15:25:45.423 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 15:25:45.477 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 15:25:45.477 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 15:25:45.477 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 15:25:45.486 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 15:25:45.496 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:25:50.718 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 15:25:50.747 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 15:25:50.747 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 15:25:51.855 [info] <0.152.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 15:25:51.907 [info] <0.152.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 15:25:51.907 [info] <0.152.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 15:25:51.907 [info] <0.152.0>@tcp_agent:handle_info:222 ####
+2017-05-19 15:25:51.907 [info] <0.152.0>@tcp_agent:wait_auth:97 
+2017-05-19 15:25:51.908 [info] <0.152.0>@tcp_agent:wait_auth:99 1
+2017-05-19 15:25:51.924 [info] <0.152.0>@mod_mnesia:add_new_client:30 #############
+2017-05-19 15:25:51.926 [info] <0.148.0>@client:start_link:45 ```````````````````````````````````````
+2017-05-19 15:25:51.926 [info] <0.154.0>@client:init:67 ```````````````````````````````````````
+2017-05-19 15:25:51.927 [info] <0.152.0>@tcp_agent:wait_auth:115 $$$$$$$$$$$$$$ end
+2017-05-19 15:35:40.827 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:35:40.827 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 15:35:41.476 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 15:35:41.493 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 15:35:41.493 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 15:35:41.508 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 15:35:41.551 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 15:35:41.551 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 15:35:41.551 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 15:35:41.560 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 15:35:41.570 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 16:07:34.663 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 16:07:34.736 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 16:07:34.736 [info] <0.162.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 16:07:41.187 [info] <0.162.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 16:07:41.187 [info] <0.162.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 16:08:49.073 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3753>
+2017-05-19 16:08:49.073 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 16:08:49.073 [info] <0.164.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3753>
+2017-05-19 16:08:52.302 [info] <0.164.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 16:08:52.302 [info] <0.164.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 16:10:19.593 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3754>
+2017-05-19 16:10:19.593 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 16:10:19.593 [info] <0.165.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3754>
+2017-05-19 16:10:22.825 [info] <0.165.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 16:10:22.825 [info] <0.165.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 16:17:50.938 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3755>
+2017-05-19 16:17:50.938 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 16:17:50.938 [info] <0.169.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3755>
+2017-05-19 16:18:03.911 [info] <0.169.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 16:18:03.911 [info] <0.169.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 16:18:09.045 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3756>
+2017-05-19 16:18:09.045 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 16:18:09.045 [info] <0.170.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3756>
+2017-05-19 16:18:24.377 [info] <0.170.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 16:18:24.377 [info] <0.170.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 16:36:44.430 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3757>
+2017-05-19 16:36:44.431 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 16:36:44.431 [info] <0.177.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3757>
+2017-05-19 16:37:02.158 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 16:37:02.158 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 16:37:02.646 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 16:37:02.663 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 16:37:02.663 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 16:37:02.677 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 16:37:02.720 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 16:37:02.720 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 16:37:02.720 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 16:37:02.730 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 16:37:02.739 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 16:38:12.159 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 16:38:12.226 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 16:38:12.226 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 16:38:24.752 [info] <0.152.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 16:38:24.752 [info] <0.152.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 16:39:14.624 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3753>
+2017-05-19 16:39:14.624 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 16:39:14.624 [info] <0.153.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3753>
+2017-05-19 16:43:27.372 [info] <0.153.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 16:43:27.372 [info] <0.153.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 16:44:06.588 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3754>
+2017-05-19 16:44:06.588 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 16:44:06.588 [info] <0.156.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3754>
+2017-05-19 16:46:57.340 [info] <0.156.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 16:46:57.340 [info] <0.156.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 16:55:16.153 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 16:55:16.153 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 16:55:17.117 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 16:55:17.120 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 16:55:17.120 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 16:55:17.134 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 16:55:17.166 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 16:55:17.166 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 16:55:17.166 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 16:55:17.175 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 16:55:17.184 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 16:55:35.585 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 16:55:35.602 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 16:55:35.602 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 16:55:49.314 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3753>
+2017-05-19 16:55:49.314 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 16:55:49.314 [info] <0.153.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3753>
+2017-05-19 16:56:23.519 [info] <0.153.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 16:56:23.567 [info] <0.153.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 16:56:23.567 [info] <0.153.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"ist">>,<<"username">> => <<"yw">>}
+2017-05-19 16:56:23.567 [info] <0.153.0>@tcp_agent:handle_info:222 ####
+2017-05-19 16:56:23.567 [info] <0.153.0>@tcp_agent:wait_auth:97 
+2017-05-19 16:56:23.567 [info] <0.153.0>@tcp_agent:wait_auth:99 1
+2017-05-19 16:56:23.581 [info] <0.153.0>@mod_mnesia:add_new_client:30 #############
+2017-05-19 16:56:23.605 [info] <0.148.0>@client:start_link:45 ```````````````````````````````````````
+2017-05-19 16:56:23.605 [info] <0.183.0>@client:init:67 ```````````````````````````````````````
+2017-05-19 16:56:23.605 [info] <0.153.0>@tcp_agent:wait_auth:115 $$$$$$$$$$$$$$ end
+2017-05-19 16:56:29.549 [info] <0.152.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 16:56:29.549 [info] <0.152.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 16:56:29.549 [info] <0.152.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 16:56:29.549 [info] <0.152.0>@tcp_agent:handle_info:222 ####
+2017-05-19 16:56:29.549 [info] <0.152.0>@tcp_agent:wait_auth:97 
+2017-05-19 16:56:29.550 [info] <0.152.0>@tcp_agent:wait_auth:99 2
+2017-05-19 16:56:29.550 [info] <0.152.0>@mod_mnesia:add_new_client:30 #############
+2017-05-19 16:56:29.550 [info] <0.148.0>@client:start_link:45 ```````````````````````````````````````
+2017-05-19 16:56:29.550 [info] <0.185.0>@client:init:67 ```````````````````````````````````````
+2017-05-19 16:56:29.550 [info] <0.152.0>@tcp_agent:wait_auth:115 $$$$$$$$$$$$$$ end
+2017-05-19 16:57:27.612 [info] <0.152.0>@tcp_agent:handle_info:259 tcp closed, state: wait_data
+2017-05-19 16:57:27.612 [info] <0.152.0>@tcp_agent:terminate:286 tcp_agent process is termianted
+2017-05-19 17:15:19.913 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:15:19.913 [info] <0.150.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 17:15:19.936 [info] <0.151.0>@mod_control_sup:init:25 ok 
+2017-05-19 17:15:19.936 [info] <0.151.0>@control_sup:init:63 
+2017-05-19 17:15:19.937 [info] <0.153.0>@id_generator:init:30 ########### id_generator
+2017-05-19 17:15:19.956 [info] <0.154.0>@group_sup:init:70 [] 
+2017-05-19 17:15:19.956 [info] <0.154.0>@group_sup:init:77 [] 
+2017-05-19 17:15:19.956 [info] <0.154.0>@group_sup:init:79 ######## group_sup
+2017-05-19 17:15:19.990 [info] <0.156.0>@client_sup:init:65 ######## client_sup
+2017-05-19 17:15:19.999 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:16:01.923 [info] <0.158.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3752>
+2017-05-19 17:16:01.951 [info] <0.158.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:16:01.951 [info] <0.161.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3752>
+2017-05-19 17:17:19.159 [info] <0.158.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.4499>
+2017-05-19 17:17:19.159 [info] <0.158.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:17:19.159 [info] <0.197.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.4499>
+2017-05-19 17:17:32.097 [info] <0.197.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 17:17:32.139 [info] <0.197.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 17:17:32.139 [info] <0.197.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"ist">>,<<"username">> => <<"yw">>}
+2017-05-19 17:17:32.139 [info] <0.197.0>@tcp_agent:handle_info:222 ####
+2017-05-19 17:17:32.139 [info] <0.197.0>@tcp_agent:wait_auth:97 
+2017-05-19 17:17:32.139 [info] <0.197.0>@tcp_agent:wait_auth:99 1
+2017-05-19 17:17:32.139 [info] <0.197.0>@mod_mnesia:add_new_client:45 #############
+2017-05-19 17:17:32.167 [info] <0.156.0>@client:start_link:45 ```````````````````````````````````````
+2017-05-19 17:17:32.167 [info] <0.204.0>@client:init:67 ```````````````````````````````````````
+2017-05-19 17:17:32.167 [info] <0.197.0>@tcp_agent:wait_auth:115 $$$$$$$$$$$$$$ end
+2017-05-19 17:17:40.973 [info] <0.161.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 17:17:40.973 [info] <0.161.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 17:17:40.974 [info] <0.161.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 17:17:40.974 [info] <0.161.0>@tcp_agent:handle_info:222 ####
+2017-05-19 17:17:40.974 [info] <0.161.0>@tcp_agent:wait_auth:97 
+2017-05-19 17:17:40.974 [info] <0.161.0>@tcp_agent:wait_auth:99 2
+2017-05-19 17:17:40.974 [info] <0.161.0>@mod_mnesia:add_new_client:45 #############
+2017-05-19 17:17:40.974 [info] <0.156.0>@client:start_link:45 ```````````````````````````````````````
+2017-05-19 17:17:40.974 [info] <0.208.0>@client:init:67 ```````````````````````````````````````
+2017-05-19 17:17:40.974 [info] <0.161.0>@tcp_agent:wait_auth:115 $$$$$$$$$$$$$$ end
+2017-05-19 17:18:03.014 [info] <0.161.0>@tcp_agent:handle_info:259 tcp closed, state: wait_data
+2017-05-19 17:18:03.014 [info] <0.161.0>@tcp_agent:terminate:287 tcp_agent process is termianted
+2017-05-19 17:25:53.643 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:25:53.643 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 17:25:54.288 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:25:54.291 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 17:25:54.291 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 17:25:54.301 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 17:25:54.344 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 17:25:54.344 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 17:25:54.344 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 17:25:54.354 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 17:25:54.363 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:37:05.353 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:37:05.353 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 17:37:05.886 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:37:05.889 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 17:37:05.889 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 17:37:05.911 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 17:37:05.954 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 17:37:05.954 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 17:37:05.954 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 17:37:05.963 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 17:37:05.973 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:52:12.379 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3750>
+2017-05-19 17:52:12.429 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:52:12.429 [info] <0.159.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3750>
+2017-05-19 17:52:32.356 [info] <0.159.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 17:52:32.356 [info] <0.159.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 17:52:32.356 [info] <0.159.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 17:53:40.906 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:53:40.906 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 17:53:41.579 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:53:41.583 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 17:53:41.583 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 17:53:41.598 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 17:53:41.629 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 17:53:41.629 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 17:53:41.629 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 17:53:41.638 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 17:53:41.659 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 17:57:02.524 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3744>
+2017-05-19 17:57:02.527 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:57:02.527 [info] <0.157.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3744>
+2017-05-19 17:57:32.262 [info] <0.157.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 17:57:32.262 [info] <0.157.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 17:57:32.262 [info] <0.157.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 17:57:40.579 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3755>
+2017-05-19 17:57:40.579 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:57:40.579 [info] <0.158.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3755>
+2017-05-19 17:58:02.110 [info] <0.158.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 17:58:02.110 [info] <0.158.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 17:58:02.110 [info] <0.158.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 17:58:25.219 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3756>
+2017-05-19 17:58:25.219 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:58:25.219 [info] <0.159.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3756>
+2017-05-19 17:58:54.280 [info] <0.159.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 17:58:54.280 [info] <0.159.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 17:58:54.280 [info] <0.159.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 17:59:11.717 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3757>
+2017-05-19 17:59:11.717 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 17:59:11.717 [info] <0.160.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3757>
+2017-05-19 17:59:13.576 [info] <0.160.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 17:59:13.613 [info] <0.160.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 17:59:13.613 [info] <0.160.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 17:59:13.613 [info] <0.160.0>@tcp_agent:handle_info:222 ####
+2017-05-19 17:59:13.613 [info] <0.160.0>@tcp_agent:wait_auth:97 
+2017-05-19 17:59:13.614 [info] <0.160.0>@tcp_agent:wait_auth:99 1
+2017-05-19 17:59:13.614 [info] <0.160.0>@mod_mnesia:add_new_client:45 #############
+2017-05-19 17:59:13.644 [info] <0.148.0>@client:start_link:45 ```````````````````````````````````````
+2017-05-19 17:59:13.644 [info] <0.162.0>@client:init:67 ```````````````````````````````````````
+2017-05-19 17:59:13.644 [info] <0.160.0>@tcp_agent:wait_auth:115 $$$$$$$$$$$$$$ end
+2017-05-19 17:59:29.022 [info] <0.160.0>@tcp_agent:handle_info:259 tcp closed, state: wait_data
+2017-05-19 17:59:29.022 [info] <0.160.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 17:59:29.022 [info] <0.160.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 18:08:21.139 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:08:21.139 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 18:08:21.778 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:08:21.781 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 18:08:21.781 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 18:08:21.791 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 18:08:21.823 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 18:08:21.823 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 18:08:21.823 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 18:08:21.832 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 18:08:21.842 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:08:30.978 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 18:08:31.015 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:08:31.015 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 18:09:03.813 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3753>
+2017-05-19 18:09:03.814 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:09:03.814 [info] <0.153.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3753>
+2017-05-19 18:09:38.943 [info] <0.152.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 18:09:38.943 [info] <0.152.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 18:09:38.943 [info] <0.152.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 18:09:39.403 [info] <0.153.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 18:09:39.403 [info] <0.153.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 18:09:39.403 [info] <0.153.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 18:12:22.527 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3754>
+2017-05-19 18:12:22.527 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:12:22.528 [info] <0.155.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3754>
+2017-05-19 18:14:02.858 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:14:02.858 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 18:14:03.235 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:14:03.238 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 18:14:03.238 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 18:14:03.239 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 18:14:03.244 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 18:14:03.244 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 18:14:03.244 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 18:14:03.245 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 18:14:03.246 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:16:01.414 [info] <0.31.0> Application lager started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:16:01.414 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-19 18:16:01.857 [info] <0.31.0> Application mnesia started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:16:01.860 [info] <0.99.0>@mod_control_sup:init:25 ok 
+2017-05-19 18:16:01.860 [info] <0.99.0>@control_sup:init:63 
+2017-05-19 18:16:01.872 [info] <0.145.0>@id_generator:init:30 ########### id_generator
+2017-05-19 18:16:01.915 [info] <0.146.0>@group_sup:init:70 [] 
+2017-05-19 18:16:01.915 [info] <0.146.0>@group_sup:init:77 [] 
+2017-05-19 18:16:01.915 [info] <0.146.0>@group_sup:init:79 ######## group_sup
+2017-05-19 18:16:01.925 [info] <0.148.0>@client_sup:init:65 ######## client_sup
+2017-05-19 18:16:01.934 [info] <0.31.0> Application chat started on node 'yangwei@brucedeiMac.local'
+2017-05-19 18:16:13.497 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3742>
+2017-05-19 18:16:13.530 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:16:13.530 [info] <0.152.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3742>
+2017-05-19 18:16:31.593 [info] <0.152.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 18:16:31.593 [info] <0.152.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 18:16:31.593 [info] <0.152.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 18:18:20.411 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3753>
+2017-05-19 18:18:20.411 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:18:20.411 [info] <0.153.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3753>
+2017-05-19 18:18:40.626 [info] <0.153.0>@tcp_agent:handle_info:259 tcp closed, state: wait_auth
+2017-05-19 18:18:40.626 [info] <0.153.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 18:18:40.626 [info] <0.153.0>@tcp_agent:terminate:288 tcp_agent process is termianted
+2017-05-19 18:19:56.023 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:181 #Port<0.3754>
+2017-05-19 18:19:56.024 [info] <0.150.0>@tcp_acceptor:process_Client_Socket:189 
+2017-05-19 18:19:56.024 [info] <0.155.0>@tcp_agent:wait_socket:93 wait_socket: #Port<0.3754>
+2017-05-19 18:20:00.811 [info] <0.155.0>@tcp_agent:handle_info:214 *******************************************
+2017-05-19 18:20:00.853 [info] <0.155.0>@tcp_agent:handle_info:218 <<"1">>
+2017-05-19 18:20:00.853 [info] <0.155.0>@tcp_agent:handle_info:219 #{<<"cmd">> => <<"1">>,<<"password">> => <<"iyw">>,<<"username">> => <<"zst">>}
+2017-05-19 18:20:00.854 [info] <0.155.0>@tcp_agent:handle_info:222 ####
+2017-05-19 18:20:00.854 [info] <0.155.0>@tcp_agent:wait_auth:97 
+2017-05-19 18:20:00.854 [info] <0.155.0>@tcp_agent:wait_auth:99 1
+2017-05-19 18:20:00.869 [info] <0.155.0>@mod_mnesia:add_new_client:45 #############
+2017-05-19 18:20:00.894 [info] <0.148.0>@client:start_link:45 ```````````````````````````````````````
+2017-05-19 18:20:00.894 [info] <0.157.0>@client:init:67 ```````````````````````````````````````
+2017-05-19 18:20:00.894 [info] <0.155.0>@tcp_agent:wait_auth:115 $$$$$$$$$$$$$$ end
+2017-05-19 18:20:32.941 [info] <0.155.0>@tcp_agent:handle_info:259 tcp closed, state: wait_data
+2017-05-19 18:20:32.941 [info] <0.155.0>@tcp_agent:terminate:287 {error,not_found}
+2017-05-19 18:20:32.941 [info] <0.155.0>@tcp_agent:terminate:288 tcp_agent process is termianted

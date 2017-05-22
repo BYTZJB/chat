@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af83b16d-30df-4f53-a134-fd816064157d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ebin/client.beam" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/client_01.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/client_02.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.rebar/erlcinfo" afterPath="$PROJECT_DIR$/.rebar/erlcinfo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/console.log" afterPath="$PROJECT_DIR$/log/console.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/crash.log" afterPath="$PROJECT_DIR$/log/crash.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/error.log" afterPath="$PROJECT_DIR$/log/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logic/client.erl" afterPath="$PROJECT_DIR$/src/logic/client.erl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mod/mod_mnesia.erl" afterPath="$PROJECT_DIR$/src/mod/mod_mnesia.erl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/network/tcp_agent.erl" afterPath="$PROJECT_DIR$/src/network/tcp_agent.erl" />
     </list>
     <ignored path="$PROJECT_DIR$/.rebar3/" />
     <ignored path="$PROJECT_DIR$/_build/" />
