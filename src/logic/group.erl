@@ -14,7 +14,6 @@
 
 %% API
 -export([
-	start_link/0,
 	start_link/1
 ]).
 
@@ -28,7 +27,7 @@
 
 -define(SERVER, ?MODULE).
 
--record(state, {id}).
+-record(state, {group_id}).
 
 %%%===================================================================
 %%% API
@@ -40,13 +39,9 @@
 %%
 %% @end
 %%--------------------------------------------------------------------
--spec(start_link() ->
-	{ok, Pid :: pid()} | ignore | {error, Reason :: term()}).
-start_link() ->
-	gen_server:start_link({local, ?SERVER}, ?MODULE, [], []).
 
-start_link(Id) ->
-	gen_server:start_link(?MODULE, [Id], []).
+start_link(Group_Id) ->
+	gen_server:start_link(?MODULE, [Group_Id], []).
 %%%===================================================================
 %%% gen_server callbacks
 %%%===================================================================
@@ -65,9 +60,10 @@ start_link(Id) ->
 -spec(init(Args :: term()) ->
 	{ok, State :: #state{}} | {ok, State :: #state{}, timeout() | hibernate} |
 	{stop, Reason :: term()} | ignore).
-init([Id]) ->
-	gen_server:cast(self(), online),
-	{ok, #state{id = Id}}.
+init([Group_Id]) ->
+	ets:insert(group_pid, {Group_Id, self()}),
+	lager:info("group pid:~p", [self()]),
+	{ok, #state{group_id = Group_Id}}.
 
 %%--------------------------------------------------------------------
 %% @private
@@ -99,9 +95,9 @@ handle_call(_Request, _From, State) ->
 	{noreply, NewState :: #state{}, timeout() | hibernate} |
 	{stop, Reason :: term(), NewState :: #state{}}).
 handle_cast(online, State) ->
-	Id = State#state.id,
-	ets:insert(group_pid, #group_pid{id = Id, pid = self()}),
-	lager:info("~p", [self()]),
+	Group_Id = State#state.group_id,
+	lager:info("group online"),
+	lager:info("~p", [ets:member(group_pid, Group_Id)]),
 	{noreply, State}.
 
 %%--------------------------------------------------------------------
@@ -118,15 +114,19 @@ handle_cast(online, State) ->
 	{noreply, NewState :: #state{}} |
 	{noreply, NewState :: #state{}, timeout() | hibernate} |
 	{stop, Reason :: term(), NewState :: #state{}}).
-handle_info(#group_receive_chat{id = Client_Id, data = Data} = _Group_receive_chat, #state{id = Group_Id} = State) ->
+handle_info(#group_receive_chat{id = Client_Id, data = Data} = _Group_receive_chat, #state{group_id =  Group_Id} = State) ->
 	Client_receive_group_chat = #client_receive_group_chat{group_id = Group_Id, client_id = Client_Id, data = Data},
 	List = mod_mnesia:get_members(Group_Id),
+	lager:info("group receive message"),
+	lager:info("group id: ~p", [Group_Id]),
+	lager:info("group members ~p", [List]),
 	lists:foreach(
 		fun(Elem) ->
 			case ets:lookup(client_pid, Elem) of
-				[Client] ->
-					#client_pid{pid = Pid} = Client,
-					Pid ! Client_receive_group_chat
+				[{_, Pid}] ->
+					Pid ! Client_receive_group_chat;
+				_ ->
+					ignore
 			end
 		end, List),
 	{noreply, State}.

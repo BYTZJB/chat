@@ -71,7 +71,8 @@ get_groups(Client_Id) ->
 	do(qlc:q([E#client.groups || E <- mnesia:table(client), E#client.id == Client_Id])).
 
 get_members(Group_Id) ->
-	do(qlc:q([E#group.members || E <- mnesia:table(group), E#group.id == Group_Id])).
+	[Members] = do(qlc:q([E#group.members || E <- mnesia:table(group), E#group.id == Group_Id])),
+	Members.
 
 get_friend_requests(Client_Id) ->
 	do(qlc:q([E#client.friend_requests || E <- mnesia:table(client), E#client.id == Client_Id])).

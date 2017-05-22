@@ -191,6 +191,7 @@ handle_info(#add_friend{id = Id, to_id = To_Id} = Add_Friend, #state{client_id =
 handle_info(#client_send_chat{data = Chat}, State) ->
 	lager:info("send message to other client"),
 	#chat{id = Id, to_type = To_Type, to_id = To_Id, data = Data} = Chat,
+	lager:info("~p", [To_Type]),
 	{To_Pid, To_Chat} =
 		case To_Type of
 			1 ->
@@ -211,18 +212,23 @@ handle_info(#client_send_chat{data = Chat}, State) ->
 %%				[{_, Res}] = ets:lookup(group_pid, To_Id),
 				Members = mod_mnesia:get_members(To_Id),
 				Judge2 = lists:member(Id, Members),
+				lager:info("~p", [Members]),
+				lager:info("~p", [Judge2]),
 				case ets:lookup(group_pid, To_Id) of
 					[{_, Res}] when Judge2 ->
+						lager:info("^^^^^^^^^^^^^^^^^^^^^^^"),
 						{Res, #group_receive_chat{id = Id, data = Data}};
 					_ ->
 						{error, ""}
 				end;
 			_ ->
+				lager:info("no correct type"),
 				{error, ""}
 		end,
 	lager:info("~p ~p", [To_Pid, To_Chat]),
 	case {To_Pid, To_Chat} of
 		{error, _} ->
+			lager:info("error occur"),
 			error;
 		_ ->
 			To_Pid ! To_Chat

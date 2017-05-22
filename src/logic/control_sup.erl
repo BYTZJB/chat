@@ -57,7 +57,7 @@ init([]) ->
 	
 	Acceptor = {tcp_acceptor, {tcp_acceptor, start_link, []},
 		Restart, Shutdown, worker, [tcp_acceptor]},
-	
+
 	Childes_Spec = [Id_generator, Group_sup, Client_sup, Tcp_Agent_sup, Acceptor],
 	
 	lager:info("Initialization all resources"),

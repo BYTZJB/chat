@@ -23,28 +23,43 @@ def receive_message(conn):
     receive_message(conn)
 
 t = threading.Thread(target=receive_message, args = (s,), name="Receive Message")
-print("客户端_2#####################")
+print("############    客户端_2   #####################")
 t.start()
 
-register = {'cmd':'1', 'username':'yw', 'password':'ist'}
-login = {'cmd':'2', 'id':'2', 'password':'ist'}
+# 客户端信息 begin ##########
+client_id = 2 
+register = {'cmd':1, 'username':'yw', 'password':'ist'}
+login = {'cmd':2, 'id': client_id , 'password':'ist'}
+# 客户端信息 end   ##########
 
 while True:                                           #接受多次数据
 
-    data = input('请输入命令：')                 #接收数据
+    cmd = input('请输入命令：')                 #接收数据
 
-    if data == "0" or data == 0:
+    if cmd == "0" or cmd == 0:
         break
 
-    if data == "1" or data == 1:
+    if cmd == "1" or cmd == 1:
         s.send(json.dumps(register))
 
-    if data == "2" or data == 2:
+    if cmd == "2" or cmd == 2:
         s.send(bytes(json.dumps(login)))
 
-    if data == "3" or data == 3:
-        message = input('请输入要发送的语句')
-        chat_context = {'cmd': '3', 'id': '2', 'to_type': '1', 'to_id': '1', 'data': message}
-        s.send(bytes(json.dumps(chat_context)))
+    if cmd == "3" or cmd == 3:
+        to_type = input('单聊1 or  群聊2?')
+        to_id = input('对方的id')
+        data = input('请输入要发送的语句')
+        message = {'cmd': 3, 'to_type': to_type, 'to_id': to_id, 'data': data}
+        s.send(bytes(json.dumps(message)))
+
+    if cmd == "4" or cmd == 4:
+        new_friend_id = input("请输入对方的id")
+        message = {'cmd': 4, 'new_friend_id': new_friend_id}
+        s.send(bytes(json.dumps(message)))
+
+    if cmd == "5" or cmd == 5:
+        to_id = input("请输入对方的id")
+        message = {'cmd': 5, 'to_id': to_id}
+        s.send(bytes(json.dumps(message)))
 
 s.close()                                             #关闭socket

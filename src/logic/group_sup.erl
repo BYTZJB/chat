@@ -76,7 +76,7 @@ init([]) ->
 	),
 	lager:info("~p ", [Childes_Spec]),
 	
-	lager:info("######## group_sup"),
+	lager:info("group_sup pid:~p", [self()]),
 	{ok, {SupFlags, Childes_Spec}}.
 
 %%%===================================================================
