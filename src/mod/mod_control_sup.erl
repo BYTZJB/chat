@@ -22,4 +22,6 @@ init() ->
 	
 	mod_mnesia:do_this_once(),
 	Reply = mnesia:wait_for_tables([client, group, ids], 2000),
+	mod_mnesia:init_client(), %% 初始化一些客户端
+	mod_mnesia:init_group(), %% 初始化一些群组
 	lager:info("load tables:~p ", [Reply]).

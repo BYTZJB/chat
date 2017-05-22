@@ -27,11 +27,11 @@ print("客户端_2#####################")
 t.start()
 
 register = {'cmd':'1', 'username':'yw', 'password':'ist'}
-login = {'cmd':'2', 'password':'ist'}
+login = {'cmd':'2', 'id':'2', 'password':'ist'}
 
 while True:                                           #接受多次数据
 
-    data = input('请输入要发送的数据：')                 #接收数据
+    data = input('请输入命令：')                 #接收数据
 
     if data == "0" or data == 0:
         break

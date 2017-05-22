@@ -98,19 +98,40 @@ handle_call(_Request, _From, State) ->
 handle_cast(online, State) ->
 	{noreply, State};
 
+%% 处理到来的好友请求
 handle_cast(#add_friend{id = Id, to_id = To_Id}, #state{client_id = To_Id = Client_Id, client_socket = Socket} = State) ->
-	lager:info("receive add friend request from other client"), %% todo 逻辑应该是直接将请求的to_id添加到自己的friends
-	MyFriends = mod_mnesia:get_friends(Client_Id),
+	lager:info("receive add friend request from other client"), %%
+	Friends = mod_mnesia:get_friends(Client_Id),
 	Friend_Requests = mod_mnesia:get_friend_requests(Client_Id),
-	case lists:member(Id, MyFriends) or lists:member(Id, Friend_Requests) of
+	case lists:member(Id, Friends) orelse lists:member(Id, Friend_Requests) of %% 若果对方在自己的好劣列表中，或者在请求列表中
 		false ->
 			Client = mod_mnesia:get_client(Client_Id),
-			New_Client = Client#client{friend_requests = lists:append(Friend_Requests, [id])},
+			New_Client = Client#client{friend_requests = lists:append(Friend_Requests, [Id])},
 			mod_mnesia:update_client(Client, New_Client),
 			Message = integer_to_list(Id) ++ "said:\nCan I be a friend with you?",
 			gen_tcp:send(Socket, Message);
 		true ->
-			ok
+			lager:info("已经存在于好友列表或者亲故列表中")
+	end,
+	{noreply, State};
+
+%% 发起好友请求
+handle_cast(#add_friend{id = Id, to_id = To_Id} = Add_Friend, #state{client_id = Id = Client_Id} = State) ->
+	lager:info("receive add friend request from other client"), %%
+	MyFriends = mod_mnesia:get_friends(Client_Id),
+	ToFriends = mod_mnesia:get_friends(To_Id),
+	Reply = case lists:member(To_Id, MyFriends) and lists:member(Id, ToFriends) of
+		        false ->
+			        false;
+		        true ->
+			        lager:info("你们已经是好友了！"),
+			        true
+	        end,
+	case ets:lookup(client_pid, To_Id) of
+		[{_, To_Pid}] when (not Reply) ->
+			gen_server:cast(To_Pid, Add_Friend); %% 给对方发送好友请求
+		_ ->
+			lager:info("对方不在线 或者 你们已经是好友了")
 	end,
 	{noreply, State};
 
@@ -120,12 +141,28 @@ handle_cast({get_state, #{tcp_agent_pid := Tcp_Agent_Pid, client_id := Client_Id
 	{noreply, State#state{tcp_agent_pid = Tcp_Agent_Pid, client_id = Client_Id, client_socket = Socket}};
 
 %% 用于接受来自其他客户端的加好友的请求
+%% 必须对方在自己的好友请求中
 handle_cast(#new_friend{new_friend_id = New_Friend_Id}, #state{client_id = Client_Id} = State) ->
-	Client = #client{friends = Friends, friend_requests = Friends_Request} = mod_mnesia:get_client(Client_Id),
-	New_Friends = lists:append(Friends, [New_Friend_Id]),
-	New_Friends_Requests = lists:delete(New_Friend_Id, Friends_Request),
-	New_Client = Client#client{friends = New_Friends, friend_requests = New_Friends_Requests},
-	mod_mnesia:update_client(Client, New_Client),
+	Client = #client{friends = Friends, friend_requests = Friends_Requests} = mod_mnesia:get_client(Client_Id),
+	
+	To_Client = #client{friends = To_Friends, friend_requests = To_Friends_Requests} = mod_mnesia:get_client(New_Friend_Id),
+	
+	case lists:member(New_Friend_Id, Friends) andalso lists:member(Client_Id, To_Friends) of %% 对方在自己的好友列表中 而且 自己在对方好友列表中
+		false ->
+			New_Friends = lists:append(Friends, [New_Friend_Id]), %% 将对方添加到自己的好友列表中
+			New_Friends_Requests = lists:delete(New_Friend_Id, Friends_Requests), %% 将对方从自己的好友列表中删除
+			New_Client = Client#client{friends = New_Friends, friend_requests = New_Friends_Requests}, %% 更新自己的信息
+			
+			New_To_Friends = lists:append(To_Friends, [Client_Id]), %% 将自己添加到对方的好友列表中
+			New_To_Friends_Requests = lists:delete(Client_Id, To_Friends_Requests), %% 将对方从自己的好友列表中删除
+			New_To_Client = To_Client#client{friends = New_To_Friends, friend_requests = New_To_Friends_Requests}, %% 更新对方的信息
+			F =
+				fun() ->
+					mod_mnesia:update_client(Client, New_Client),
+					mod_mnesia:update_client(To_Client, New_To_Client)
+				end,
+			mnesia:transaction(F)
+	end,
 	{noreply, State}.
 
 %%--------------------------------------------------------------------
@@ -159,11 +196,11 @@ handle_info(#client_send_chat{data = Chat}, State) ->
 			1 ->
 				%% 判断是不是自己的friend
 %%				[{_, Res}] = ets:lookup(client_pid, To_Id),
-				lager:info("$$$$$$$$$$$$$$$$$$$$$$$$"),
 				Friends = mod_mnesia:get_friends(Id),
 				Judge1 = lists:member(To_Id, Friends),
+				lager:info("~p ~p", [Friends, Judge1]),
 				case ets:lookup(client_pid, To_Id) of
-					[{_, Res}] when Judge1->
+					[{_, Res}] when Judge1 ->
 						{Res, #client_receive_client_chat{client_id = Id, data = Data}};
 					Err ->
 						lager:info("~p", [Err]),
@@ -175,7 +212,7 @@ handle_info(#client_send_chat{data = Chat}, State) ->
 				Members = mod_mnesia:get_members(To_Id),
 				Judge2 = lists:member(Id, Members),
 				case ets:lookup(group_pid, To_Id) of
-					[{_, Res}] when Judge2->
+					[{_, Res}] when Judge2 ->
 						{Res, #group_receive_chat{id = Id, data = Data}};
 					_ ->
 						{error, ""}

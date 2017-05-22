@@ -879,3 +879,118 @@ Bad value on output port 'tcp_inet'
      Reason:     {bad_return_value,{client_receive_client_chat,1,"wo xihuan ni"}}
      Offender:   [{pid,<0.131.0>},{id,1},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
 
+2017-05-22 11:27:30 =ERROR REPORT====
+** State machine <0.128.0> terminating 
+** Last message in was {tcp,#Port<0.3682>,<<"{\"password\": \"iyw\", \"cmd\": \"2\"}">>}
+** When State == wait_auth
+**      Data  == {state,#Port<0.3682>,undefined}
+** Reason for termination = 
+** {bad_return_value,ok}
+2017-05-22 11:27:30 =CRASH REPORT====
+  crasher:
+    initial call: tcp_agent:init/1
+    pid: <0.128.0>
+    registered_name: []
+    exception exit: {{bad_return_value,ok},[{gen_fsm,terminate,7,[{file,"gen_fsm.erl"},{line,559}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [tcp_agent_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.125.0>,#Port<0.3682>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1416
+  neighbours:
+2017-05-22 11:27:30 =SUPERVISOR REPORT====
+     Supervisor: {local,tcp_agent_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,ok}
+     Offender:   [{pid,<0.128.0>},{id,#Port<0.3682>},{mfargs,{tcp_agent,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-22 11:30:54 =ERROR REPORT====
+** State machine <0.132.0> terminating 
+** Last message in was {tcp,#Port<0.3706>,<<"{\"password\": \"iyw\", \"cmd\": \"2\", \"id\": \"1\"}">>}
+** When State == wait_auth
+**      Data  == {state,#Port<0.3706>,undefined}
+** Reason for termination = 
+** {bad_return_value,ok}
+2017-05-22 11:30:54 =CRASH REPORT====
+  crasher:
+    initial call: tcp_agent:init/1
+    pid: <0.132.0>
+    registered_name: []
+    exception exit: {{bad_return_value,ok},[{gen_fsm,terminate,7,[{file,"gen_fsm.erl"},{line,559}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [tcp_agent_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [#Port<0.3706>,<0.125.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 2409
+  neighbours:
+2017-05-22 11:30:54 =SUPERVISOR REPORT====
+     Supervisor: {local,tcp_agent_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,ok}
+     Offender:   [{pid,<0.132.0>},{id,#Port<0.3706>},{mfargs,{tcp_agent,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-22 11:31:35 =ERROR REPORT====
+** State machine <0.134.0> terminating 
+** Last message in was {tcp,#Port<0.3707>,<<"{\"password\": \"iyw\", \"cmd\": \"2\", \"id\": \"1\"}">>}
+** When State == wait_auth
+**      Data  == {state,#Port<0.3707>,undefined}
+** Reason for termination = 
+** {bad_return_value,ok}
+2017-05-22 11:31:35 =CRASH REPORT====
+  crasher:
+    initial call: tcp_agent:init/1
+    pid: <0.134.0>
+    registered_name: []
+    exception exit: {{bad_return_value,ok},[{gen_fsm,terminate,7,[{file,"gen_fsm.erl"},{line,559}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [tcp_agent_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [#Port<0.3707>,<0.125.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 2401
+  neighbours:
+2017-05-22 11:31:35 =SUPERVISOR REPORT====
+     Supervisor: {local,tcp_agent_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,ok}
+     Offender:   [{pid,<0.134.0>},{id,#Port<0.3707>},{mfargs,{tcp_agent,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-22 11:49:49 =ERROR REPORT====
+** Generic server <0.134.0> terminating 
+** Last message in was {client_receive_client_chat,1,"wo xihuan ni"}
+** When Server state == {state,undefined,undefined,undefined}
+** Reason for termination == 
+** {function_clause,[{gen_tcp,send,[undefined,"client 1 said: \nwo xihuan ni"],[{file,"gen_tcp.erl"},{line,265}]},{client,handle_info,2,[{file,"src/logic/client.erl"},{line,238}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-05-22 11:49:49 =CRASH REPORT====
+  crasher:
+    initial call: client:init/1
+    pid: <0.134.0>
+    registered_name: []
+    exception exit: {{function_clause,[{gen_tcp,send,[undefined,"client 1 said: \nwo xihuan ni"],[{file,"gen_tcp.erl"},{line,265}]},{client,handle_info,2,[{file,"src/logic/client.erl"},{line,238}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [client_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.124.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 2473
+  neighbours:
+2017-05-22 11:49:49 =SUPERVISOR REPORT====
+     Supervisor: {local,client_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{gen_tcp,send,[undefined,"client 1 said: \nwo xihuan ni"],[{file,"gen_tcp.erl"},{line,265}]},{client,handle_info,2,[{file,"src/logic/client.erl"},{line,238}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.134.0>},{id,2},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+

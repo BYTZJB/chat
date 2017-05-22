@@ -97,3 +97,15 @@
 2017-05-21 13:21:42.436 [error] <0.131.0> gen_server <0.131.0> terminated with reason: bad return value: {client_receive_client_chat,1,"wo xihuan ni"}
 2017-05-21 13:21:42.438 [error] <0.131.0> CRASH REPORT Process <0.131.0> with 0 neighbours exited with reason: bad return value: {client_receive_client_chat,1,"wo xihuan ni"} in gen_server:terminate/7 line 812
 2017-05-21 13:21:42.438 [error] <0.124.0> Supervisor client_sup had child 1 started with {client,start_link,undefined} at <0.131.0> exit with reason bad return value: {client_receive_client_chat,1,"wo xihuan ni"} in context child_terminated
+2017-05-22 11:27:30.300 [error] <0.128.0> gen_fsm <0.128.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-22 11:27:30.415 [error] <0.128.0> CRASH REPORT Process <0.128.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-22 11:27:30.415 [error] <0.125.0> Supervisor tcp_agent_sup had child #Port<0.3682> started with {tcp_agent,start_link,undefined} at <0.128.0> exit with reason bad return value: ok in context child_terminated
+2017-05-22 11:30:54.118 [error] <0.132.0> gen_fsm <0.132.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-22 11:30:54.118 [error] <0.132.0> CRASH REPORT Process <0.132.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-22 11:30:54.118 [error] <0.125.0> Supervisor tcp_agent_sup had child #Port<0.3706> started with {tcp_agent,start_link,undefined} at <0.132.0> exit with reason bad return value: ok in context child_terminated
+2017-05-22 11:31:35.576 [error] <0.134.0> gen_fsm <0.134.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-22 11:31:35.576 [error] <0.134.0> CRASH REPORT Process <0.134.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-22 11:31:35.577 [error] <0.125.0> Supervisor tcp_agent_sup had child #Port<0.3707> started with {tcp_agent,start_link,undefined} at <0.134.0> exit with reason bad return value: ok in context child_terminated
+2017-05-22 11:49:49.725 [error] <0.134.0> gen_server <0.134.0> terminated with reason: no function clause matching gen_tcp:send(undefined, "client 1 said: \nwo xihuan ni") line 265
+2017-05-22 11:49:49.778 [error] <0.134.0> CRASH REPORT Process <0.134.0> with 0 neighbours exited with reason: no function clause matching gen_tcp:send(undefined, "client 1 said: \nwo xihuan ni") line 265 in gen_server:terminate/7 line 812
+2017-05-22 11:49:49.778 [error] <0.124.0> Supervisor client_sup had child 2 started with {client,start_link,undefined} at <0.134.0> exit with reason no function clause matching gen_tcp:send(undefined, "client 1 said: \nwo xihuan ni") line 265 in context child_terminated

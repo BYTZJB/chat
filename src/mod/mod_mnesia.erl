@@ -15,7 +15,7 @@
 -export([
 	do_this_once/0,
 	get_group_keys/0,
-	add_new_client/1,
+	add_client/1,
 	get_client_password/1,
 	query_all_data/0,
 	get_friends/1,
@@ -23,7 +23,10 @@
 	get_members/1,
 	get_friend_requests/1,
 	get_client/1,
-	update_client/2
+	update_client/2,
+	init_client/0,
+	init_group/0,
+	add_group/1
 	]).
 
 get_client_password(Client_Id) ->
@@ -43,8 +46,8 @@ do_this_once() ->
 	mnesia:create_table(group, [{attributes, record_info(fields, group)}]),
 	mnesia:create_table(ids, [{attributes, record_info(fields, ids)}]).
 
-add_new_client(Client) ->
-	lager:info("~p", [Client]),
+add_client(Client) ->
+	lager:info("add client to mnesia: ~p", [Client]),
 	F =
 		fun() ->
 			mnesia:write(Client)
@@ -52,8 +55,17 @@ add_new_client(Client) ->
 	Reply = mnesia:transaction(F),
 	lager:info("add new client:~p", [Reply]).
 
+add_group(Group) ->
+	lager:info("add group to mnesia: ~p", [Group]),
+	F = fun() ->
+		mnesia:write(Group)
+			end,
+	Reply = mnesia:transaction(F),
+	lager:info("add new group:~p", [Reply]).
+
 get_friends(Client_Id) ->
-	do(qlc:q([E#client.friends || E <- mnesia:table(client), E#client.id == Client_Id])).
+	[Friends] = do(qlc:q([E#client.friends || E <- mnesia:table(client), E#client.id == Client_Id])),
+	Friends.
 
 get_groups(Client_Id) ->
 	do(qlc:q([E#client.groups || E <- mnesia:table(client), E#client.id == Client_Id])).
@@ -83,3 +95,14 @@ update_client(Client, New_Client) ->
 			end,
 	Reply = mnesia:transaction(F),
 	lager:info("~p", [Reply]).
+
+init_client() ->
+	Client_01 = #client{id = 1, username = "zst", password="iyw" , groups=[1], friends = [2], friend_requests = []},
+	Client_02 = #client{id = 2, username = "yw", password="ist", groups=[1], friends = [1], friend_requests = []},
+	mod_mnesia:add_client(Client_01),
+	mod_mnesia:add_client(Client_02).
+
+
+init_group() ->
+	Group_01 = #group{id =1 , members = [1, 2]},
+	mod_mnesia:add_group(Group_01).

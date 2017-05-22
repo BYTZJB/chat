@@ -2799,3 +2799,436 @@
 2017-05-21 17:36:08.228 [info] <0.131.0>@client:handle_info:162 #Port<0.3682>
 2017-05-21 17:36:08.228 [info] <0.131.0>@client:handle_info:163 "client 2 said: \nni hao ya"
 2017-05-21 17:36:08.228 [info] <0.131.0>@client:handle_info:165 success send message
+2017-05-22 11:26:21.487 [info] <0.31.0> Application lager started on node yangwei@brucedeiMac
+2017-05-22 11:26:21.487 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-22 11:26:21.597 [info] <0.31.0> Application mnesia started on node yangwei@brucedeiMac
+2017-05-22 11:26:21.604 [info] <0.99.0>@mod_mnesia:add_client:48 {client,1,"zst","iyw",[2],[1],[]}
+2017-05-22 11:26:21.604 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:26:21.604 [info] <0.99.0>@mod_mnesia:add_client:48 {client,2,"yw","ist",[1],[1],[]}
+2017-05-22 11:26:21.604 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:26:21.604 [info] <0.99.0>@mod_control_sup:init:26 load tables:ok 
+2017-05-22 11:26:21.604 [info] <0.99.0>@control_sup:init:63 Initialization all resources
+2017-05-22 11:26:21.605 [info] <0.121.0>@id_generator:init:31 ########### id_generator
+2017-05-22 11:26:21.636 [info] <0.122.0>@group_sup:init:70 [] 
+2017-05-22 11:26:21.636 [info] <0.122.0>@group_sup:init:77 [] 
+2017-05-22 11:26:21.636 [info] <0.122.0>@group_sup:init:79 ######## group_sup
+2017-05-22 11:26:21.653 [info] <0.124.0>@client_sup:init:65 ######## client_sup
+2017-05-22 11:26:21.655 [info] <0.31.0> Application chat started on node yangwei@brucedeiMac
+2017-05-22 11:26:57.761 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3682>
+2017-05-22 11:26:57.783 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:26:57.783 [info] <0.128.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:27:26.640 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3693>
+2017-05-22 11:27:26.640 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:27:26.640 [info] <0.129.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:27:30.210 [info] <0.128.0>@tcp_agent:handle_info:227 ***************** receive request from socket ****************
+2017-05-22 11:27:30.300 [info] <0.128.0>@tcp_agent:handle_info:230 #{<<"cmd">> => <<"2">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:27:30.300 [info] <0.128.0>@tcp_agent:handle_info:278 error {badkey,<<"id">>}
+2017-05-22 11:27:30.300 [info] <0.128.0>@tcp_agent:terminate:312 call suervisor to terminate_child: {error,not_found}
+2017-05-22 11:27:30.300 [info] <0.128.0>@tcp_agent:terminate:313 tcp_agent process is termianted
+2017-05-22 11:27:30.300 [error] <0.128.0> gen_fsm <0.128.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-22 11:27:30.415 [error] <0.128.0> CRASH REPORT Process <0.128.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-22 11:27:30.415 [error] <0.125.0> Supervisor tcp_agent_sup had child #Port<0.3682> started with {tcp_agent,start_link,undefined} at <0.128.0> exit with reason bad return value: ok in context child_terminated
+2017-05-22 11:29:12.112 [info] <0.129.0>@tcp_agent:handle_info:286 tcp closed, stateName: wait_auth
+2017-05-22 11:29:12.112 [info] <0.129.0>@tcp_agent:terminate:312 call suervisor to terminate_child: {error,not_found}
+2017-05-22 11:29:12.112 [info] <0.129.0>@tcp_agent:terminate:313 tcp_agent process is termianted
+2017-05-22 11:30:42.424 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3706>
+2017-05-22 11:30:42.424 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:30:42.424 [info] <0.132.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:30:54.117 [info] <0.132.0>@tcp_agent:handle_info:227 ***************** receive request from socket ****************
+2017-05-22 11:30:54.117 [info] <0.132.0>@tcp_agent:handle_info:230 #{<<"cmd">> => <<"2">>,<<"id">> => <<"1">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:30:54.117 [info] <0.132.0>@tcp_agent:handle_info:246 call wait_auth to handle login
+2017-05-22 11:30:54.118 [info] <0.132.0>@tcp_agent:handle_info:278 error {badrecord,client}
+2017-05-22 11:30:54.118 [info] <0.132.0>@tcp_agent:terminate:312 call suervisor to terminate_child: {error,not_found}
+2017-05-22 11:30:54.118 [info] <0.132.0>@tcp_agent:terminate:313 tcp_agent process is termianted
+2017-05-22 11:30:54.118 [error] <0.132.0> gen_fsm <0.132.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-22 11:30:54.118 [error] <0.132.0> CRASH REPORT Process <0.132.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-22 11:30:54.118 [error] <0.125.0> Supervisor tcp_agent_sup had child #Port<0.3706> started with {tcp_agent,start_link,undefined} at <0.132.0> exit with reason bad return value: ok in context child_terminated
+2017-05-22 11:31:33.616 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3707>
+2017-05-22 11:31:33.616 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:31:33.616 [info] <0.134.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:31:35.576 [info] <0.134.0>@tcp_agent:handle_info:227 ***************** receive request from socket ****************
+2017-05-22 11:31:35.576 [info] <0.134.0>@tcp_agent:handle_info:230 #{<<"cmd">> => <<"2">>,<<"id">> => <<"1">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:31:35.576 [info] <0.134.0>@tcp_agent:handle_info:246 call wait_auth to handle login
+2017-05-22 11:31:35.576 [info] <0.134.0>@tcp_agent:handle_info:278 error {badrecord,client}
+2017-05-22 11:31:35.576 [info] <0.134.0>@tcp_agent:terminate:312 call suervisor to terminate_child: {error,not_found}
+2017-05-22 11:31:35.576 [info] <0.134.0>@tcp_agent:terminate:313 tcp_agent process is termianted
+2017-05-22 11:31:35.576 [error] <0.134.0> gen_fsm <0.134.0> in state wait_auth terminated with reason: bad return value: ok
+2017-05-22 11:31:35.576 [error] <0.134.0> CRASH REPORT Process <0.134.0> with 0 neighbours exited with reason: bad return value: ok in gen_fsm:terminate/7 line 559
+2017-05-22 11:31:35.577 [error] <0.125.0> Supervisor tcp_agent_sup had child #Port<0.3707> started with {tcp_agent,start_link,undefined} at <0.134.0> exit with reason bad return value: ok in context child_terminated
+2017-05-22 11:31:52.308 [info] <0.31.0> Application lager started on node yangwei@brucedeiMac
+2017-05-22 11:31:52.308 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-22 11:31:52.363 [info] <0.31.0> Application mnesia started on node yangwei@brucedeiMac
+2017-05-22 11:31:52.374 [info] <0.99.0>@mod_mnesia:add_client:48 {client,1,"zst","iyw",[2],[1],[]}
+2017-05-22 11:31:52.374 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:31:52.374 [info] <0.99.0>@mod_mnesia:add_client:48 {client,2,"yw","ist",[1],[1],[]}
+2017-05-22 11:31:52.374 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:31:52.374 [info] <0.99.0>@mod_control_sup:init:26 load tables:ok 
+2017-05-22 11:31:52.374 [info] <0.99.0>@control_sup:init:63 Initialization all resources
+2017-05-22 11:31:52.375 [info] <0.121.0>@id_generator:init:31 ########### id_generator
+2017-05-22 11:31:52.380 [info] <0.122.0>@group_sup:init:70 [] 
+2017-05-22 11:31:52.380 [info] <0.122.0>@group_sup:init:77 [] 
+2017-05-22 11:31:52.380 [info] <0.122.0>@group_sup:init:79 ######## group_sup
+2017-05-22 11:31:52.380 [info] <0.124.0>@client_sup:init:65 ######## client_sup
+2017-05-22 11:31:52.382 [info] <0.31.0> Application chat started on node yangwei@brucedeiMac
+2017-05-22 11:31:59.144 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3682>
+2017-05-22 11:31:59.147 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:31:59.147 [info] <0.128.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:32:02.285 [info] <0.128.0>@tcp_agent:handle_info:227 ***************** receive request from socket ****************
+2017-05-22 11:32:02.289 [info] <0.128.0>@tcp_agent:handle_info:230 #{<<"cmd">> => <<"2">>,<<"id">> => <<"1">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:32:02.289 [info] <0.128.0>@tcp_agent:handle_info:246 call wait_auth to handle login
+2017-05-22 11:32:02.332 [info] <0.131.0>@client:init:66 success to create a client
+2017-05-22 11:35:04.348 [info] <0.31.0> Application lager started on node yangwei@brucedeiMac
+2017-05-22 11:35:04.348 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-22 11:35:04.403 [info] <0.31.0> Application mnesia started on node yangwei@brucedeiMac
+2017-05-22 11:35:04.410 [info] <0.99.0>@mod_mnesia:add_client:48 {client,1,"zst","iyw",[2],[1],[]}
+2017-05-22 11:35:04.410 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:35:04.410 [info] <0.99.0>@mod_mnesia:add_client:48 {client,2,"yw","ist",[1],[1],[]}
+2017-05-22 11:35:04.410 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:35:04.410 [info] <0.99.0>@mod_control_sup:init:26 load tables:ok 
+2017-05-22 11:35:04.410 [info] <0.99.0>@control_sup:init:63 Initialization all resources
+2017-05-22 11:35:04.411 [info] <0.121.0>@id_generator:init:31 ########### id_generator
+2017-05-22 11:35:04.416 [info] <0.122.0>@group_sup:init:70 [] 
+2017-05-22 11:35:04.416 [info] <0.122.0>@group_sup:init:77 [] 
+2017-05-22 11:35:04.416 [info] <0.122.0>@group_sup:init:79 ######## group_sup
+2017-05-22 11:35:04.417 [info] <0.124.0>@client_sup:init:65 ######## client_sup
+2017-05-22 11:35:04.418 [info] <0.31.0> Application chat started on node yangwei@brucedeiMac
+2017-05-22 11:35:12.024 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3682>
+2017-05-22 11:35:12.027 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:35:12.027 [info] <0.128.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:35:13.501 [info] <0.128.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:35:13.505 [info] <0.128.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"1">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:35:13.505 [info] <0.128.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:35:13.507 [info] <0.131.0>@client:init:66 success to create a client
+2017-05-22 11:35:13.507 [info] <0.128.0>@tcp_agent:wait_auth:127 成功登录
+2017-05-22 11:35:32.714 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3701>
+2017-05-22 11:35:32.714 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:35:32.714 [info] <0.132.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:35:34.056 [info] <0.132.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:35:34.056 [info] <0.132.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"2">>,<<"password">> => <<"ist">>}
+2017-05-22 11:35:34.056 [info] <0.132.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:35:34.057 [info] <0.134.0>@client:init:66 success to create a client
+2017-05-22 11:35:34.057 [info] <0.132.0>@tcp_agent:wait_auth:127 成功登录
+2017-05-22 11:36:37.071 [info] <0.128.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:36:37.071 [info] <0.128.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"3">>,<<"data">> => <<"wo xihuan ni">>,<<"id">> => <<"1">>,<<"to_id">> => <<"2">>,<<"to_type">> => <<"1">>}
+2017-05-22 11:36:37.071 [info] <0.128.0>@tcp_agent:handle_info:261 call wait_data to handle chat
+2017-05-22 11:36:37.071 [info] <0.128.0>@tcp_agent:wait_data:137 chat begin, client send chat
+2017-05-22 11:36:37.071 [info] <0.131.0>@client:handle_info:192 send message to other client
+2017-05-22 11:36:37.071 [info] <0.131.0>@client:handle_info:205 [{2,<0.134.0>}]
+2017-05-22 11:36:37.071 [info] <0.131.0>@client:handle_info:222 error []
+2017-05-22 11:36:55.792 [info] <0.132.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:36:55.792 [info] <0.132.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"3">>,<<"data">> => <<"wo xihuan ni">>,<<"id">> => <<"2">>,<<"to_id">> => <<"1">>,<<"to_type">> => <<"1">>}
+2017-05-22 11:36:55.792 [info] <0.132.0>@tcp_agent:handle_info:261 call wait_data to handle chat
+2017-05-22 11:36:55.792 [info] <0.132.0>@tcp_agent:wait_data:137 chat begin, client send chat
+2017-05-22 11:36:55.792 [info] <0.134.0>@client:handle_info:192 send message to other client
+2017-05-22 11:36:55.792 [info] <0.134.0>@client:handle_info:205 [{1,<0.131.0>}]
+2017-05-22 11:36:55.792 [info] <0.134.0>@client:handle_info:222 error []
+2017-05-22 11:42:39.017 [info] <0.31.0> Application lager started on node yangwei@brucedeiMac
+2017-05-22 11:42:39.017 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-22 11:42:39.072 [info] <0.31.0> Application mnesia started on node yangwei@brucedeiMac
+2017-05-22 11:42:39.079 [info] <0.99.0>@mod_mnesia:add_client:48 {client,1,"zst","iyw",[2],[1],[]}
+2017-05-22 11:42:39.079 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:42:39.079 [info] <0.99.0>@mod_mnesia:add_client:48 {client,2,"yw","ist",[1],[1],[]}
+2017-05-22 11:42:39.079 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:42:39.079 [info] <0.99.0>@mod_control_sup:init:26 load tables:ok 
+2017-05-22 11:42:39.079 [info] <0.99.0>@control_sup:init:63 Initialization all resources
+2017-05-22 11:42:39.080 [info] <0.121.0>@id_generator:init:31 ########### id_generator
+2017-05-22 11:42:39.085 [info] <0.122.0>@group_sup:init:70 [] 
+2017-05-22 11:42:39.085 [info] <0.122.0>@group_sup:init:77 [] 
+2017-05-22 11:42:39.085 [info] <0.122.0>@group_sup:init:79 ######## group_sup
+2017-05-22 11:42:39.086 [info] <0.124.0>@client_sup:init:65 ######## client_sup
+2017-05-22 11:42:39.087 [info] <0.31.0> Application chat started on node yangwei@brucedeiMac
+2017-05-22 11:42:47.749 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3682>
+2017-05-22 11:42:47.751 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:42:47.752 [info] <0.128.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:42:49.422 [info] <0.128.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:42:49.435 [info] <0.128.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"1">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:42:49.435 [info] <0.128.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:42:49.437 [info] <0.131.0>@client:init:66 success to create a client
+2017-05-22 11:42:49.437 [info] <0.128.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:43:03.189 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3701>
+2017-05-22 11:43:03.190 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:43:03.190 [info] <0.132.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:43:05.421 [info] <0.132.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:43:05.421 [info] <0.132.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"2">>,<<"password">> => <<"ist">>}
+2017-05-22 11:43:05.421 [info] <0.132.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:43:05.421 [info] <0.134.0>@client:init:66 success to create a client
+2017-05-22 11:43:05.421 [info] <0.132.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:44:07.507 [info] <0.31.0> Application lager started on node yangwei@brucedeiMac
+2017-05-22 11:44:07.507 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-22 11:44:07.561 [info] <0.31.0> Application mnesia started on node yangwei@brucedeiMac
+2017-05-22 11:44:07.568 [info] <0.99.0>@mod_mnesia:add_client:48 {client,1,"zst","iyw",[2],[1],[]}
+2017-05-22 11:44:07.568 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:44:07.568 [info] <0.99.0>@mod_mnesia:add_client:48 {client,2,"yw","ist",[1],[1],[]}
+2017-05-22 11:44:07.568 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:44:07.568 [info] <0.99.0>@mod_control_sup:init:26 load tables:ok 
+2017-05-22 11:44:07.568 [info] <0.99.0>@control_sup:init:63 Initialization all resources
+2017-05-22 11:44:07.569 [info] <0.121.0>@id_generator:init:31 ########### id_generator
+2017-05-22 11:44:07.574 [info] <0.122.0>@group_sup:init:70 [] 
+2017-05-22 11:44:07.574 [info] <0.122.0>@group_sup:init:77 [] 
+2017-05-22 11:44:07.574 [info] <0.122.0>@group_sup:init:79 ######## group_sup
+2017-05-22 11:44:07.575 [info] <0.124.0>@client_sup:init:65 ######## client_sup
+2017-05-22 11:44:07.576 [info] <0.31.0> Application chat started on node yangwei@brucedeiMac
+2017-05-22 11:44:11.129 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3682>
+2017-05-22 11:44:11.132 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:44:11.132 [info] <0.128.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:44:13.022 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3693>
+2017-05-22 11:44:13.023 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:44:13.023 [info] <0.129.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:44:17.481 [info] <0.128.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:44:17.527 [info] <0.128.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"1">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:44:17.527 [info] <0.128.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:44:17.528 [info] <0.132.0>@client:init:66 success to create a client
+2017-05-22 11:44:17.529 [info] <0.128.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:44:20.991 [info] <0.129.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:44:20.991 [info] <0.129.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"2">>,<<"password">> => <<"ist">>}
+2017-05-22 11:44:20.991 [info] <0.129.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:44:20.992 [info] <0.134.0>@client:init:66 success to create a client
+2017-05-22 11:44:20.992 [info] <0.129.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:44:48.883 [info] <0.31.0> Application lager started on node yangwei@brucedeiMac
+2017-05-22 11:44:48.883 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-22 11:44:48.936 [info] <0.31.0> Application mnesia started on node yangwei@brucedeiMac
+2017-05-22 11:44:48.943 [info] <0.99.0>@mod_mnesia:add_client:48 {client,1,"zst","iyw",[2],[1],[]}
+2017-05-22 11:44:48.943 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:44:48.943 [info] <0.99.0>@mod_mnesia:add_client:48 {client,2,"yw","ist",[1],[1],[]}
+2017-05-22 11:44:48.943 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:44:48.943 [info] <0.99.0>@mod_control_sup:init:26 load tables:ok 
+2017-05-22 11:44:48.943 [info] <0.99.0>@control_sup:init:63 Initialization all resources
+2017-05-22 11:44:48.944 [info] <0.121.0>@id_generator:init:31 ########### id_generator
+2017-05-22 11:44:48.949 [info] <0.122.0>@group_sup:init:70 [] 
+2017-05-22 11:44:48.949 [info] <0.122.0>@group_sup:init:77 [] 
+2017-05-22 11:44:48.949 [info] <0.122.0>@group_sup:init:79 ######## group_sup
+2017-05-22 11:44:48.950 [info] <0.124.0>@client_sup:init:65 ######## client_sup
+2017-05-22 11:44:48.951 [info] <0.31.0> Application chat started on node yangwei@brucedeiMac
+2017-05-22 11:44:54.752 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3682>
+2017-05-22 11:44:54.755 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:44:54.755 [info] <0.128.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:45:00.218 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3693>
+2017-05-22 11:45:00.218 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:45:00.218 [info] <0.129.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:45:05.083 [info] <0.128.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:45:05.128 [info] <0.128.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"1">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:45:05.128 [info] <0.128.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:45:05.130 [info] <0.132.0>@client:init:66 success to create a client
+2017-05-22 11:45:05.131 [info] <0.128.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:45:07.929 [info] <0.129.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:45:07.929 [info] <0.129.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"2">>,<<"password">> => <<"ist">>}
+2017-05-22 11:45:07.929 [info] <0.129.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:45:07.929 [info] <0.134.0>@client:init:66 success to create a client
+2017-05-22 11:45:07.930 [info] <0.129.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:45:19.303 [info] <0.128.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:45:19.303 [info] <0.128.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"3">>,<<"data">> => <<"wo xihuan ni">>,<<"id">> => <<"1">>,<<"to_id">> => <<"2">>,<<"to_type">> => <<"1">>}
+2017-05-22 11:45:19.303 [info] <0.128.0>@tcp_agent:handle_info:261 call wait_data to handle chat
+2017-05-22 11:45:19.303 [info] <0.128.0>@tcp_agent:wait_data:137 chat begin, client send chat
+2017-05-22 11:45:19.303 [info] <0.132.0>@client:handle_info:192 send message to other client
+2017-05-22 11:45:19.304 [info] <0.132.0>@client:handle_info:205 [{2,<0.134.0>}]
+2017-05-22 11:45:19.304 [info] <0.132.0>@client:handle_info:222 error []
+2017-05-22 11:47:28.081 [info] <0.31.0> Application lager started on node yangwei@brucedeiMac
+2017-05-22 11:47:28.081 [info] <0.163.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-22 11:47:28.204 [info] <0.31.0> Application mnesia started on node yangwei@brucedeiMac
+2017-05-22 11:47:28.212 [info] <0.164.0>@mod_mnesia:add_client:48 {client,1,"zst","iyw",[2],[1],[]}
+2017-05-22 11:47:28.212 [info] <0.164.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:47:28.212 [info] <0.164.0>@mod_mnesia:add_client:48 {client,2,"yw","ist",[1],[1],[]}
+2017-05-22 11:47:28.212 [info] <0.164.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:47:28.212 [info] <0.164.0>@mod_control_sup:init:26 load tables:ok 
+2017-05-22 11:47:28.212 [info] <0.164.0>@control_sup:init:63 Initialization all resources
+2017-05-22 11:47:28.213 [info] <0.187.0>@id_generator:init:31 ########### id_generator
+2017-05-22 11:47:28.260 [info] <0.188.0>@group_sup:init:70 [] 
+2017-05-22 11:47:28.260 [info] <0.188.0>@group_sup:init:77 [] 
+2017-05-22 11:47:28.260 [info] <0.188.0>@group_sup:init:79 ######## group_sup
+2017-05-22 11:47:28.269 [info] <0.190.0>@client_sup:init:65 ######## client_sup
+2017-05-22 11:47:28.280 [info] <0.31.0> Application chat started on node yangwei@brucedeiMac
+2017-05-22 11:47:42.913 [info] <0.192.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.4428>
+2017-05-22 11:47:42.941 [info] <0.192.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:47:42.941 [info] <0.210.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:47:45.480 [info] <0.192.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.4439>
+2017-05-22 11:47:45.480 [info] <0.192.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:47:45.480 [info] <0.215.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:47:47.924 [info] <0.210.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:47:48.017 [info] <0.210.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"1">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:47:48.017 [info] <0.210.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:47:48.039 [info] <0.221.0>@client:init:66 success to create a client
+2017-05-22 11:47:48.039 [info] <0.210.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:47:50.118 [info] <0.215.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:47:50.119 [info] <0.215.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"2">>,<<"password">> => <<"ist">>}
+2017-05-22 11:47:50.119 [info] <0.215.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:47:50.119 [info] <0.226.0>@client:init:66 success to create a client
+2017-05-22 11:47:50.119 [info] <0.215.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:47:56.497 [info] <0.210.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:47:56.498 [info] <0.210.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"3">>,<<"data">> => <<"wo xihuan ni">>,<<"id">> => <<"1">>,<<"to_id">> => <<"2">>,<<"to_type">> => <<"1">>}
+2017-05-22 11:47:56.498 [info] <0.210.0>@tcp_agent:handle_info:261 call wait_data to handle chat
+2017-05-22 11:47:56.498 [info] <0.210.0>@tcp_agent:wait_data:137 chat begin, client send chat
+2017-05-22 11:47:56.498 [info] <0.221.0>@client:handle_info:192 send message to other client
+2017-05-22 11:47:56.498 [info] <0.221.0>@client:handle_info:201 [[2]] false
+2017-05-22 11:47:56.498 [info] <0.221.0>@client:handle_info:206 [{2,<0.226.0>}]
+2017-05-22 11:47:56.498 [info] <0.221.0>@client:handle_info:223 error []
+2017-05-22 11:49:01.229 [info] <0.31.0> Application lager started on node yangwei@brucedeiMac
+2017-05-22 11:49:01.229 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-22 11:49:01.282 [info] <0.31.0> Application mnesia started on node yangwei@brucedeiMac
+2017-05-22 11:49:01.289 [info] <0.99.0>@mod_mnesia:add_client:48 {client,1,"zst","iyw",[2],[1],[]}
+2017-05-22 11:49:01.289 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:49:01.289 [info] <0.99.0>@mod_mnesia:add_client:48 {client,2,"yw","ist",[1],[1],[]}
+2017-05-22 11:49:01.289 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:49:01.289 [info] <0.99.0>@mod_control_sup:init:26 load tables:ok 
+2017-05-22 11:49:01.289 [info] <0.99.0>@control_sup:init:63 Initialization all resources
+2017-05-22 11:49:01.290 [info] <0.121.0>@id_generator:init:31 ########### id_generator
+2017-05-22 11:49:01.295 [info] <0.122.0>@group_sup:init:70 [] 
+2017-05-22 11:49:01.295 [info] <0.122.0>@group_sup:init:77 [] 
+2017-05-22 11:49:01.295 [info] <0.122.0>@group_sup:init:79 ######## group_sup
+2017-05-22 11:49:01.296 [info] <0.124.0>@client_sup:init:65 ######## client_sup
+2017-05-22 11:49:01.298 [info] <0.31.0> Application chat started on node yangwei@brucedeiMac
+2017-05-22 11:49:04.303 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3682>
+2017-05-22 11:49:04.306 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:49:04.306 [info] <0.128.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:49:06.417 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3693>
+2017-05-22 11:49:06.417 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:49:06.417 [info] <0.129.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:49:09.143 [info] <0.128.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:49:09.147 [info] <0.128.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"1">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:49:09.147 [info] <0.128.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:49:09.149 [info] <0.132.0>@client:init:66 success to create a client
+2017-05-22 11:49:09.149 [info] <0.128.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:49:11.854 [info] <0.129.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:49:11.854 [info] <0.129.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"2">>,<<"password">> => <<"ist">>}
+2017-05-22 11:49:11.854 [info] <0.129.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:49:11.855 [info] <0.134.0>@client:init:66 success to create a client
+2017-05-22 11:49:11.855 [info] <0.129.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:49:32.089 [info] <0.31.0> Application lager started on node yangwei@brucedeiMac
+2017-05-22 11:49:32.089 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-22 11:49:32.143 [info] <0.31.0> Application mnesia started on node yangwei@brucedeiMac
+2017-05-22 11:49:32.150 [info] <0.99.0>@mod_mnesia:add_client:48 {client,1,"zst","iyw",[2],[1],[]}
+2017-05-22 11:49:32.150 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:49:32.150 [info] <0.99.0>@mod_mnesia:add_client:48 {client,2,"yw","ist",[1],[1],[]}
+2017-05-22 11:49:32.150 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:49:32.150 [info] <0.99.0>@mod_control_sup:init:26 load tables:ok 
+2017-05-22 11:49:32.150 [info] <0.99.0>@control_sup:init:63 Initialization all resources
+2017-05-22 11:49:32.151 [info] <0.121.0>@id_generator:init:31 ########### id_generator
+2017-05-22 11:49:32.158 [info] <0.122.0>@group_sup:init:70 [] 
+2017-05-22 11:49:32.158 [info] <0.122.0>@group_sup:init:77 [] 
+2017-05-22 11:49:32.158 [info] <0.122.0>@group_sup:init:79 ######## group_sup
+2017-05-22 11:49:32.159 [info] <0.124.0>@client_sup:init:65 ######## client_sup
+2017-05-22 11:49:32.160 [info] <0.31.0> Application chat started on node yangwei@brucedeiMac
+2017-05-22 11:49:35.444 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3682>
+2017-05-22 11:49:35.447 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:49:35.447 [info] <0.128.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:49:38.964 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3693>
+2017-05-22 11:49:38.964 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:49:38.964 [info] <0.129.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:49:42.625 [info] <0.128.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:49:42.629 [info] <0.128.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"1">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:49:42.629 [info] <0.128.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:49:42.631 [info] <0.132.0>@client:init:66 success to create a client
+2017-05-22 11:49:42.631 [info] <0.128.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:49:44.166 [info] <0.129.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:49:44.166 [info] <0.129.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"2">>,<<"id">> => <<"2">>,<<"password">> => <<"ist">>}
+2017-05-22 11:49:44.166 [info] <0.129.0>@tcp_agent:handle_info:247 call wait_auth to handle login
+2017-05-22 11:49:44.167 [info] <0.134.0>@client:init:66 success to create a client
+2017-05-22 11:49:44.167 [info] <0.129.0>@tcp_agent:wait_auth:127 success login
+2017-05-22 11:49:49.724 [info] <0.128.0>@tcp_agent:handle_info:228 ***************** receive request from socket ****************
+2017-05-22 11:49:49.724 [info] <0.128.0>@tcp_agent:handle_info:231 #{<<"cmd">> => <<"3">>,<<"data">> => <<"wo xihuan ni">>,<<"id">> => <<"1">>,<<"to_id">> => <<"2">>,<<"to_type">> => <<"1">>}
+2017-05-22 11:49:49.724 [info] <0.128.0>@tcp_agent:handle_info:261 call wait_data to handle chat
+2017-05-22 11:49:49.724 [info] <0.128.0>@tcp_agent:wait_data:137 chat begin, client send chat
+2017-05-22 11:49:49.724 [info] <0.132.0>@client:handle_info:192 send message to other client
+2017-05-22 11:49:49.724 [info] <0.132.0>@client:handle_info:201 [2] true
+2017-05-22 11:49:49.724 [info] <0.132.0>@client:handle_info:223 <0.134.0> {client_receive_client_chat,1,"wo xihuan ni"}
+2017-05-22 11:49:49.725 [info] <0.134.0>@client:handle_info:234 receive message from client and send to socket
+2017-05-22 11:49:49.725 [info] <0.134.0>@client:handle_info:236 undefined
+2017-05-22 11:49:49.725 [info] <0.134.0>@client:handle_info:237 "client 1 said: \nwo xihuan ni"
+2017-05-22 11:49:49.725 [info] <0.134.0>@client:terminate:262 {function_clause,[{gen_tcp,send,[undefined,"client 1 said: \nwo xihuan ni"],[{file,"gen_tcp.erl"},{line,265}]},{client,handle_info,2,[{file,"src/logic/client.erl"},{line,238}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-05-22 11:49:49.725 [error] <0.134.0> gen_server <0.134.0> terminated with reason: no function clause matching gen_tcp:send(undefined, "client 1 said: \nwo xihuan ni") line 265
+2017-05-22 11:49:49.778 [error] <0.134.0> CRASH REPORT Process <0.134.0> with 0 neighbours exited with reason: no function clause matching gen_tcp:send(undefined, "client 1 said: \nwo xihuan ni") line 265 in gen_server:terminate/7 line 812
+2017-05-22 11:49:49.778 [error] <0.124.0> Supervisor client_sup had child 2 started with {client,start_link,undefined} at <0.134.0> exit with reason no function clause matching gen_tcp:send(undefined, "client 1 said: \nwo xihuan ni") line 265 in context child_terminated
+2017-05-22 11:52:33.889 [info] <0.31.0> Application lager started on node yangwei@brucedeiMac
+2017-05-22 11:52:33.889 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-22 11:52:33.944 [info] <0.31.0> Application mnesia started on node yangwei@brucedeiMac
+2017-05-22 11:52:33.951 [info] <0.99.0>@mod_mnesia:add_client:48 {client,1,"zst","iyw",[2],[1],[]}
+2017-05-22 11:52:33.951 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:52:33.951 [info] <0.99.0>@mod_mnesia:add_client:48 {client,2,"yw","ist",[1],[1],[]}
+2017-05-22 11:52:33.951 [info] <0.99.0>@mod_mnesia:add_client:54 add new client:{atomic,ok}
+2017-05-22 11:52:33.951 [info] <0.99.0>@mod_control_sup:init:26 load tables:ok 
+2017-05-22 11:52:33.951 [info] <0.99.0>@control_sup:init:63 Initialization all resources
+2017-05-22 11:52:33.952 [info] <0.121.0>@id_generator:init:31 ########### id_generator
+2017-05-22 11:52:33.957 [info] <0.122.0>@group_sup:init:70 [] 
+2017-05-22 11:52:33.957 [info] <0.122.0>@group_sup:init:77 [] 
+2017-05-22 11:52:33.957 [info] <0.122.0>@group_sup:init:79 ######## group_sup
+2017-05-22 11:52:33.958 [info] <0.124.0>@client_sup:init:65 ######## client_sup
+2017-05-22 11:52:33.959 [info] <0.31.0> Application chat started on node yangwei@brucedeiMac
+2017-05-22 11:52:36.904 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3682>
+2017-05-22 11:52:36.907 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:52:36.907 [info] <0.128.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:52:46.029 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:181 this is the socket use to bind:#Port<0.3693>
+2017-05-22 11:52:46.029 [info] <0.126.0>@tcp_acceptor:process_Client_Socket:189 success to create tcp_agent and controlling_porcess it
+2017-05-22 11:52:46.029 [info] <0.129.0>@tcp_agent:wait_socket:92 the gen_tcp fsm next_state is wait_auth
+2017-05-22 11:52:49.251 [info] <0.128.0>@tcp_agent:handle_info:229 ***************** receive request from socket ****************
+2017-05-22 11:52:49.265 [info] <0.128.0>@tcp_agent:handle_info:232 #{<<"cmd">> => <<"2">>,<<"id">> => <<"1">>,<<"password">> => <<"iyw">>}
+2017-05-22 11:52:49.265 [info] <0.128.0>@tcp_agent:handle_info:248 call wait_auth to handle login
+2017-05-22 11:52:49.267 [info] <0.132.0>@client:init:66 success to create a client
+2017-05-22 11:52:49.267 [info] <0.128.0>@tcp_agent:wait_auth:128 success login
+2017-05-22 11:52:49.267 [info] <0.132.0>@client:handle_cast:140 client state: tcp_agent_pid <0.128.0>, client_id 1, client_socket #Port<0.3682>
+2017-05-22 11:52:51.703 [info] <0.129.0>@tcp_agent:handle_info:229 ***************** receive request from socket ****************
+2017-05-22 11:52:51.703 [info] <0.129.0>@tcp_agent:handle_info:232 #{<<"cmd">> => <<"2">>,<<"id">> => <<"2">>,<<"password">> => <<"ist">>}
+2017-05-22 11:52:51.703 [info] <0.129.0>@tcp_agent:handle_info:248 call wait_auth to handle login
+2017-05-22 11:52:51.704 [info] <0.134.0>@client:init:66 success to create a client
+2017-05-22 11:52:51.704 [info] <0.129.0>@tcp_agent:wait_auth:128 success login
+2017-05-22 11:52:51.704 [info] <0.134.0>@client:handle_cast:140 client state: tcp_agent_pid <0.129.0>, client_id 2, client_socket #Port<0.3693>
+2017-05-22 11:52:58.926 [info] <0.128.0>@tcp_agent:handle_info:229 ***************** receive request from socket ****************
+2017-05-22 11:52:58.926 [info] <0.128.0>@tcp_agent:handle_info:232 #{<<"cmd">> => <<"3">>,<<"data">> => <<"wo xihuan ni">>,<<"id">> => <<"1">>,<<"to_id">> => <<"2">>,<<"to_type">> => <<"1">>}
+2017-05-22 11:52:58.926 [info] <0.128.0>@tcp_agent:handle_info:262 call wait_data to handle chat
+2017-05-22 11:52:58.926 [info] <0.128.0>@tcp_agent:wait_data:138 chat begin, client send chat
+2017-05-22 11:52:58.926 [info] <0.132.0>@client:handle_info:192 send message to other client
+2017-05-22 11:52:58.926 [info] <0.132.0>@client:handle_info:201 [2] true
+2017-05-22 11:52:58.927 [info] <0.132.0>@client:handle_info:223 <0.134.0> {client_receive_client_chat,1,"wo xihuan ni"}
+2017-05-22 11:52:58.927 [info] <0.134.0>@client:handle_info:234 receive message from client and send to socket
+2017-05-22 11:52:58.927 [info] <0.134.0>@client:handle_info:236 #Port<0.3693>
+2017-05-22 11:52:58.927 [info] <0.134.0>@client:handle_info:237 "client 1 said: \nwo xihuan ni"
+2017-05-22 11:52:58.927 [info] <0.134.0>@client:handle_info:239 success send message
+2017-05-22 11:53:09.041 [info] <0.129.0>@tcp_agent:handle_info:229 ***************** receive request from socket ****************
+2017-05-22 11:53:09.041 [info] <0.129.0>@tcp_agent:handle_info:232 #{<<"cmd">> => <<"3">>,<<"data">> => <<" wo ye xihuan ni">>,<<"id">> => <<"2">>,<<"to_id">> => <<"1">>,<<"to_type">> => <<"1">>}
+2017-05-22 11:53:09.041 [info] <0.129.0>@tcp_agent:handle_info:262 call wait_data to handle chat
+2017-05-22 11:53:09.041 [info] <0.129.0>@tcp_agent:wait_data:138 chat begin, client send chat
+2017-05-22 11:53:09.041 [info] <0.134.0>@client:handle_info:192 send message to other client
+2017-05-22 11:53:09.041 [info] <0.134.0>@client:handle_info:201 [1] true
+2017-05-22 11:53:09.041 [info] <0.134.0>@client:handle_info:223 <0.132.0> {client_receive_client_chat,2," wo ye xihuan ni"}
+2017-05-22 11:53:09.041 [info] <0.132.0>@client:handle_info:234 receive message from client and send to socket
+2017-05-22 11:53:09.041 [info] <0.132.0>@client:handle_info:236 #Port<0.3682>
+2017-05-22 11:53:09.041 [info] <0.132.0>@client:handle_info:237 "client 2 said: \n wo ye xihuan ni"
+2017-05-22 11:53:09.041 [info] <0.132.0>@client:handle_info:239 success send message
+2017-05-22 12:18:14.398 [info] <0.128.0>@tcp_agent:handle_info:229 ***************** receive request from socket ****************
+2017-05-22 12:18:14.398 [info] <0.128.0>@tcp_agent:handle_info:232 #{<<"cmd">> => <<"3">>,<<"data">> => <<"wo zhende xihuan ni">>,<<"id">> => <<"1">>,<<"to_id">> => <<"2">>,<<"to_type">> => <<"1">>}
+2017-05-22 12:18:14.398 [info] <0.128.0>@tcp_agent:handle_info:262 call wait_data to handle chat
+2017-05-22 12:18:14.398 [info] <0.128.0>@tcp_agent:wait_data:138 chat begin, client send chat
+2017-05-22 12:18:14.398 [info] <0.132.0>@client:handle_info:192 send message to other client
+2017-05-22 12:18:14.399 [info] <0.132.0>@client:handle_info:201 [2] true
+2017-05-22 12:18:14.399 [info] <0.132.0>@client:handle_info:223 <0.134.0> {client_receive_client_chat,1,"wo zhende xihuan ni"}
+2017-05-22 12:18:14.399 [info] <0.134.0>@client:handle_info:234 receive message from client and send to socket
+2017-05-22 12:18:14.399 [info] <0.134.0>@client:handle_info:236 #Port<0.3693>
+2017-05-22 12:18:14.399 [info] <0.134.0>@client:handle_info:237 "client 1 said: \nwo zhende xihuan ni"
+2017-05-22 12:18:14.399 [info] <0.134.0>@client:handle_info:239 success send message
+2017-05-22 13:46:41.855 [info] <0.128.0>@tcp_agent:handle_info:229 ***************** receive request from socket ****************
+2017-05-22 13:46:41.855 [info] <0.128.0>@tcp_agent:handle_info:232 #{<<"cmd">> => <<"3">>,<<"data">> => <<"wo chaoji chaoji xihuan ni">>,<<"id">> => <<"1">>,<<"to_id">> => <<"2">>,<<"to_type">> => <<"1">>}
+2017-05-22 13:46:41.855 [info] <0.128.0>@tcp_agent:handle_info:262 call wait_data to handle chat
+2017-05-22 13:46:41.855 [info] <0.128.0>@tcp_agent:wait_data:138 chat begin, client send chat
+2017-05-22 13:46:41.856 [info] <0.132.0>@client:handle_info:192 send message to other client
+2017-05-22 13:46:41.857 [info] <0.132.0>@client:handle_info:201 [2] true
+2017-05-22 13:46:41.857 [info] <0.132.0>@client:handle_info:223 <0.134.0> {client_receive_client_chat,1,"wo chaoji chaoji xihuan ni"}
+2017-05-22 13:46:41.858 [info] <0.134.0>@client:handle_info:234 receive message from client and send to socket
+2017-05-22 13:46:41.858 [info] <0.134.0>@client:handle_info:236 #Port<0.3693>
+2017-05-22 13:46:41.858 [info] <0.134.0>@client:handle_info:237 "client 1 said: \nwo chaoji chaoji xihuan ni"
+2017-05-22 13:46:41.858 [info] <0.134.0>@client:handle_info:239 success send message
+2017-05-22 13:55:35.063 [info] <0.31.0> Application lager started on node yangwei@brucedeiMac
+2017-05-22 13:55:35.063 [info] <0.98.0>@chat_sup:init:26 ###############   Begin  ##############
+2017-05-22 13:55:35.177 [info] <0.31.0> Application mnesia started on node yangwei@brucedeiMac
+2017-05-22 13:55:35.185 [info] <0.99.0>@mod_mnesia:add_client:50 add client to mnesia: {client,1,"zst","iyw",[2],[1],[]}
+2017-05-22 13:55:35.185 [info] <0.99.0>@mod_mnesia:add_client:56 add new client:{atomic,ok}
+2017-05-22 13:55:35.185 [info] <0.99.0>@mod_mnesia:add_client:50 add client to mnesia: {client,2,"yw","ist",[1],[1],[]}
+2017-05-22 13:55:35.186 [info] <0.99.0>@mod_mnesia:add_client:56 add new client:{atomic,ok}
+2017-05-22 13:55:35.186 [info] <0.99.0>@mod_mnesia:add_group:59 add group to mnesia: {group,1,[1,2]}
+2017-05-22 13:55:35.186 [info] <0.99.0>@mod_mnesia:add_group:64 add new group:{atomic,ok}
+2017-05-22 13:55:35.186 [info] <0.99.0>@mod_control_sup:init:27 load tables:ok 
+2017-05-22 13:55:35.186 [info] <0.99.0>@control_sup:init:63 Initialization all resources
+2017-05-22 13:55:35.193 [info] <0.121.0>@id_generator:init:31 ########### id_generator
+2017-05-22 13:55:35.223 [info] <0.122.0>@group_sup:init:70 [1] 
+2017-05-22 13:55:35.223 [info] <0.122.0>@group_sup:init:77 [{1,{group,start_link,[1]},permanent,2000,worker,[group]}] 
+2017-05-22 13:55:35.223 [info] <0.122.0>@group_sup:init:79 ######## group_sup
+2017-05-22 13:55:35.224 [info] <0.124.0>@group:handle_cast:104 <0.124.0>
+2017-05-22 13:55:35.240 [info] <0.125.0>@client_sup:init:65 ######## client_sup
+2017-05-22 13:55:35.242 [info] <0.31.0> Application chat started on node yangwei@brucedeiMac

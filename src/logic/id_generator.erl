@@ -13,6 +13,7 @@
 -export([init/1, handle_call/3, handle_cast/2, handle_info/2, terminate/2, code_change/3]).
 -include("predefine.hrl").
 -record(state, {}).
+-define(BEGIN_ID, 100).
 
 start_link() ->
 	gen_server:start_link({local, ?MODULE}, ?MODULE, [], []).
@@ -45,18 +46,16 @@ handle_call({get_id, IdType}, _From, State) ->
 				mnesia:write(ids, NewId, write),
 				Id;
 			[] ->
-				NewId= #ids{id_type = IdType, ids = 2},
+				NewId= #ids{id_type = IdType, ids = ?BEGIN_ID+1}, %% id从begin_id 开始
 				mnesia:write(ids, NewId, write),
-				1
+				?BEGIN_ID
 		end
 	    end,
 	case mnesia:transaction(F) of
 		{atomic, Id} ->
 			{atomic, Id};
-		{aborted, Reason} ->
-			lager:info("run transaction error ~1000.p ~n", [Reason]),
-			Id = 0;
 		_Else ->
+			lager:info("run mnesia transaction error"),
 			Id = -1
 	end,
 	{reply, Id, State}.

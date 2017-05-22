@@ -105,7 +105,7 @@ wait_auth(#register{username = UserName, password = PassWord} = Register, State)
 		friend_requests = []
 	},
 	%% 往数据库添加新的用户
-	mod_mnesia:add_new_client(Client),
+	mod_mnesia:add_client(Client),
 	%% 给用户生成对应的处理进程
 	%% 并与当前进程相结合
 	{ok, Client_Pid} = mod_tcp_agent:add_new_client(Client_Id),
@@ -123,7 +123,9 @@ wait_auth(#login{id = Id, password = PassWord}, State) ->
 			%% 给mod_tcp_agent添加新的子进程
 			%% 并与当前进程相结合
 			{ok, Client_Pid} = mod_tcp_agent:add_new_client(Id),
+			gen_server:cast(Client_Pid, {get_state, #{tcp_agent_pid => self(), client_id => Id, client_socket => State#state.socket}}),
 			ets:insert(client_pid, {Id, Client_Pid}),
+			lager:info("success login"),
 			{next_state, wait_data, State#state{client_pid = Client_Pid}};
 		_ ->
 			{stop, normale, State#client{}}
@@ -157,7 +159,7 @@ wait_data(#chat{} = Chat, #state{client_pid = Client_Pid} = State) ->
 	{next_state, wait_data, State};
 
 wait_data(#add_friend{} = Add_Friend, #state{client_pid = Client_Pid} = State) ->
-	lager:info("add friend begin...."),
+	lager:info("i want add a friend ! begin...."),
 	gen_server:cast(Client_Pid, Add_Friend),
 	{next_state, wait_data, State};
 
@@ -230,7 +232,7 @@ handle_info({tcp, Socket, BinData}, _StateName, #state{socket = Socket} = State)
 		lager:info("~p", [Message]),
 		Cmd = maps:get(<<"cmd">>, Message),
 		case Cmd of
-			<<"1">> ->
+			<<"1">> -> %% 注册新用户
 				UserName = binary_to_list(maps:get(<<"username">>, Message)),
 				PassWord = binary_to_list(maps:get(<<"password">>, Message)),
 				Register = #register{username = UserName, password = PassWord},
@@ -238,15 +240,15 @@ handle_info({tcp, Socket, BinData}, _StateName, #state{socket = Socket} = State)
 				lager:info("call wait_auth to handle register"),
 				tcp_agent:wait_auth(Register, State);
 			
-			<<"2">> ->
-				Id = binary_to_list(maps:get(<<"id">>, Message)),
+			<<"2">> -> %% 登录
+				Id = binary_to_integer(maps:get(<<"id">>, Message)),
 				PassWord = binary_to_list(maps:get(<<"password">>, Message)),
 				Login = #login{id = Id, password = PassWord},
 				
 				lager:info("call wait_auth to handle login"),
 				tcp_agent:wait_auth(Login, State);
 			
-			<<"3">> ->
+			<<"3">> -> %% 聊天
 				Id = binary_to_integer(maps:get(<<"id">>, Message)),
 				To_Type = binary_to_integer(maps:get(<<"to_type">>, Message)),
 				To_Id = binary_to_integer(maps:get(<<"to_id">>, Message)),
@@ -260,11 +262,11 @@ handle_info({tcp, Socket, BinData}, _StateName, #state{socket = Socket} = State)
 				lager:info("call wait_data to handle chat"),
 				tcp_agent:wait_data(Chat, State);
 			
-			<<"4">> ->
+			<<"4">> -> %% 接受好友请求
 				New_Friend_Id = binary_to_integer(maps:get(<<"new_friend_id">>, Message)),
 				tcp_agent:wait_data(#new_friend{new_friend_id = New_Friend_Id},State);
 			
-			<<"5">> ->
+			<<"5">> -> %% 发起好友请求
 				Id = binary_to_integer(maps:get(<<"id">>, Message)),
 				To_Id = binary_to_integer(maps:get(<<"to_id">>, Message)),
 				tcp_agent:wait_data(#add_friend{id = Id, to_id = To_Id}, State);
