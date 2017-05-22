@@ -6028,3 +6028,204 @@ Bad value on output port 'tcp_inet'
      Reason:     {{badmatch,{1,<0.133.0>}},[{group,'-handle_info/2-fun-6-',2,[{file,"src/logic/group.erl"},{line,127}]},{lists,foreach,2,[{file,"lists.erl"},{line,1338}]},{group,handle_info,2,[{file,"src/logic/group.erl"},{line,123}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
      Offender:   [{pid,<0.124.0>},{id,1},{mfargs,{group,start_link,[1]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
 
+2017-05-22 18:38:03 =ERROR REPORT====
+** Generic server <0.133.0> terminating 
+** Last message in was {'$gen_cast',ge_online_client}
+** When Server state == {state,<0.129.0>,100,#Port<0.3684>}
+** Reason for termination == 
+** {function_clause,[{client,handle_cast,[ge_online_client,{state,<0.129.0>,100,#Port<0.3684>}],[{file,"src/logic/client.erl"},{line,94}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-05-22 18:38:03 =ERROR REPORT====
+** State machine <0.129.0> terminating 
+** Last message in was {tcp,#Port<0.3684>,<<"{\"cmd\": 6}">>}
+** When State == wait_data
+**      Data  == {state,#Port<0.3684>,<0.133.0>,100}
+** Reason for termination = 
+** {bad_return_value,ok}
+2017-05-22 18:38:03 =CRASH REPORT====
+  crasher:
+    initial call: client:init/1
+    pid: <0.133.0>
+    registered_name: []
+    exception exit: {{function_clause,[{client,handle_cast,[ge_online_client,{state,<0.129.0>,100,#Port<0.3684>}],[{file,"src/logic/client.erl"},{line,94}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [client_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.125.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 2356
+  neighbours:
+2017-05-22 18:38:03 =CRASH REPORT====
+  crasher:
+    initial call: tcp_agent:init/1
+    pid: <0.129.0>
+    registered_name: []
+    exception exit: {{bad_return_value,ok},[{gen_fsm,terminate,7,[{file,"gen_fsm.erl"},{line,559}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [tcp_agent_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [#Port<0.3684>,<0.126.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 2795
+  neighbours:
+2017-05-22 18:38:03 =SUPERVISOR REPORT====
+     Supervisor: {local,client_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{client,handle_cast,[ge_online_client,{state,<0.129.0>,100,#Port<0.3684>}],[{file,"src/logic/client.erl"},{line,94}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.133.0>},{id,100},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-22 18:38:03 =SUPERVISOR REPORT====
+     Supervisor: {local,tcp_agent_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,ok}
+     Offender:   [{pid,<0.129.0>},{id,#Port<0.3684>},{mfargs,{tcp_agent,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-22 18:41:04 =ERROR REPORT====
+** Generic server <0.133.0> terminating 
+** Last message in was {'$gen_cast',get_online_client}
+** When Server state == {state,<0.129.0>,100,#Port<0.3684>}
+** Reason for termination == 
+** {function_clause,[{mod_mnesia,'-get_client_name/1-lc$^0/1-0-',[{qlc_handle,{qlc_table,#Fun<mnesia.22.64458334>,true,#Fun<mnesia.23.64458334>,#Fun<mnesia.24.64458334>,#Fun<mnesia.25.64458334>,#Fun<mnesia.28.64458334>,#Fun<mnesia.27.64458334>,#Fun<mnesia.26.64458334>,'=:=',undefined,no_match_spec}}],[{file,"src/mod/mod_mnesia.erl"},{line,113}]},{mod_mnesia,get_client_name,1,[{file,"src/mod/mod_mnesia.erl"},{line,113}]},{client,'-handle_cast/2-fun-2-',2,[{file,"src/logic/client.erl"},{line,98}]},{lists,foreach,2,[{file,"lists.erl"},{line,1338}]},{client,handle_cast,2,[{file,"src/logic/client.erl"},{line,96}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-05-22 18:41:04 =ERROR REPORT====
+** State machine <0.129.0> terminating 
+** Last message in was {tcp,#Port<0.3684>,<<"{\"cmd\": 6}">>}
+** When State == wait_data
+**      Data  == {state,#Port<0.3684>,<0.133.0>,100}
+** Reason for termination = 
+** {bad_return_value,ok}
+2017-05-22 18:41:04 =CRASH REPORT====
+  crasher:
+    initial call: client:init/1
+    pid: <0.133.0>
+    registered_name: []
+    exception exit: {{function_clause,[{mod_mnesia,'-get_client_name/1-lc$^0/1-0-',[{qlc_handle,{qlc_table,#Fun<mnesia.22.64458334>,true,#Fun<mnesia.23.64458334>,#Fun<mnesia.24.64458334>,#Fun<mnesia.25.64458334>,#Fun<mnesia.28.64458334>,#Fun<mnesia.27.64458334>,#Fun<mnesia.26.64458334>,'=:=',undefined,no_match_spec}}],[{file,"src/mod/mod_mnesia.erl"},{line,113}]},{mod_mnesia,get_client_name,1,[{file,"src/mod/mod_mnesia.erl"},{line,113}]},{client,'-handle_cast/2-fun-2-',2,[{file,"src/logic/client.erl"},{line,98}]},{lists,foreach,2,[{file,"lists.erl"},{line,1338}]},{client,handle_cast,2,[{file,"src/logic/client.erl"},{line,96}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [client_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [<0.125.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 4684
+  neighbours:
+2017-05-22 18:41:04 =CRASH REPORT====
+  crasher:
+    initial call: tcp_agent:init/1
+    pid: <0.129.0>
+    registered_name: []
+    exception exit: {{bad_return_value,ok},[{gen_fsm,terminate,7,[{file,"gen_fsm.erl"},{line,559}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [tcp_agent_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [#Port<0.3684>,<0.126.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 2795
+  neighbours:
+2017-05-22 18:41:04 =SUPERVISOR REPORT====
+     Supervisor: {local,tcp_agent_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,ok}
+     Offender:   [{pid,<0.129.0>},{id,#Port<0.3684>},{mfargs,{tcp_agent,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-22 18:41:04 =SUPERVISOR REPORT====
+     Supervisor: {local,client_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{mod_mnesia,'-get_client_name/1-lc$^0/1-0-',[{qlc_handle,{qlc_table,#Fun<mnesia.22.64458334>,true,#Fun<mnesia.23.64458334>,#Fun<mnesia.24.64458334>,#Fun<mnesia.25.64458334>,#Fun<mnesia.28.64458334>,#Fun<mnesia.27.64458334>,#Fun<mnesia.26.64458334>,'=:=',undefined,no_match_spec}}],[{file,"src/mod/mod_mnesia.erl"},{line,113}]},{mod_mnesia,get_client_name,1,[{file,"src/mod/mod_mnesia.erl"},{line,113}]},{client,'-handle_cast/2-fun-2-',2,[{file,"src/logic/client.erl"},{line,98}]},{lists,foreach,2,[{file,"lists.erl"},{line,1338}]},{client,handle_cast,2,[{file,"src/logic/client.erl"},{line,96}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.133.0>},{id,100},{mfargs,{client,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-22 18:42:47 =ERROR REPORT====
+** State machine <0.129.0> terminating 
+** Last message in was {tcp,#Port<0.3684>,<<"{\"cmd\": 6}">>}
+** When State == wait_data
+**      Data  == {state,#Port<0.3684>,<0.133.0>,100}
+** Reason for termination = 
+** {bad_return_value,ok}
+2017-05-22 18:42:47 =CRASH REPORT====
+  crasher:
+    initial call: tcp_agent:init/1
+    pid: <0.129.0>
+    registered_name: []
+    exception exit: {{bad_return_value,ok},[{gen_fsm,terminate,7,[{file,"gen_fsm.erl"},{line,559}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [tcp_agent_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [#Port<0.3684>,<0.126.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 2803
+  neighbours:
+2017-05-22 18:42:47 =SUPERVISOR REPORT====
+     Supervisor: {local,tcp_agent_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,ok}
+     Offender:   [{pid,<0.129.0>},{id,#Port<0.3684>},{mfargs,{tcp_agent,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-22 18:46:39 =ERROR REPORT====
+** State machine <0.133.0> terminating 
+** Last message in was {tcp,#Port<0.3704>,<<"{\"cmd\": 6}">>}
+** When State == wait_data
+**      Data  == {state,#Port<0.3704>,<0.134.0>,101}
+** Reason for termination = 
+** {bad_return_value,ok}
+2017-05-22 18:46:39 =CRASH REPORT====
+  crasher:
+    initial call: tcp_agent:init/1
+    pid: <0.133.0>
+    registered_name: []
+    exception exit: {{bad_return_value,ok},[{gen_fsm,terminate,7,[{file,"gen_fsm.erl"},{line,559}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [tcp_agent_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [#Port<0.3704>,<0.126.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 2832
+  neighbours:
+2017-05-22 18:46:39 =SUPERVISOR REPORT====
+     Supervisor: {local,tcp_agent_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,ok}
+     Offender:   [{pid,<0.133.0>},{id,#Port<0.3704>},{mfargs,{tcp_agent,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-05-22 18:47:44 =ERROR REPORT====
+** State machine <0.129.0> terminating 
+** Last message in was {tcp,#Port<0.3684>,<<"{\"cmd\": 6}">>}
+** When State == wait_data
+**      Data  == {state,#Port<0.3684>,<0.131.0>,100}
+** Reason for termination = 
+** {bad_return_value,ok}
+2017-05-22 18:47:44 =CRASH REPORT====
+  crasher:
+    initial call: tcp_agent:init/1
+    pid: <0.129.0>
+    registered_name: []
+    exception exit: {{bad_return_value,ok},[{gen_fsm,terminate,7,[{file,"gen_fsm.erl"},{line,559}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [tcp_agent_sup,control_sup,chat_sup,<0.97.0>]
+    messages: []
+    links: [#Port<0.3684>,<0.126.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 2799
+  neighbours:
+2017-05-22 18:47:44 =SUPERVISOR REPORT====
+     Supervisor: {local,tcp_agent_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,ok}
+     Offender:   [{pid,<0.129.0>},{id,#Port<0.3684>},{mfargs,{tcp_agent,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+

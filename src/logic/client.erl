@@ -91,11 +91,14 @@ handle_call(_Request, _From, State) ->
 %%
 %% @end
 %%--------------------------------------------------------------------
--spec(handle_cast(Request :: term(), State :: #state{}) ->
-	{noreply, NewState :: #state{}} |
-	{noreply, NewState :: #state{}, timeout() | hibernate} |
-	{stop, Reason :: term(), NewState :: #state{}}).
-handle_cast(online, State) ->
+handle_cast(get_online_client, #state{client_socket = Socket} = State) ->
+	lager:info("get_online_client"),
+	lists:foreach(
+		fun({Client_Id, _}) ->
+			Message = integer_to_list(Client_Id) ++ " " ++ mod_mnesia:get_client_name(Client_Id),
+			gen_tcp:send(Socket, Message)
+		end,
+		ets:tab2list(client_pid)),
 	{noreply, State};
 
 %% 处理到来的好友请求

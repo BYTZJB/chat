@@ -26,7 +26,8 @@
 	update_client/2,
 	init_client/0,
 	init_group/0,
-	add_group/1
+	add_group/1,
+	get_client_name/1
 	]).
 
 get_client_password(Client_Id) ->
@@ -107,3 +108,9 @@ init_client() ->
 init_group() ->
 	Group_01 = #group{id =1 , members = [1, 2]},
 	mod_mnesia:add_group(Group_01).
+
+get_client_name(Client_Id) ->
+	lager:info("**************************"),
+	[Client_Name] = do(qlc:q([E#client.username || E <- mnesia:table(client), E#client.id == Client_Id])),
+	lager:info("~p ~p", [Client_Id, Client_Name]),
+	Client_Name.

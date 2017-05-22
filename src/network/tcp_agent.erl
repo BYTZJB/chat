@@ -271,7 +271,7 @@ handle_info({tcp, Socket, BinData}, _StateName, #state{socket = Socket} = State)
 				tcp_agent:wait_data(#add_friend{id = Id, to_id = To_Id}, State);
 			
 			6 -> %% 获取在线的客户端列表
-				{stop, "undefined cmd", State};
+				gen_server:cast(State#state.client_pid, get_online_client);
 			
 			_ ->
 				lager:info("error cmd"),
